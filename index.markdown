@@ -23,10 +23,10 @@ As a B* fellow, you'll have brief weekly calls with Sam for mentorship, or reall
 [Fill out this form!](https://link.here)
 
 #### Are there any restrictions for my idea/team?
- - Product must be a software project; web app || mobile app.
+ - Product must be a software project; a web app or mobile app.
  - Team must be 2 people
  - We bias towards students who have built a big project before, either in a class like CS32 or outside of class.
 
 #### Why the name B*?
 
-It's a reference to A*, the search algorithm.  Creating a software product from scratch requires conviction (heuristic), and lot of iteration (backtracking).
+It's a reference to A*, the graph search algorithm.  Creating a software product from scratch requires conviction you're building the right thing (heuristic), and lot of iteration (backtracking).
