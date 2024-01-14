@@ -2,7 +2,7 @@ title: B*
 logo: /assets/img/bstar.png
 email: bstarfellowship@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Brown Startup Fellowship
+  We help Brown students create software products
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

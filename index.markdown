@@ -2,6 +2,37 @@
 layout: default
 ---
 
+# What is B*?
+
+B* is short for **Brown Startup Fellowship**; a 10 week summer program for Brown computer science students to build software products.
+
+Every year, we give **$10,000** grants to 2 teams of student founders.  From **June 1 - August 15**, you'll live in Providence and build v1.0.0 of your software product.  By the end of the summer, you'll have something to launch to friends, family and random internet strangers.
+
+If you and a friend are interested in our 2024 program, [please apply!](https://link.here)
+
+# Who runs B*?
+
+[Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/), was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  Sam started this program because it's never been easier for smart, self-motivated people to start an internet business.
+
+As a B* fellow, you'll have brief weekly calls with Sam for mentorship, or really anything.  These calls are totally optional; most of your learning will be by doing anyway.
+
+# FAQ
+
+#### How do I apply?
+
+[Fill out this form!](https://link.here)
+
+#### Are there any restrictions for my idea/team?
+ - Product must be a software project; either a web app or mobile app or both.
+ - Team must be 2 people; teams of 3 or more will move too slowly.
+ - We generally bias towards students who have demonstrated they can build a big project, either in a class like CS32 or outside of class.
+
+#### Why the name B*?
+
+It's a cheeky reference to A*, the search algorithm.  Creating a software product from scratch requires conviction (heuristic), and lot of iteration (backtracking).
+
+### Test
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
