@@ -14,7 +14,7 @@ If you and a friend are interested in our 2024 program, [please apply!](https://
 
 [Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/), was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  Sam created this fellowship because it's never been easier for smart, self-motivated people to start an internet business.
 
-As a B* fellow, you'll have brief weekly calls with Sam for mentorship, or really anything.  These calls are totally optional; most of your learning will be by doing anyway.
+As a B* fellow, you'll have brief weekly mentorship calls with Sam.
 
 # FAQ
 
