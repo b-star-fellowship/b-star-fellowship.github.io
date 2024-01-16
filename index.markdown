@@ -22,7 +22,7 @@ If you and a friend are interested in our 2024 program, [please apply!](https://
 
 #### Are there any restrictions for my idea/team?
  - Product must be a software project; a web app or mobile app.
- - Team must be 2 people, living in the same city
+ - Team must be 2 students, living in the same city, working on the project full time.
  - Students must have built a software project on a team before, either in a class like CS32 or outside of class.
 
 #### Why the name B*?
