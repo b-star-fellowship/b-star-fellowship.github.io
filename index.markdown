@@ -12,7 +12,7 @@ If you and a friend are interested in our 2024 program, [please apply!](https://
 
 # Who runs B*?
 
-[Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/) was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  As a B* fellow, you'll have access to Sam as a mentor via weekly calls.
+[Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/) was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  As a B* fellow, you'll have access to Sam as a mentor via brief, weekly calls.
 
 # FAQ
 
