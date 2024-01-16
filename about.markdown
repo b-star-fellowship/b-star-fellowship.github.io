@@ -4,9 +4,9 @@ layout: default
 
 # What is B*?
 
-B* is short for **Brown Startup Fellowship**; a 10 week summer program for Brown computer science students to build software products.
+B* is short for **Brown Startup Fellowship**; a 10 week summer program for Brown computer science students to build consumer software products.
 
-Every year, we give **$10,000** grants to 2 teams of student founders.  From **June 1 - August 15**, you'll build v1 of your software product and launch it to friends, family and random internet strangers.
+Every year, we give **$10,000** grants to 2 teams of student founders.  From **June 1 - August 15**, you'll build v1 of your product and launch it to friends, family and random internet strangers.
 
 If you and a friend are interested in our 2024 program, [please apply!](https://forms.gle/CPwBHFqYcksibz658)
 
