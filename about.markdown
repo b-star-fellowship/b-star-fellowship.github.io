@@ -2,122 +2,29 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# What is B*?
 
-[Link to another page](./another-page.html).
+B* is short for **Brown Startup Fellowship**; a 10 week summer program for Brown computer science students to build software products.
 
-There should be whitespace between paragraphs.
+Every year, we give **$10,000** grants to 2 teams of student founders.  From **June 1 - August 15**, you'll build v1 of your software product and launch it to friends, family and random internet strangers.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+If you and a friend are interested in our 2024 program, [please apply!](https://forms.gle/CPwBHFqYcksibz658)
 
-# Header 1
+# Who runs B*?
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+[Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/) was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  As a B* fellow, you'll have access to Sam as a mentor via brief, weekly calls.
 
-## Header 2
+# FAQ
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+#### How do I apply?
 
-### Header 3
+[Fill out this form!](https://forms.gle/CPwBHFqYcksibz658)
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+#### Are there any restrictions for my idea/team?
+ - Product must be a software project; a web app or mobile app.
+ - Team must be 2 students, living in the same city, working on the project full time.
+ - Students must have built a software project on a team before, either in a class like CS32 or outside of class.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+#### Why the name B*?
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+It's a reference to A*, the graph search algorithm.  Creating a software product from scratch requires conviction you're building the right thing (heuristic), and lot of iteration (backtracking).
