@@ -27,4 +27,4 @@ If you and a friend are interested in our 2024 program, [please apply!](https://
 
 #### Why the name B*?
 
-It's a reference to A*, the graph search algorithm.  Creating a software product from scratch requires conviction you're building the right thing (heuristic), and lot of iteration (backtracking).
+It's a reference to A*, the graph search algorithm.  Creating a software product from scratch requires conviction you're building something useful (heuristic), and lot of iteration (backtracking).
