@@ -8,7 +8,7 @@ B* is short for **Brown Startup Fellowship**; a 10 week summer program for Brown
 
 Every year, we give **$10,000** grants to 2 teams of student founders.  From **June 1 - August 15**, you'll build v1 of your product and launch it to friends, family and random internet strangers.
 
-If you and a friend are interested in our 2024 program, [please apply!](https://forms.gle/CPwBHFqYcksibz658)
+If you and a friend are interested in our 2024 program, [please apply!](https://forms.gle/CPwBHFqYcksibz658). To get a sense for what kind of products you can build in B*, check out our past fellows' work [here](/past-projects).
 
 # Who runs B*?
 
@@ -17,7 +17,6 @@ If you and a friend are interested in our 2024 program, [please apply!](https://
 # FAQ
 
 #### How do I apply?
-
 [Fill out this form!](https://forms.gle/CPwBHFqYcksibz658)
 
 #### Are there any restrictions for my idea/team?
@@ -26,5 +25,4 @@ If you and a friend are interested in our 2024 program, [please apply!](https://
  - Students must have built a software project on a team before, either in a class like CS32 or outside of class.
 
 #### Why the name B*?
-
 It's a reference to A*, the graph search algorithm.  Creating a software product from scratch requires conviction you're building something useful (heuristic), and lot of iteration (backtracking).
