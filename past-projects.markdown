@@ -6,6 +6,11 @@ layout: default
 
 ## 2023
 
+## [heartBeats](https://heartbeatsapp.netlify.app/)
+### Maya Magavi & Dalton Simonson
+
+Heartbeats is a web-based workout playlist generator which interfaces with Spotify to create unique workout playlists tailored to your needs. Playlists are based on the user’s music preferences, desired genres, workout length, type, and intensity, as well as projected heart rate over the course of the workout!
+
 ## [Brush Up](https://brush-up.netlify.app/)
 ### Charles Levy & Ethan Jiang
 
