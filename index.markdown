@@ -8,7 +8,7 @@ B* is short for **Brown Startup Fellowship**; a 10 week summer fellowship for Br
 
 Every year, we give a **$10,000** grant to a team of two student founders.  From **June 1 - August 15**, you'll build v1 of your product and launch it to friends, family and random internet strangers.
 
-If you're interested in joining our 2024 fellowship, [please apply!](https://forms.gle/CPwBHFqYcksibz658). To get a sense for what kind of products you can build in B*, check out our fellows' work [here](/products).
+To get a sense for what kind of products you can build in B*, check out our fellows' work [here](/products).
 
 # Who runs B*?
 
@@ -17,7 +17,7 @@ If you're interested in joining our 2024 fellowship, [please apply!](https://for
 # FAQ
 
 #### How do I apply?
-[Fill out this form!](https://forms.gle/CPwBHFqYcksibz658)
+[Fill out this form! (Closed for 2024)](https://forms.gle/CPwBHFqYcksibz658)
 
 #### Are there any restrictions for my idea/team?
  - Product must be a software project; a web app or mobile app.
