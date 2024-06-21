@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# B* Projects
+# B* Products
 
 ## 2024
 
