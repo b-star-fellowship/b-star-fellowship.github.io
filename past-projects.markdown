@@ -2,7 +2,13 @@
 layout: default
 ---
 
-# Past Projects
+# B* Projects
+
+## 2024
+
+## [ATA](https://talktoata.com)
+### Julian Dai, Noah Rousell, Andrew Chen
+ATA (Artificial Teaching Assistant) is an adaptable LLM-powered teaching assistant designed to guide and conceptually teach students.  ATA uses cutting-edge AI to provide a combination of conceptual understanding, debugging assistance, and logistical support to students, all tailored to the specifics of your course content.
 
 ## 2023
 
