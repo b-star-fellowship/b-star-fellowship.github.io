@@ -17,7 +17,7 @@ To get a sense for what kind of products you can build in B*, check out our fell
 # FAQ
 
 #### How do I apply?
-[Fill out this form!](https://forms.gle/56rBUXt9oKoXS9mJ6)
+[Apply to our 2025 cohort here!](https://forms.gle/56rBUXt9oKoXS9mJ6)
 
 #### Are there any restrictions for my idea/team?
  - Product must be a software project; a web app or mobile app.
