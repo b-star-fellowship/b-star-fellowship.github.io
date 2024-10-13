@@ -7,7 +7,7 @@ layout: default
 
 Warning: Following these instructions will take considerable time and energy (2+ months of consistent effort).  IMO that is a worthwhile investment to get a job you find meaningful.  
 
-Any highlighted text is anecdotal/my own experience, and should not be considered representative of all startups.
+_Any italicized text is anecdotal/my own experience, and should not be considered representative of all startups._
 
 ## Preparation
 ### 1. Your Resume
@@ -92,8 +92,9 @@ Any highlighted text is anecdotal/my own experience, and should not be considere
 
  - Also take up to 10 minutes to search LinkedIn for people who have similar roles to the job application, or seem related to the actual hiring process (recruiters, HR, CEO/founders sometimes).  Save any of their profile links in your google sheet.
 
- - Some jobs require a cover letter, or for you to fill out some extra information for why you're interested in their company specifically.  This is a great place to use stuff from your Things I like column or your questions column.  If they ask for a cover letter, keep it concise, tone should be eager and appreciative of their time, and don't be afraid to get creative.  
- - ==When I was interviewing regularly for engineering positions at Down Dog, a few people stood out by putting jokes in applications, and it made me want to talk to them more.  Your mileage may vary.==
+ - Some jobs require a cover letter, or for you to fill out some extra information for why you're interested in their company specifically.  This is a great place to use stuff from your Things I like column or your questions column.  If they ask for a cover letter, keep it concise, tone should be eager and appreciative of their time, and don't be afraid to get creative.
+
+ - _When I was interviewing regularly for engineering positions at Down Dog, a few people stood out by putting jokes in applications, and it made me want to talk to them more.  With other companies, your mileage may vary._
 
  - Submit your tailored resume, cover letter, and extra information!  **Guess what you're not done yet!**
 
