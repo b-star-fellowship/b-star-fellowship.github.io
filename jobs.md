@@ -10,8 +10,8 @@ Warning: Following these instructions will take considerable time and energy (2+
 _Any italicized text is anecdotal/my own experience, and should not be considered representative of all startups._
 
 ## Preparation
-### 1. Your Resume
- - Make one master copy of your resume, either in a plain text file or in a template like [this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  This master copy should be as detailed and long as possible; include everything you've done that could possibly relate to a software engineering job or ML job.  Don't worry about limiting to 1 page.
+### 1. Your Resume (3-5 hours)
+ - Make one primary copy of your resume, either in a plain text file or in a template like [this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  This primary copy should be as detailed and long as possible; include everything you've done that could possibly relate to a software engineering job or ML job.  Don't worry about limiting to 1 page.
 
  - Keep it simple with 3 sections: **Experience, Education,** and **Languages & Tools** (in that order)
 
@@ -23,22 +23,22 @@ _Any italicized text is anecdotal/my own experience, and should not be considere
 
  - Under Technologies & Languages add the programming languages, technologies (like Git, AWS, any special command line stuff, etc.) & frameworks (like Rails, React, PyTorch) you've used in your classes and projects and feel comfortable with.   These will be important keywords for Recruiters, application reviewers, and AIs.
 
- - Make sure that you have a LinkedIn account, and it contains all the information you're putting into the master resume.  Ideally with a professional headshot.
+ - Make sure that you have a LinkedIn account, and it contains all the information you're putting into the primary resume.  Ideally with a professional headshot.
 
 
-### 2. Practicing for interviews
+### 2. Practicing for interviews (3-5 weeks)
   - You want to make sure your programming fundamentals are sound, which means reviewing a lot of material from the intro CS classes:
       - Data Structures: Hash Tables, Linked Lists, Stacks, Queues, Trees, Tries, Graphs, Vectors, Heaps.
       - Algorithms: Quick Sort, Merge Sort, Binary Search, BreadthFirst Search, Depth-First Search.
-      - Concepts: Big-O Time, Big-O Space, Recursion & Memoization, Probability, Bit Manipulation.
+      - Concepts: Big-O Time, Big-O Space, Recursion & Memoization, Probability.
 
   - When I was interviewing, this meant going through the first 4 chapters of [cracking the coding interview](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  Nowadays you might find a structured set of exercises on Leetcode or a diff online coding website.
 
   - Ideally you would dedicate at least 2 weeks to reviewing these, it'll make you feel a lot more confident in any first round technical interviews.  Hard to do mid semester, so def try to do it over winter break.
 
-  - If you're interested in a specialty (distributed systems, machine learning), defniitely investigate interview prep for those specialties.  For example, in ML that might include gradient descent, implementing a classifier over MNIST, etc.
+  - If you're interested in a specialty (distributed systems, machine learning, design), defniitely investigate other interview prep for those specialties.  For example, in ML that might include implementing a gradient descent algorithm, a classifier over MNIST, etc.
 
-## Sourcing Companies
+## Sourcing Companies (1-3 days)
  - First, make a Companies google sheet with the following columns
     - **Company Name**
     - **Priority (High or Low)**
@@ -81,12 +81,12 @@ _Any italicized text is anecdotal/my own experience, and should not be considere
 
  - Then, pick a second batch of companies that includes 1 or 2 of your high priority companies (and some low priority ones), which you'll apply to 1 week later.
 
-### 2.  For Each Application:
+### 2.  For Each Application (1 hour each):
  - Create a version of your resume tailored specifically to the job application.  That means:
     - Expand on the most relevant experience, education & language/tools for that job.  Filter out unrelated stuff.
     - As much as possible, include language from the job posting in your tailored resume without being dishonest.
     - If you trust Chat GPT, you can paste the job description & your full resume into Chat GPT and ask it to do the first draft for you.
-    - The tailored resume should be one page long, and put into a template like this one.
+    - The tailored resume should be one page long, and put into a template [like this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).
 
  - Take up to 10 minutes to search the company's website & linkedin for any long form writing they have about engineering or product.  This is a great source of questions for you to ask an interviewer, which will show you're actually interested in the company's work - fill your questions in your google sheet.
 
@@ -99,7 +99,7 @@ _Any italicized text is anecdotal/my own experience, and should not be considere
  - Submit your tailored resume, cover letter, and extra information!  **Guess what you're not done yet!**
 
  - Put a reminder in your calendar for 3 business days from now to LinkedIn message everyone you added to the Contact column.  You should send them something to the effect of:
-   - "Hey there [USE THEIR NAME]!  My name is [YOUR NAME], I recently applied for the [XXX JOB], and am super excited about [COMPANY YYY].  I would love to ask you a couple questions about the role/company: [INSERT YOUR GOOD, THOUGHTFUL QUESTIONS HERE]?  Thanks so much for your time!"
+   - "Hey there [USE THEIR NAME]!  My name is [YOUR NAME], I recently applied for the [XXX JOB], and am super excited about [COMPANY YYY].  I would love to ask you a couple questions about your role/company: [INSERT YOUR GOOD, THOUGHTFUL QUESTIONS HERE]?  Thanks so much for your time!"
    - If you can get their email from their linkedin profile, send them the same stuff in an email too, but change up the text slightly so it doesn't feel spammy.
    - [Here is some supplemental advice for cold emailing people](https://www.reddit.com/r/cscareerquestionsOCE/comments/1acm703/my_guide_to_cold_emailingpitching_to_companies/)
 
@@ -119,3 +119,33 @@ _Any italicized text is anecdotal/my own experience, and should not be considere
  - When you're making batches of jobs to apply to, try to group the jobs with similar titles or companies together, and then the tailored resumes will be more similar (which will let you copy and paste more between jobs).
 
  - Give yourself a little treat, only after finishing a batch (grandma's rule).
+
+## Interviewing
+### 1. First Round
+ - If you know who your interviewer's name ahead of time, read their LinkedIn and come up with more questions specifically for them in the interview.  Not just questions about the job details like pay/vacation/401k, but questions about the product or their personal experience with the company.
+
+ - _When I was interviewing people and they had no questions afterwards, that was a red flag.  I want to hire people who are not just technically competant, but curious and excited about my work._  
+
+ - Make sure you get enough sleep and have eaten a meal 1-2 hours before your interview.  Solving technical problems while hungry sucks, interviewing after having just eaten also sucks.  Go to the bathroom beforehand too.
+
+ - Don't be late.
+
+ - After the interview, schedule send an email to the interviewer thanking them for the time.  If you have any supplemental questions include those too.  Ask when you should expect to hear from them, and if they don't answer, put a reminder in your calendar to follow up with them in 1 week.
+
+ - If you think you bombed the interview, be nice to yourself and keep applying elsewhere.  That's why we do practice interviews!
+
+ - If you think you rocked the interview, give yourself a pat on the back and keep applying elsewhere.  _Don't be like me, who thought he aced his Google & Facebook onsite interviews, then confidently stopped applying elsewhere, only to get rejected by both 2 weeks later._
+
+### 2. Second Rounds
+ - Same as above
+
+### 3. Onsite Interview
+ - Same as above, but especially don't be late.
+
+## Navigating offers
+### 1. Immediately upon receiving an offer from company [XXX]
+ - For each HIGH priority company [YYY] that you're already in the pipeline for, email the person you've been corresponding with saying something like "Hey there!  I just want to let you know that I've received an attractive job offer from another company.  I'm still really excited about [YYY] and if possible would love to continue the process to see if we're a good fit."
+
+ - Apply to the remaining HIGH priority companies that same day, to get started in their process ASAP.
+
+ - Say the following out loud to yourself in the mirror:
