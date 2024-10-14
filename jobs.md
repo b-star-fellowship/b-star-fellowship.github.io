@@ -9,6 +9,15 @@ Warning: Following these instructions will take considerable time and energy (2+
 
 _Any italicized text is anecdotal/my own experience, and should not be considered representative of all startups._
 
+## Time Management
+If you're like me, you'll find all this work draining and miserable.  Here's some tips to speed up the process and make you feel better while doing it:
+
+ - Use the [Pomodoro method](https://en.wikipedia.org/wiki/Pomodoro_Technique) for focus, and dedicate 2-3 hours at a time to submitting applications.
+
+ - Give yourself a little treat, but only after finishing a session (grandma's rule).
+
+ - Put your phone in another room while you're doing these, no multitasking allowed.
+
 ## Preparation
 ### 1. Your Resume (3-5 hours)
  - Make one primary copy of your resume, either in a plain text file or in a template like [this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  This primary copy should be as detailed and long as possible; include everything you've done that could possibly relate to a software engineering job or ML job.  Don't worry about limiting to 1 page.
@@ -109,16 +118,10 @@ _Any italicized text is anecdotal/my own experience, and should not be considere
 
  - Expect a response rate of about 5%; that means for every 20 of these messages you send, you'll get 1 response.  That means especially for high priority companies, you want to reach out to as many relevant people as possible.
 
-### 3. Time management
- - The first time you do all those steps for just one job application, it's going to feel pretty slow and depressing.  Here's some ways to make this take less time and feel less bad
+### 3. Batching tips
+ - Try to group the jobs with similar titles or companies together, their tailored resumes will be similar (which will let you copy and paste more).
 
- - Use the Pomodoro method for focus, and dedicate 2 hours at a time to submitting applications.
-
- - Put your phone in another room while you're doing these, no multitasking allowed.
-
- - When you're making batches of jobs to apply to, try to group the jobs with similar titles or companies together, and then the tailored resumes will be more similar (which will let you copy and paste more between jobs).
-
- - Give yourself a little treat, only after finishing a batch (grandma's rule).
+ - Again, give yourself a tasty treat once you deserve it.
 
 ## Interviewing
 ### 1. First Round
