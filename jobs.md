@@ -129,7 +129,7 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
 
  - _When I was interviewing people and they had no questions afterwards, that was a red flag.  I want to hire people who are not just technically competant, but curious and excited about my work._  
 
- - Make sure you get enough sleep and have eaten a meal 1-2 hours before your interview.  Solving technical problems while hungry sucks, interviewing after having just eaten also sucks.  Go to the bathroom beforehand too.
+ - Make sure you get enough sleep and have eaten a meal 1-2 hours before your interview.  Solving technical problems while you're hungry is like mirror mode in mario kart. Go to the bathroom beforehand too.
 
  - Don't be late.
 
@@ -139,11 +139,11 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
 
  - If you think you rocked the interview, give yourself a pat on the back and keep applying elsewhere.  _Don't be like me, who thought he aced his Google & Facebook onsite interviews, then confidently stopped applying elsewhere, only to get rejected by both 2 weeks later._
 
-### 2. Second Rounds
+### 2. Second Round
  - Same as above
 
-### 3. Onsite Interview
- - Same as above, but especially don't be late.
+### 3. Onsite Interviews
+ - Same as above
 
 ## Navigating offers
 ### 1. Immediately upon receiving an offer from company [XXX]
@@ -152,3 +152,7 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
  - Apply to the remaining HIGH priority companies that same day, to get started in their process ASAP.
 
  - Say the following out loud to yourself in the mirror:
+
+### 2. Negotiating
+ - [SF Bay Startup Salaries](https://wellfound.com/hiring-data/l/san-francisco-bay-area)
+ - [Real time software eng salary benchmark](https://www.levels.fyi/benchmark)
