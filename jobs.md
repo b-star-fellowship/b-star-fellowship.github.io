@@ -10,7 +10,7 @@ Warning: Following these instructions will take considerable time and energy (2+
 _Any italicized text is anecdotal/my own experience, and should not be considered representative of all startups._
 
 ## Time Management
-If you're like me, you'll find all this work draining and miserable.  Here's some tips to speed up the process and make you feel better while doing it:
+If you're like me, you'll find all this work draining and miserable at first.  Here's some tips to speed up & feel better:
 
  - Use the [Pomodoro method](https://en.wikipedia.org/wiki/Pomodoro_Technique) for focus, and dedicate 2-3 hours at a time to submitting applications.
 
@@ -90,7 +90,7 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
 
  - Then, pick a second batch of companies that includes 1 or 2 of your high priority companies (and some low priority ones), which you'll apply to 1 week later.
 
-### 2.  For Each Application (1 hour each):
+### 2.  For Each Application (30 mins each):
  - Create a version of your resume tailored specifically to the job application.  That means:
     - Expand on the most relevant experience, education & language/tools for that job.  Filter out unrelated stuff.
     - As much as possible, include language from the job posting in your tailored resume without being dishonest.
@@ -124,7 +124,6 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
  - Again, give yourself a tasty treat once you deserve it.
 
 ## Interviewing
-### 1. First Round
  - If you know who your interviewer's name ahead of time, read their LinkedIn and come up with more questions specifically for them in the interview.  Not just questions about the job details like pay/vacation/401k, but questions about the product or their personal experience with the company.
 
  - _When I was interviewing people and they had no questions afterwards, that was a red flag.  I want to hire people who are not just technically competant, but curious and excited about my work._  
@@ -133,17 +132,73 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
 
  - Don't be late.
 
- - After the interview, schedule send an email to the interviewer thanking them for the time.  If you have any supplemental questions include those too.  Ask when you should expect to hear from them, and if they don't answer, put a reminder in your calendar to follow up with them in 1 week.
+ - After the interview, send an email to the interviewer thanking them for the time.  If you have any supplemental questions include those too.  Ask when you should expect to hear from them, and if they don't answer, put a reminder in your calendar to follow up with them in 1 week.
 
  - If you think you bombed the interview, be nice to yourself and keep applying elsewhere.  That's why we do practice interviews!
 
  - If you think you rocked the interview, give yourself a pat on the back and keep applying elsewhere.  _Don't be like me, who thought he aced his Google & Facebook onsite interviews, then confidently stopped applying elsewhere, only to get rejected by both 2 weeks later._
 
-### 2. Second Round
- - Same as above
+ - Generally, try to respond to recruiters / employees running the interview process within a few hours to show you're interested.  Keep your calendar up to date with all your interviews.
 
-### 3. Onsite Interviews
- - Same as above
+## Understanding Equity
+ - When you get an offer, your compensation will usually have 3 parts:  Salary, Equity, and Benefits.
+
+ - Equity is ownership (either shares or stock options) in the company.
+
+ - Below are two real world examples from my own career to illustrate how you can value equity as part of your job offer.
+
+### _Example 1: My 2017 Down Dog offer (shares):_
+ - $100,000 yearly salary
+ - 106,000 shares in the company over 4 years
+ - Health insurance, food paid for at work
+
+### 1. How much were 106,000 shares of Down Dog worth?
+ - To compute this, we need to know A) how many shares are outstanding, and B) the current valuation of the company.
+ - At the time of the offer, there were 5,088,000 shares outstanding, owned by other employees at the company.
+ - At the time of the offer, the company valued themselves at $5,000,000 (with an implied price per share of $0.9827)
+
+ - If I were issued 106,000 shares, my shares would amount to `106,000 / (106,000 + 5,088,000) => 0.02040816326`, or roughly 2% of the company.
+ - 2% of a company valued at $5,000,000 equates to roughly $100,000.
+
+### 2.  What is vesting?
+ - Imagine I accepted the offer, immediately got my 2% of the company, and then quit after a month.  That would be a disaster for the company; they spent the equivalent of ~$100,000 for one month of work.
+
+ - "Vesting" means those 106,000 shares are earned over time.  Vesting over 4 years means earning `106,000 / 4 => 26,500` shares per year.
+
+### 3.  What's the total compensation?
+ - 26,500 shares comes out to roughly $25,000 per year in ownership of the company
+ - Having meals paid for while at the office meant I was saving about ~$30 per work day, so `52 * 5 * 30 => $7,800` per year for food.
+ - Salary + equity + food costs comes out to $132,800 as my total compensation.
+
+### Options vs Shares
+ - When you earn shares, you have to pay taxes on them.  Later stage startups try to avoid this, since they don't want to give their employees big tax burdens.
+
+ - These companies often issue options instead of shares.  An option is a contract that will let you buy shares at a pre-described price.
+
+ - While they help you defer taxes, stock options can be slightly more complicated to value.
+
+### _Example 2: My 2021 Down Dog equity refresher (stock options):_
+ - As part of a raise/incentive to keep me around longer, Down Dog offered me 46,370 stock options, vesting over another 4 years
+ - At the time of the offer, there were 5,495,506 shares outstanding, owned by employees at the company.
+ - At the time of the offer, the company valued itself at $12,000,000 (with an implied price per share of $2.18)
+ - That $2.18 is the exercise price; once fully vested, I have the option to buy 46,370 shares in the company for `$2.18 * 46,370 => $101,086.60`
+
+### 1. How much are those 46,370 stock options worth?
+ - It depends on the price per share when you want to sell the shares.
+ - Imagine Down Dog goes public, and the price per share of `NYSE::YOGA` is $4.  I could exercise the options for $2.18 and immediately sell the shares for $4 each to the public.
+ - In that example, the options themselves are worth `($4.00 - $2.18) * 46,370 => $84,393.4`
+ - Note: If the price per share goes below $2.18, the options are worthless.
+
+### 2. What are the options worth if Down Dog doesn't go public?
+ - A stock is only worth what someone will pay you for it.  So if nobody can buy your shares, they're technically worthless.
+ - Most startups fail, therefore most startups' equity ends up being worth $0.00.
+
+### 3. What should I ask to properly 
+
+### 4. More reading:
+ - Here are some good references for how to understand & value equity from startups:
+   - [Equity for employees](https://stripe.com/guides/equity-for-employees)
+   - [Equity Guide for Employees at Fast-growing Companies](https://manual.compoundplanning.com/equity-guide-for-employees-at-fast-growing-companies?collection=early-employee)
 
 ## Navigating offers
 ### 1. Immediately upon receiving an offer from company [XXX]
@@ -151,8 +206,22 @@ If you're like me, you'll find all this work draining and miserable.  Here's som
 
  - Apply to the remaining HIGH priority companies that same day, to get started in their process ASAP.
 
- - Say the following out loud to yourself in the mirror:
+### 2. Evaluating offers (with example)
+ - Your offer will have 3 parts:  Salary, Equity, and Benefits.  Equity is ownership in the company, but requires a little math to properly value.
 
-### 2. Negotiating
- - [SF Bay Startup Salaries](https://wellfound.com/hiring-data/l/san-francisco-bay-area)
- - [Real time software eng salary benchmark](https://www.levels.fyi/benchmark)
+ - Example:  You received the following offer from an exciting new software startup Brown Bog.  It's
+
+### 3. Negotiating
+ - Unfortunately, at many companies your starting salary is determined more by how well you negotiate than your merit or expected contribution.  So it's in your best interest to negotiate, even if that feels uncomfortable.
+
+ - **The best negotiation strategy is to have a competing offer**
+
+ - Learn the current general salary ranges for your position.  Here's some resources to search for the ranges you can expect:
+   - [SF Bay Startup Salaries](https://wellfound.com/hiring-data/l/san-francisco-bay-area)
+   - [Real time software eng salary benchmark](https://www.levels.fyi/benchmark)
+   - Also, check the Brown CS self reported internship & salary spreadsheet, which will give you a range for engineers with your background.
+
+ - 
+
+### 3.  Staying Grounded
+ - Say the following out loud to yourself in the mirror: "This offer might go away".  _I know several people who received offers from a company, accepted, only for the companies to revoke the offer months later due to layoffs, budget cuts, etc._
