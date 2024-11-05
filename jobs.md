@@ -5,12 +5,10 @@ layout: default
 # Startup Software Engineering Job Guide
 ### Last updated October 2024
 
-Warning: Following these instructions will take considerable time and energy (2+ months of consistent effort).  IMO that is a worthwhile investment to get a job you find meaningful.  
-
-_Any italicized text is anecdotal/my own experience, and should not be considered representative of all startups._
+_Any italicized text is anecdotal/my own experience, and should not be considered representative of all startups/companies._
 
 ## Time Management
-If you're like me, you'll find all this work draining and miserable at first.  Here's some tips to speed up & feel better:
+Following this guide takes time and energy (2+ months of consistent effort).  IMO that is a worthwhile investment to get a job you find meaningful.  If you're like me, you'll find this work draining and miserable at first.  Here's some tips to speed up & feel better:
 
  - Use the [Pomodoro method](https://en.wikipedia.org/wiki/Pomodoro_Technique) for focus, and dedicate 2-3 hours at a time to submitting applications.
 
@@ -34,6 +32,9 @@ If you're like me, you'll find all this work draining and miserable at first.  H
 
  - Make sure that you have a LinkedIn account, and it contains all the information you're putting into the primary resume.  Ideally with a professional headshot.
 
+ - If you don't have a personal website, set up a basic [Github Pages](https://pages.github.com/) site using your Github account, and give a brief overview of your experience and what you're interested in.
+
+ - Double check how your website looks on every browser, both mobile & desktop.  Send it to a friend and ask for feedback.
 
 ### 2. Practicing for interviews (3-5 weeks)
   - You want to make sure your programming fundamentals are sound, which means reviewing a lot of material from the intro CS classes:
@@ -148,12 +149,7 @@ If you're like me, you'll find all this work draining and miserable at first.  H
 
  - 
 
-### 2. Evaluating offers (with example)
- - An offer to work at a startup usually has 3 parts: Salary, Equity, and Benefits.  Equity means ownership in the company, either via stock or stock options.
-
- - Startups want their employees to own pieces of the company, so that employees are rewarded for their work & the company growing.
-
-### 3. Negotiating
+### 2. Negotiating
  - Unfortunately, at many companies your starting salary is determined more by how well you negotiate than your merit or expected contribution.  So it's in your best interest to negotiate, even if that feels uncomfortable.
 
  - **The best negotiation strategy is to have a competing offer.**
@@ -167,3 +163,5 @@ If you're like me, you'll find all this work draining and miserable at first.  H
 
 ### 3.  Staying Grounded
  - Say the following out loud to yourself in the mirror: "This offer might go away".  _I know several people who received offers from a company, accepted, only for the companies to revoke the offer months later due to layoffs, budget cuts, etc._
+
+ - Don't Ghost

@@ -35,7 +35,6 @@ Here are two real world examples from my own career to illustrate how you can va
  - Having meals paid for while at the office meant I was saving about ~$30 per work day, so `52 * 5 * 30 => $7,800` per year for food.
  - Salary + equity + food costs comes out to roughly $133,800 as total compensation.
 
-
 ## Options vs Shares
 
 When you earn shares, you have to pay taxes on them just like your salary.  That's not a problem for early stage companies, which the government values close to $0.
@@ -60,9 +59,9 @@ The solution is to issue options instead of shares.  An option is a contract tha
  - A stock is worth what someone will pay you for it.  So if nobody can buy your shares, in practice they are worth $0.00.
  - Most startups fail, so the median startup's equity ends up being worth $0.00.
 
-
 ## Evaluating equity in a job offer
 ### 3. How do I properly value equity in job offers?
+ - Since most startups fail, comparing 
 
 ### 4. More reading:
  - Here are some good references to deep dive into understanding equity.
