@@ -84,7 +84,7 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 
 ## Applying (1-2 weeks)
 ### 1. Gameplan
- - Applying for jobs is a sport; play some friendly games before the championship.  Pick a batch of 3-5 companies that are low priority to apply to as your warmup.
+ - Applying for jobs is a sport; you need to stretch and warmup before the game.  Pick a batch of 3-5 companies that are low priority to apply to as your warmup.
 
  - Then, pick a second batch of companies that includes 1 or 2 of your high priority companies (and some low priority ones), which you'll apply to 1 week later.
 
