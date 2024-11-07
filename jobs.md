@@ -16,6 +16,8 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 
  - Put your phone in another room while you're working. No multitasking allowed!
 
+ - Ask ChatGPT/your language model of choice for help and ideas whenever you get stuck.
+
 ## Preparation
 ### 1. Your Resume (3-5 hours)
  - Make one primary copy of your resume, either in a plain text file or in a template like [this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  This primary copy should be as detailed and long as possible; include everything you've done that could possibly relate to a software engineering job.  Don't worry about limiting to 1 page.
