@@ -74,6 +74,8 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 	 - [https://jobs.techstars.com/jobs](https://jobs.techstars.com/jobs)
  - Look at every app on your phone & laptop that you actually use, then go search the jobs pages for that company.  For me that's Duolingo, Eight Sleep, Chess.com, Spotify & YouTube.  Then put your phone back in another room.  No multitasking allowed!
 
+ - LinkedIn and Google are decent resources, try searching for 'Early Career' software engineering positions.
+
  - AI companies have a lot of money right now, so look for lists of emerging AI companies [like this one](https://a16z.com/100-gen-ai-apps/) and search those companies' websites.
 
  - Look up all of the career fair events at Brown, find all those companies, and add them to your sheet before the actual career fair.
