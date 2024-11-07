@@ -147,18 +147,17 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
 
  - Apply to the remaining HIGH priority companies that you would prefer to company [XXX], to get started within their processes ASAP.
 
- - Read my guide on [startup equity](/equity.md)
+ - Read my guide on [startup equity](/equity.md), so you can value equity as part of your negotiations.
 
 ### 2. Negotiating
  - Unfortunately, at many companies your starting compensation is determined more by how well you negotiate than your merit or expected contribution.  So it's in your best interest to negotiate, even if that feels uncomfortable.
 
- - **The best negotiation strategy is to have a competing offer.**
-
- - Learn the current general salary ranges for your position.  Here's some resources to search for the ranges you can expect:
+  - Learn the current general salary ranges for your position.  Here's some resources to search for the ranges you can expect:
    - [SF Bay Startup Salaries](https://wellfound.com/hiring-data/l/san-francisco-bay-area)
    - [Real time software eng salary benchmark](https://www.levels.fyi/benchmark)
    - Also, check the Brown CS self reported internship & salary spreadsheet, which will give you a range for engineers with your background.
 
+ - **The best negotiation strategy is to have a competing offer.**  So keep interviewing unless you're confident the offer in front of you is the best offer for you.
  - 
 
 ### 3.  Staying Grounded

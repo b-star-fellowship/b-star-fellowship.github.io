@@ -4,7 +4,7 @@ layout: default
 
 # Startup Equity Guide
 
-An offer to work at a startup usually has 3 parts: Salary, Equity, and Benefits.  Equity means _ownership in the company_, either via stock or stock options.  Startups want their employees to own pieces of the company, so that employees are rewarded for their work & the company growing.  Importantly, the way that most people in tech get very wealthy is via their equity, not their salary.
+An offer to work at a startup usually has 3 parts: Salary, Equity, and Benefits.  Equity means _ownership in the company_, either via stock or stock options.  Startups want their employees to own part of the company, so those employees are rewarded when the company grows.
 
 Here are two real world examples from my own career to illustrate how you can value equity as part of your job offer.
 
@@ -55,7 +55,7 @@ The solution is to issue options instead of shares.  An option is a contract tha
  - That $2.18 is the exercise price of the options; once fully vested, I have the option to buy 46,370 shares in the company for `$2.18 * 46,370 => $101,086.60`
 
 ### 1. How much are those 46,370 stock options worth?
- - It depends on the price per share when you want to sell the shares.
+ - It depends on the price per share when you sell the shares.
  - Imagine Down Dog goes public, and the price per share is $4.00.  I could exercise the options for $2.18 and immediately sell the shares for $4 each to the public.
  - In that example, the options themselves are worth `($4.00 - $2.18) * 46,370 => $84,393.4`
  - Note: If the price per share goes below $2.18, the options are worthless.
@@ -66,8 +66,8 @@ The solution is to issue options instead of shares.  An option is a contract tha
 
 ## Evaluating equity in your job offers
 ### 1. Ask the right questions
- - If your offer does not include equity, and you would like some, ask for some.  Many companies will let you trade off
-   some of your salary for a bigger chunk of equity, if you're comfortable with the risk.
+ - If your offer does not include equity, and you would like some, ask for some.  Some companies will let you trade
+   salary for more equity, if you're comfortable with the increased risk.
 
  - Make sure you have enough information to do the calculations I did above.  That means asking for the following:
     - How many outstanding shares are there?
