@@ -186,4 +186,4 @@ This guide includes a TON of work that is not directly related to software engin
 
 Working as an employee at a startup requires wearing many hats.  _For Down Dog, I've been a customer support agent, an audio engineer, a recruiter, an interviewer, a video editor, music licensing sourcer, and more._   Astute readers will notice that just by following this guide, you'll develop broad business, sales, financial and legal acumen.  So do it!  Tackle this with an open mind, get better at stuff, and you'll get a better job and have a better life.  
 
-Thanks for reading :)  If you find it helpful, let me know!
+Thanks for reading :)  If you find this guide helpful, let me know!
