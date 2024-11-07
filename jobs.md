@@ -14,11 +14,11 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
 
  - Give yourself a little treat, but only after finishing a session (grandma's rule).
 
- - Put your phone in another room while you're doing these, no multitasking allowed.
+ - Put your phone in another room while you're working. No multitasking allowed!
 
 ## Preparation
 ### 1. Your Resume (3-5 hours)
- - Make one primary copy of your resume, either in a plain text file or in a template like [this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  This primary copy should be as detailed and long as possible; include everything you've done that could possibly relate to a software engineering job or ML job.  Don't worry about limiting to 1 page.
+ - Make one primary copy of your resume, either in a plain text file or in a template like [this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).  This primary copy should be as detailed and long as possible; include everything you've done that could possibly relate to a software engineering job.  Don't worry about limiting to 1 page.
 
  - Keep it simple with 3 sections: **Experience, Education,** and **Languages & Tools** (in that order)
 
@@ -32,9 +32,9 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
 
  - Make sure that you have a LinkedIn account, and it contains all the information you're putting into the primary resume.  Ideally with a professional headshot.
 
- - If you don't have a personal website, set up a basic [Github Pages](https://pages.github.com/) site using your Github account, and give a brief overview of your experience and what you're interested in.
+ - If you don't have a personal website, set up a basic [Github Page](https://pages.github.com/), and give a brief overview of your experience and what you're interested in.
 
- - Double check how your website looks on every browser, both mobile & desktop.  Send it to a friend and ask for feedback.
+ - Double check how your website looks on every browser, both mobile & desktop.  Send it to a friend or family member who will look at it immediately.
 
 ### 2. Practicing for interviews (3-5 weeks)
   - You want to make sure your programming fundamentals are sound, which means reviewing a lot of material from the intro CS classes:
@@ -74,7 +74,7 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
 	 - [https://jobs.thrivecap.com/companies](https://jobs.thrivecap.com/companies)
 	 - [https://jobs.bvp.com/](https://jobs.bvp.com/)
 	 - [https://jobs.techstars.com/jobs](https://jobs.techstars.com/jobs)
- - Look at every app on your phone & laptop that you actually use, then go search the jobs pages for that company.  For me that's Duolingo, Eight Sleep, Chess.com, Spotify & YouTube.
+ - Look at every app on your phone & laptop that you actually use, then go search the jobs pages for that company.  For me that's Duolingo, Eight Sleep, Chess.com, Spotify & YouTube.  Then put your phone back in another room.  No multitasking allowed!
 
  - AI companies have a lot of money right now, so look for lists of emerging AI companies [like this one](https://a16z.com/100-gen-ai-apps/) and search those companies' websites.
 
@@ -84,21 +84,19 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
 
 ## Applying
 ### 1. Gameplan
-
- - Assuming you're prepared and have a big list of companies, you're ready to start applying.  
-
- - Interviewing is like a sport; you want to make sure you're warmed up before the games that matter; pick a first batch of 3-5 companies that are low priority which will be your first companies to apply to.
+ - Applying for jobs is a sport; make sure you're warmed up before the games that actually matter.  Pick a batch of 3-5 companies that are low priority to apply to as your warmup.
 
  - Then, pick a second batch of companies that includes 1 or 2 of your high priority companies (and some low priority ones), which you'll apply to 1 week later.
 
-### 2.  For Each Application (30 mins each):
+### 2. For Each Application (30 mins each):
  - Create a version of your resume tailored specifically to the job application.  That means:
     - Expand on the most relevant experience, education & language/tools for that job.  Filter out unrelated stuff.
     - As much as possible, include language from the job posting in your tailored resume without being dishonest.
     - If you trust Chat GPT, you can paste the job description & your full resume into Chat GPT and ask it to do the first draft for you.
     - The tailored resume should be one page long, and put into a template [like this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).
+    - Save the document & the exported PDF into a folder with the company's name on it.  It takes 10 extra seconds, and will save you in 2 weeks when you want to find this copy of the resume.
 
- - Take up to 10 minutes to search the company's website & linkedin for any long form writing they have about engineering or product.  This is a great source of questions for you to ask an interviewer, which will show you're actually interested in the company's work - fill your questions in your google sheet.
+ - Take up to 10 minutes to search the company's website & linkedin for any blog posts or interviews they have about engineering/product.  This is a great source of questions for you to ask an interviewer, which will show you're actually interested in the company's work - fill your questions in your google sheet.
 
  - Also take up to 10 minutes to search LinkedIn for people who have similar roles to the job application, or seem related to the actual hiring process (recruiters, HR, CEO/founders sometimes).  Save any of their profile links in your google sheet.
 
@@ -117,7 +115,7 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
 
  - Put a reminder in your calendar for 7 business days from now to double text anyone that didn't respond to your first messages.
 
- - Expect a response rate of about 4%; that means for every 25 of these messages you send, you'll get 1 response.  That means especially for high priority companies, you want to reach out to as many relevant people as possible.
+ - Expect a response rate of about 4%; that means for every 25 of these messages you send, you'll get 1 response -> Cold email as many relevant people as possible, especially at the high priority companies.
 
 ### 3. Batching tips
  - Try to group the jobs with similar titles or companies together, their tailored resumes will be similar (which will let you copy and paste more).
@@ -125,7 +123,7 @@ Following this guide takes time and energy (2+ months of consistent effort).  IM
  - Again, give yourself a tasty treat once you deserve it.
 
 ## Interviewing
- - If you know who your interviewer's name ahead of time, read their LinkedIn and come up with more questions specifically for them in the interview.  Not just questions about the job details like pay/vacation/401k, but questions about the product or their personal experience with the company.
+ - If you know who your interviewer's name ahead of time, read their LinkedIn and come up with more questions specifically for them in the interview.  Not just questions about the job details like pay/vacation/401k, but questions about the product or their personal experience at the company.
 
  - _When I was interviewing people and they had no questions afterwards, that was a red flag.  I want to hire people who are not just technically competant, but curious and excited about my work._  
 
