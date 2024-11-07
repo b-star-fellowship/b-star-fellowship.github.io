@@ -48,21 +48,18 @@ For later stage startups these taxes are problematic: they want employees to be 
 
 The solution is to issue options instead of shares.  An option is a contract that will let you buy shares at a pre-described price.  While they help you defer taxes, stock options are slightly more complicated to value.
 
-## Example 2: My 2021 Down Dog equity refresher (stock options):
+### Example 2: My 2021 Down Dog equity refresher (stock options):
  - As incentive to stay around longer, Down Dog offered me 46,370 stock options, vesting over another 4 years.
  - At the time of the offer, there were 5,495,506 shares outstanding, owned by employees at the company.
  - At the time of the offer, the company valued itself at $12,000,000 (with an implied price per share of $2.18)
  - That $2.18 is the exercise price of the options; once fully vested, I have the option to buy 46,370 shares in the company for `$2.18 * 46,370 => $101,086.60`
 
-### 1. How much are those 46,370 stock options worth?
+### How much are those 46,370 stock options worth?
  - It depends on the price per share when you sell the shares.
- - Imagine Down Dog goes public, and the price per share is $4.00.  I could exercise the options for $2.18 and immediately sell the shares for $4 each to the public.
+ - Imagine Down Dog goes public, and the market price per share is $4.00.  I could exercise the options to buy the shares from Down Dog for $2.18, then immediately sell them for $4 each to the public.
  - In that example, the options themselves are worth `($4.00 - $2.18) * 46,370 => $84,393.4`
  - Note: If the price per share goes below $2.18, the options are worthless.
-
-### 2. What are shares/options worth if Down Dog doesn't go public?
- - A stock is worth what someone will pay you for it.  So if nobody can buy your shares, in practice they are worth $0.00.
- - Most startups fail, so the median startup's equity ends up being worth $0.00.
+ - If Down Dog never goes public, the shares only have value if I find a buyer, so they might still be worth $0.00 eventually.
 
 ## Evaluating equity in your job offers
 ### 1. Ask the right questions
@@ -83,6 +80,7 @@ The solution is to issue options instead of shares.  An option is a contract tha
 
 ### 2. Value equity for yourself in your life stage
  - The right trade off between risk and reward is deeply personal, and different for everyone.
+ - Most startups fail, so the median startup's equity ends up being worth $0.00.
  - If you want to pay off student loans ASAP, or support your family in the short term, it's better to take salary over equity.
  - If you're down to gamble, with the slim possiblility of becoming wealthy, more equity is the way to go.
 
