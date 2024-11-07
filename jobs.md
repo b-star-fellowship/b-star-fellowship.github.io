@@ -98,7 +98,7 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 
     - The tailored resume should be one page long, and put into a template [like this one](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/).
 
-    - Save the document & the exported PDF into a folder with the company's name on it.  It takes 10 extra seconds, and will save you in 2 weeks when you want to find this copy of the resume.
+    - Save a new copy of this specific resume & the exported PDF into a folder with the company's name on it.  It takes 10 extra seconds, and will save you in 2 weeks when you want to find this copy of the resume.
 
  - Take ~10 minutes to search the company's website & linkedin for any blog posts or interviews they have about engineering/product.  This is a great source of questions for you to ask an interviewer, which will show you're actually interested in the company's work - fill your questions in your google sheet.
 
