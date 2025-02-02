@@ -5,7 +5,7 @@ layout: default
 # Startup Software Engineering Job Guide
 ### (Last updated November 2024)
 
-_Any italicized text is anecdotal, and should not be considered representative of all startups/companies._
+_Any italicized text is anecdotal, and isn't representative of all startups/companies._
 
 ## Time Management
 Following this guide takes significant time and effort.  IMO it's a worthwhile investment to get a job you find meaningful.  If you're like me, you'll find this work draining and miserable at first.  Here's some tips to make it less terrible:
@@ -158,6 +158,8 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 ### 2. Negotiating
  - Unfortunately, at many companies your starting compensation is determined more by how well you negotiate than your merit or expected contribution.  So it's in your best interest to negotiate, even if that feels uncomfortable.
 
+ - _I've failed at negotiating more than I've succeeded.  So when you're at this stage in your job search, do some research!_  Use YouTube and other resources, like this [classic blog post on negotiating engineering salaries](https://www.kalzumeus.com/2012/01/23/salary-negotiation/)
+
  - Learn the current general salary ranges for your position.  Here's some resources to search for the ranges you can expect:
     - [SF Bay Startup Salaries](https://wellfound.com/hiring-data/l/san-francisco-bay-area)
     - [Real time software eng salary benchmark](https://www.levels.fyi/benchmark)
@@ -167,9 +169,7 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 
  - If you want more risk, you can ask for more equity instead of salary (or vice versa for less risk).
 
- - **The best negotiation strategy is to have a competing offer.**  So keep interviewing unless you're confident the offer in front of you is the best offer for you.
-
- - Negotiating is too important to only listen to me on the subject (_I've failed at negotiating more than I've succeeded_).  Use YouTube and other resources, like this [classic blog post on negotiating engineering salaries](https://www.kalzumeus.com/2012/01/23/salary-negotiation/)
+ - **It's much easier to negotiate with a competing offer.**  So keep interviewing unless you're confident the offer in front of you is the best offer for you.
 
 ### 3. Accepting an offer
  - **Do not ghost recruiters or interviewers at other companies, especially if they gave you an offer**.
