@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Some startup inspo
+Here are some essays, talks, and interviews that have informed my decisions to work at a startup.
 
 ### [You weren't meant to have a boss](https://www.paulgraham.com/boss.html)
 
