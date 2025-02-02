@@ -2,8 +2,8 @@
 layout: default
 ---
 
-# Startup Software Engineering Job Guide
-### (Last updated November 2024)
+# How I would get a Software Engineer job in 2025
+### (Last updated February 2025)
 
 _Any italicized text is anecdotal, and isn't representative of all startups/companies._
 
