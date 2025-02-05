@@ -20,7 +20,7 @@ To get a sense for what kind of products you can build in B\*, check out our fel
 #### Are there any restrictions for my idea/team?
  - Product must be a software project; a web app, mobile app, command line tool, game, etc.
  - Team must be 1-2 Brown university students, living in the same city, working on the project full time.
- - Students must have built a software project on a team before, either in a class like CS32 or outside of class.
+ - Strong preference for students with a working prototype.
 
 # Resources
  - [Why should you work on a startup?](/inspo)
