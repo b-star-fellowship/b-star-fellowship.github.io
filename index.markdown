@@ -6,7 +6,7 @@ layout: default
 
 B\* is the **Brown Startup Fellowship**; a 10 week summer fellowship for Brown University computer science students to build and launch software.
 
-Every year, we give teams of student founders **$10,000** to build software.  From **June 1 - August 15**, B\* fellows build, iterate, test, and launch their products.
+Every year, we give teams of student founders **$5,000 per person** to build software.  From **June 1 - August 15**, B\* fellows build, iterate, test, and launch their products.
 
 ### [Apply for Summer 2025!](https://forms.gle/56rBUXt9oKoXS9mJ6)
 
