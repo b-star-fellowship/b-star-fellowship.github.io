@@ -17,3 +17,5 @@ Here are some essays, talks, and interviews that have informed my decisions to w
 ### [Brian Chesky on Launching Airbnb](https://youtu.be/W608u6sBFpo?si=dk7fMPfHujGI1jtx)
 
 ### [The Path to $100B by Paul Buchheit](https://youtu.be/Ir3hGtg0Wog?si=1eJYr211dk3_UAFa)
+
+### [Down Dog Values](https://www.downdogapp.com/web/values.pdf)
