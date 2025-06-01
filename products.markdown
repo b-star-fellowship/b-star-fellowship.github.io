@@ -10,6 +10,11 @@ layout: default
 ### [Eric Xia](https://eric-xia.com/) & [Julian Beaudry](https://www.linkedin.com/in/julian-beaudry-05229b232/)
 word.golf is an online sport played with pretrained word embeddings. There are five rounds: in each, a source and target word with low cosine similarity are used. Word golf is played by finding the closest word out of a 4 by 7 grid: for instance, danger -> fragile -> falter -> linger is one path, which intuits 'fragile' is a bridge word between the source and target. When the target shows up in the nearest neighbors, it is made easily visible to avoid frustrating the user. As a nod to the 'golf' aspect, there is always a two-click path from the source to the target.
 
+## [Codex]()
+### [Jerry Zheng](https://www.linkedin.com/in/jerryzh0101/) & [Adithya Sriram](https://www.linkedin.com/in/adithya-sriram/)
+
+We’re reimagining how kids interact with stories by tackling the “fourth grade literacy slump”—the point where reading engagement drops for millions of students. With our platform, a kid can pick up any book and we’ll know exactly what’s happening in every chapter. Our system makes hyper-specific references to moments in the story, connects themes across chapters and even across different books, and personalizes prompts and activities to each child’s unique interests. Students can discuss books with real-time audio, generate comics from their own stories, and receive adaptive prompts tailored to their reading levels. Our built-in reward system gamifies progress and keeps kids motivated, meeting them where they are in the digital age and turning reading into an experience they genuinely want to come back to.
+
 ## 2024
 
 ## [ATA](https://talktoata.com)
