@@ -15,6 +15,16 @@ word.golf is an online sport played with pretrained word embeddings. There are f
 
 We’re reimagining how kids interact with stories by tackling the “fourth grade literacy slump”—the point where reading engagement drops for millions of students. With our platform, a kid can pick up any book and we’ll know exactly what’s happening in every chapter. Our system makes hyper-specific references to moments in the story, connects themes across chapters and even across different books, and personalizes prompts and activities to each child’s unique interests. Students can discuss books with real-time audio, generate comics from their own stories, and receive adaptive prompts tailored to their reading levels. Our built-in reward system gamifies progress and keeps kids motivated, meeting them where they are in the digital age and turning reading into an experience they genuinely want to come back to.
 
+## [ForReelFlies](https://forreelflies.com/)
+### [Ryan Klivansky](https://www.linkedin.com/in/ryan-klivansky/) & [Matt Bockelmann](https://www.linkedin.com/in/matthew-bockelmann-40107b251/)
+
+ForReelFlies is a one stop shop for fly fishermen and outdoorsmen. We connect fly tiers and consumers on a centralized, secure platform.
+
+## [BindTwo](https://www.bindtwo.com)
+### [Erick Torres]() & [Ema Dimitrova](https://www.linkedin.com/in/ema-dimitrova-92b941217/)
+
+BindTwo is a lightweight sync tool connecting Notion databases to Google Sheets.
+
 ## 2024
 
 ## [ATA](https://talktoata.com)
