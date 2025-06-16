@@ -4,7 +4,7 @@ layout: default
 
 # Exit Interview Questions
 
-### Basic Product
+### Product
  - What's the current 1 minute elevator pitch for your product?
  - When (and how many times) did you launch?
  - How many daily|weekly|monthly active users do you have?
