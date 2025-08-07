@@ -6,11 +6,11 @@ layout: default
 
 Mentorship is overrated.  
 
-Now that we have AI tools that can do research & code, they can provide better jumping-off points for solving problems than most other mentors.
+Now that we have AI tools that can do research & code, they can provide better jumping-off points for solving problems than most other mentors.  Additionally, most of the things you need to learn to run a startup are best learned by doing.
 
-I hope to be primarily useful offering what the AI models don't have yet; personal anecdotes from building [Down Dog](https://www.downdogapp.com).  Hopefully, they'll be a good jumping off point for how to think through approaching different startup problems.  Below is a collection of snippets from my mentorship calls with B* fellows, summarized by Gemini for brevity.
+I hope to be primarily useful offering personal anecdotes from building [Down Dog](https://www.downdogapp.com).  Hopefully, they'll be a good jumping off point for how to think through approaching different startup problems.  
 
-If you find these helpful or interesting, let me know!
+Below is a collection of snippets from my mentorship calls with B* fellows, summarized by Gemini for brevity.  If you find these helpful or interesting, let me know!
 
 # For Reel Flies - August 7th
 ## Matthew Bockelmann:
