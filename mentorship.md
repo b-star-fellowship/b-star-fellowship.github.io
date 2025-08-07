@@ -2,13 +2,15 @@
 layout: default
 ---
 
-# Mentorship
+# Mentorship is overrated.
 
-Mentorship is overrated.  
+The two big questions are "what do I do?" and "how do I do it?" 
 
-Now that we have AI tools that can do research & code, they can provide better jumping-off points for solving problems than most other mentors.  Additionally, most of the things you need to learn to run a startup are best learned by doing.
+I don't know what you should do for your startup.  Unless you're _also_ building a digital fitness app, you know what you're interested in && the users you're serving better than me.
 
-I hope to be primarily useful offering personal anecdotes from building [Down Dog](https://www.downdogapp.com).  Hopefully, they'll be a good jumping off point for how to think through approaching different startup problems.  
+As for the second question, modern AI tools will enable you to make incremental progress much faster than me, most of the time.
+
+So I hope to be primarily useful with personal anecdotes, wins, and losses from building [Down Dog](https://www.downdogapp.com).  I'll try to highlight what information was available at the time & what the relevant tradeoffs were.  Hopefully, that's a good jumping off point for how to think through approaching different problems while building your startup.
 
 Below is a collection of snippets from my mentorship calls with B* fellows, summarized by Gemini for brevity.  If you find these helpful or interesting, let me know!
 
