@@ -2,6 +2,16 @@
 layout: default
 ---
 
+# Mentorship
+
+Mentorship is overrated.  
+
+Now that we have AI tools that can do research & code, they can provide better jumping-off points for solving problems than most other mentors.
+
+I hope to be primarily useful offering what the AI models don't have yet; personal anecdotes from building [Down Dog](https://www.downdogapp.com).  Hopefully, they'll be a good jumping off point for how to think through approaching different startup problems.  Below is a collection of snippets from my mentorship calls with B* fellows, summarized by Gemini for brevity.
+
+If you find these helpful or interesting, let me know!
+
 # For Reel Flies - August 7th
 ## Matthew Bockelmann:
 A lot of my friends and their parents use the Peloton app for yoga. I was wondering if they are on your radar as a competitor. Is their app a paid subscription?
