@@ -13,7 +13,7 @@ To get a sense for what kind of products you can build in B\*, check out our fel
 # FAQ
 
 #### Who runs B\*?
-[Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/) was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  As a B\* fellow, you'll have access to Sam as a mentor via brief, weekly calls.
+[Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/) was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  As a B\* fellow, you'll have access to Sam as a [mentor](/mentorship) via brief, weekly calls.
 
 #### Are there any restrictions for my idea/team?
  - Product must be a software project; a web app, mobile app, command line tool, game, etc.
