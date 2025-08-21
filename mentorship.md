@@ -14,6 +14,25 @@ So I hope to be primarily useful with personal anecdotes, wins, and losses from 
 
 Below is a collection of snippets from my mentorship calls with B* fellows, summarized by Gemini for brevity.  If you find these helpful or interesting, let me know!
 
+# Pagio - August 21st
+## Jerry & Adithya:
+We're trying to figure out the best way to get our app into schools and how to eventually make money. One idea is to get it into the hands of as many students as possible by offering it for free in the classroom, and then maybe charging parents if their kids want to use it at home. We're looking at different platforms that could help us reach teachers and students easily.
+
+## Sam:
+That reminds me of our experience with Clever. If you don't know, Clever is a big aggregator for school apps. Back during COVID, we made Down Dog free for teachers and schools. Carlos, our CEO, had a connection with their CEO, Tyler, who's a YC partner now. They were really excited for us to get on their platform.
+
+I did all the technical work to integrate our app with Clever, which was a pain because they didn't have a proper login SDK for iOS or Android at the time. A bigger issue was that they wouldn't let users create an account with an email and password; you had to log in through Clever. This meant students couldn't easily use the app at home.
+
+After all that work, we got listed in their store and even got some advertising from them. We saw about 80,000 signups globally, which sounds like a lot, but it was a drop in the bucket compared to our usual numbers. More importantly, the number of people who actually went on to do a yoga practice was tiny. The funnel just didn't convert. For us, it ended up not being worth the effort. It might be different for you guys, but I wanted to share that it wasn't a guaranteed win for us.
+
+## Jerry & Adithya:
+We were studying how Anthropic licensed books for their models; Anthropic spent literally millions and millions of dollars buying as they claimed every single book ever created. They hired a whole team to do this. They poached somebody from Google who was Google's book scanning expert. Like his whole job was to buy books and scan them.  But that was after they trained the first models, which they did by illegally sourcing from Libgen.  And so the legal exposure ended up being more than the value of the whole company.
+
+## Sam:
+This reminds me of something I learned at a fitness conference. There’s a common, though risky, playbook in the fitness app world when it comes to music. A lot of startups want to use popular music in their workout apps, but the licensing is incredibly expensive. So, they just use it illegally and hope to fly under the radar for as long as possible.
+
+The music companies know this happens. They often don't bother going after the small apps. Instead, they wait until a company gets big enough and has something to lose. Then, they come in and say, "You're breaking the law, and the damages would bankrupt your company. So, instead of us suing you into oblivion, you're going to give us a huge chunk of your company."  This exact thing happened to Peloton. A big reason for their IPO was to raise money to pay off their massive legal obligations to the record labels.
+
 # For Reel Flies - August 7th
 ## Matthew Bockelmann:
 A lot of my friends and their parents use the Peloton app for yoga. I was wondering if they are on your radar as a competitor. Is their app a paid subscription?
