@@ -3,6 +3,7 @@ layout: default
 ---
 
 # [Pagio (2025)](https://pagio.app)
+### [Jerry Zheng](https://www.linkedin.com/in/jerryzh0101/) & [Adithya Sriram](https://www.linkedin.com/in/adithya-sriram/)
 
 Pagio reimagines how kids interact with stories by tackling the “fourth grade literacy slump”—the point where reading engagement drops for millions of students. With our platform, a kid can pick up any book and we’ll know exactly what’s happening in every chapter. Our system makes hyper-specific references to moments in the story, connects themes across chapters and even across different books, and personalizes prompts and activities to each child’s unique interests. Students can discuss books with real-time audio, generate comics from their own stories, and receive adaptive prompts tailored to their reading levels. Our built-in reward system gamifies progress and keeps kids motivated, meeting them where they are in the digital age and turning reading into an experience they genuinely want to come back to.
 

@@ -3,6 +3,9 @@ layout: default
 ---
 
 # [For Reel Flies (2025)](https://forreelflies.com)
+### [Ryan Klivansky](https://www.linkedin.com/in/ryan-klivansky/) & [Matt Bockelmann](https://www.linkedin.com/in/matthew-bockelmann-40107b251/)
+
+ForReelFlies is a one stop shop for fly fishermen and outdoorsmen. We connect fly tiers and consumers on a centralized, secure platform.
 
 ## Sam: Show me the buyer experience.  
 Ryan: On the homepage you can browse categories or dive into the shop. Users can view flies, add them to cart or wish list, and check vendor pages to build trust. Checkout is powered by Stripe—shipping is auto-calculated, coupon codes work, and past orders include tracking numbers.  

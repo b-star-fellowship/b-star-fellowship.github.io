@@ -3,9 +3,9 @@ layout: default
 ---
 
 # [Word Golf (2025)](https://word.golf)
+### [Eric Xia](https://eric-xia.com/) & [Julian Beaudry](https://www.linkedin.com/in/julian-beaudry-05229b232/)
 
 word.golf is an online sport played with pretrained word embeddings. There are five rounds: in each, a source and target word with low cosine similarity are used. Word golf is played by finding the closest word out of a 4 by 7 grid: for instance, danger -> fragile -> falter -> linger is one path, which intuits ‘fragile’ is a bridge word between the source and target. When the target shows up in the nearest neighbors, it is made easily visible to avoid frustrating the user. As a nod to the ‘golf’ aspect, there is always a two-click path from the source to the target.
-
 
 ## Sam: When did you last launch, and what new features did you add?
 Eric: We released major versions in June and July, adding persistent history, account functionality, and UI improvements.
