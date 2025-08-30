@@ -1,95 +1,51 @@
 ---
 layout: default
+---
 
 # [Word Golf (2025)](https://word.golf)
 
 word.golf is an online sport played with pretrained word embeddings. There are five rounds: in each, a source and target word with low cosine similarity are used. Word golf is played by finding the closest word out of a 4 by 7 grid: for instance, danger -> fragile -> falter -> linger is one path, which intuits ‘fragile’ is a bridge word between the source and target. When the target shows up in the nearest neighbors, it is made easily visible to avoid frustrating the user. As a nod to the ‘golf’ aspect, there is always a two-click path from the source to the target.
 
-### When did you launch, and who did you launch to?
 
-Julian: It started off with just friends. We would notify our friends of updates and play races with them. For existing users, some didn’t give us their email when making an account, but the new “race” button on the top of the screen made it obvious there was something new.  
+## Sam: When did you last launch, and what new features did you add?
+Eric: We released major versions in June and July, adding persistent history, account functionality, and UI improvements.
+Julian: In July and early August, we added a catalog to replay past days and a race feature to compete with friends.
 
-Eric: We released major new versions in June and July, adding persistence, account functionality, and improving the UI and user experience.  
+## Sam: How did you distribute those updates?
+Julian: At first we just told friends and played races with them. Existing users noticed the new “race” button at the top of the screen and started trying it.
 
----
+## Sam: How many active users do you have now?
+Eric: About 30 daily active users, 200 weekly, and 500 over the past month.
 
-### How many active users do you currently have?
+## Sam: Are most users strangers or friends?
+Julian: Most daily players are strangers—at least two-thirds. Some accounts are anonymous, so it’s hard to get exact numbers.
 
-Eric: About 30 daily active users, 200 weekly, and maybe 500 in the last month.  
+## Sam: What does it cost to run Word Golf?
+Julian: About one dollar a day for the app and database, both hosted on Digital Ocean. We’re far from capacity, so we can support many more users.
 
----
+## Sam: What are you working on next?
+Julian: I’m building a prompt maker and revising the UI to make it less intimidating for new users.
+Eric: I’m experimenting with a new game using sentence embeddings, aiming to create enriching online experiences based on shared language knowledge.
 
-### What is the breakdown of how many are strangers versus friends?
+## Sam: How do you split the work?
+Julian: Eric did a lot of the front-end. I handled authentication and back-end. I built the catalog; Eric built the race feature.
 
-Julian: Daily players are mostly strangers. Exact breakdown is unclear because of anonymous accounts, but it’s at least two-thirds strangers.  
+## Sam: What product lessons surprised you?
+Eric: Directly reaching out to people with established user bases, with specific interests works better than passive advertising like posters.
 
----
+Julian: We cut features like a skip button and a back button. They cluttered the UI, and we already had automatic skip after 12 jumps. We also had to completely rework the tutorial after testing with new players.
 
-### What is the cost to run your service?
+## Sam: What’s been your favorite and least favorite part of the startup?
+Eric: Favorite: seeing direct impact of my work on users. Least favorite: spending time on features that never ship.
 
-Julian: Around $1 a day for the application and database. The database has plenty of space left, so we can support many more users with the current setup.  
+Julian: My favorite moment was waking up to 100 new players overnight after the comic creator mentioned us. It’s rewarding to see people enjoy what we built.
 
----
+## Sam: What advice would you give other Brown students building products?
+Eric: Be clear on why you’re building something and who it’s for. With Word Golf, I built it out of personal fascination with language vectors, but broader appeal is trickier.
 
-### What are you using for serving, hosting, and database?
+Julian: Talk to users constantly. Quick feedback has been invaluable for us.
 
-Eric: We’re using DigitalOcean.
+## Sam: What could improve the summer program?
+Eric: More interaction between different groups of fellows, to learn from each other’s struggles—especially on entrepreneurship.
 
----
-
-### What are the next steps or ideas you’re excited to work on for Word Golf in the future?
-
-Julian: I’ve been working on a prompt maker and revising the UI to make it less intimidating for new users.  
-
-Eric: I’m experimenting with a new game involving sentence embeddings, and want to create enriching online experiences that use shared knowledge about language in interesting ways.
-
----
-
-### (Re: Eric's demo) Oh that's awesome, so you're thinking you'll build a portfolio of interesting word games / experiences / art?
-
-Eric:  Yeah, and we should be able to cross promote them to each others' audiences.
-
----
-
-### How did you two split up the work?
-
-Julian: Eric did a lot of the front-end work, and I handled user authentication and back-end. For features, I made the first version of the catalog, and Eric made the race part. We split by front-end vs. back-end or by features themselves.  
-
----
-
-### Were there any surprises or counterintuitive learnings from looking at the data?
-
-Eric: Yes. I thought posters and passive advertising would be best, and while they do bring visits, we learned that contacting people with established user bases is more effective for gaining engaged users.  
-
----
-
-### Were there any product ideas or experiments that didn’t work out?
-
-Julian: We tried adding a skip button and a back feature, but they cluttered the UI and weren’t useful since the game already skips after 12 jumps. We also had to revise the tutorial many times based on direct user testing.  
-
-Eric: I experimented with changing the core embeddings to find more interesting connections, but it’s hard to innovate effectively at the embeddings level.  
-
----
-
-### What has been your favorite and least favorite part of working on a startup?
-
-Julian: My favorite moment was waking up after Eric emailed the comic creator and seeing 100 people had played overnight. Also, seeing people enjoy new features you built is really rewarding.  
-
-Eric: My favorite part is directly seeing my work impact users. Least favorite is when you work hard on something that never ends up making a difference in the product.  
-
----
-
-### What unsolicited advice do you have for other students considering building a software product or starting their own company?
-
-Julian: Talking to users has been incredibly helpful. We could quickly get feedback and test ideas directly with people.  
-
-Eric: Know why you’re building something and who you’re building it for. At first, I thought this game could appeal to everyone, but it’s more effective to identify specific audiences who would engage deeply.  
-
----
-
-### If you were me, what would you do differently for this summer program?
-
-Julian: Maybe have demos once a month or every three weeks so everyone can share their product’s evolution. It would create more community and mutual support.  
-
-Eric: More interactions between different groups of fellows. Seeing others’ struggles and learning from them is really valuable.  
-
+Julian: Regular demo sessions, maybe monthly, so everyone can share progress and challenges. It would build a stronger community.
