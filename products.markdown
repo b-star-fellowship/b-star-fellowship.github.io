@@ -20,11 +20,6 @@ Pagio reimagines how kids interact with stories by tackling the “fourth grade 
 
 ForReelFlies is a one stop shop for fly fishermen and outdoorsmen. We connect fly tiers and consumers on a centralized, secure platform.
 
-## [BindTwo](https://www.bindtwo.com)
-### [Erick Torres]() & [Ema Dimitrova](https://www.linkedin.com/in/ema-dimitrova-92b941217/)
-
-BindTwo is a lightweight sync tool connecting Notion databases to Google Sheets.
-
 ## 2024
 
 ## [ATA](https://talktoata.com)
