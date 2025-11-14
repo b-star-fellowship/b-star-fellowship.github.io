@@ -12,6 +12,8 @@ Here are some essays, talks, and interviews that have informed my decisions to w
 
 ### [You don't need to work on hard problems](https://www.benkuhn.net/hard/)
 
+### [How to Make a Living as an Artist](https://essays.fnnch.com/make-a-living)
+
 ### [How to Build a Startup Without Funding](https://youtu.be/6reLWfFNer0?si=YwGna2fbv7oCBgsz)
 
 ### [Brian Chesky on Launching Airbnb](https://youtu.be/W608u6sBFpo?si=dk7fMPfHujGI1jtx)
