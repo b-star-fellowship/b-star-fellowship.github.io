@@ -16,7 +16,7 @@ Every year, we give teams of students **$5,000 per person** to build their softw
 [Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/) was the 1st employee at [Down Dog](https://www.downdogapp.com), and helped Down Dog blitz-scale to millions of users during the Covid-19 lockdowns.  As a B\* fellow, you'll have access to Sam as a [mentor](/mentorship) via brief, weekly calls.
 
 #### Are there any restrictions for my idea/team?
- - Product must be a software project; a web app, mobile app, command line tool, game, etc.
+ - Product must have a software component; a web app, mobile app, command line tool, game, robotics, etc.
  - Team must be 1-2 Brown university students, living in the same city, working on the project full time.
  - Strong preference for students with a working prototype.
 
