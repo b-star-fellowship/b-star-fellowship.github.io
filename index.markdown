@@ -8,8 +8,6 @@ B\* is the **Brown Startup Fellowship**; a 10 week summer fellowship for Brown U
 
 Every year, we give teams of students **$5,000 per person** to build their software project.  From **June 1 - Sept 1**, B\* fellows build, iterate, test, and launch/publish their projects.
 
-## [Apply Here For Summer 2026](https://forms.gle/eKgcjw4ue7f7mfBw7)
-
 # FAQ
 
 #### Who runs B\*?
@@ -22,9 +20,6 @@ Every year, we give teams of students **$5,000 per person** to build their softw
 
 #### What kind of projects have B* fellows built in the past?
 To get a sense for what kind of products you can build in B\*, check out our fellows' work [here](/products).
-
-#### How do I apply?
-[Fill out this form](https://forms.gle/eKgcjw4ue7f7mfBw7)
 
 # Resources
  - [Why should you work on a startup?](/inspo)
