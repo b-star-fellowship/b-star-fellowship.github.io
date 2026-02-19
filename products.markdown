@@ -4,6 +4,25 @@ layout: default
 
 # B* Products
 
+## 2026
+
+## Fountainhead
+### [https://fountainhead.site](https://fountainhead.site)
+### [Chris Zou](https://www.linkedin.com/in/chris-zou-138290262/) & Brian Zou
+
+Fountainhead is the first completely free premium screenwriting editor aimed at finding the next generation of filmmakers. 
+
+## BloomBetter
+### [https://www.bloom-pots.com](https://www.bloom-pots.com)
+### [Bruno Rodriguez-Mendez](https://www.linkedin.com/in/bruno-rodriguez-mendez-18723725b/) & [Ayaan Jamal](https://www.linkedin.com/in/ayaan-jamal-496228396/)
+
+BloomBetter is building smart plant pots that use real-time sensor data and a species-specific deterministic model to tell users exactly what their plant needs—water, light, or temperature adjustments—through a mobile and web app.
+
+## Mona
+### [Alessandro Guerrero](https://www.linkedin.com/in/alessandro-guerrero/) & [Fabio Villatoro](https://www.linkedin.com/in/fabiovillatoro/)
+
+Mona is an AI-powered personal finance app built in SwiftUI with Firebase. It helps users manage budgets, track spending, analyze transaction patterns, and gain actionable financial insights. The app includes budgeting tools, transaction categorization, recurring subscription detection, trend analytics, quiz-based financial awareness features, and CSV export functionality. Mona is designed to make financial stability more intuitive, personalized, and engaging for users.
+
 ## 2025
 
 ## [Word Golf](/wordgolf)
