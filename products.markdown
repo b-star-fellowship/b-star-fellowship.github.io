@@ -23,6 +23,10 @@ BloomBetter is building smart plant pots that use real-time sensor data and a sp
 
 Mona is an AI-powered personal finance app built in SwiftUI with Firebase. It helps users manage budgets, track spending, analyze transaction patterns, and gain actionable financial insights. The app includes budgeting tools, transaction categorization, recurring subscription detection, trend analytics, quiz-based financial awareness features, and CSV export functionality. Mona is designed to make financial stability more intuitive, personalized, and engaging for users.
 
+## Coachlink
+### Madeline Templeton() & Kit Jackson
+CoachLinks is the hub for parent/player-coach interactions; we have everything from finding experienced coaches to scheduling sessions to communicating real-time updates will be centralized. By connecting players, their parents, and coaches, everyone will enjoy a more organized and efficient experience.
+
 ## 2025
 
 ## [Word Golf](/wordgolf)
