@@ -18,13 +18,18 @@ Fountainhead is the first completely free premium screenwriting editor aimed at 
 
 BloomBetter is building smart plant pots that use real-time sensor data and a species-specific deterministic model to tell users exactly what their plant needs—water, light, or temperature adjustments—through a mobile and web app.
 
+## Dropcal
+### [https://dropcal.ai/welcome](https://dropcal.ai/welcome)
+### [Lucas Kover Wolf](https://www.linkedin.com/in/lucas-kover-wolf/)
+One click scheduling from anywhere
+
 ## Mona
 ### [Alessandro Guerrero](https://www.linkedin.com/in/alessandro-guerrero/) & [Fabio Villatoro](https://www.linkedin.com/in/fabiovillatoro/)
 
 Mona is an AI-powered personal finance app built in SwiftUI with Firebase. It helps users manage budgets, track spending, analyze transaction patterns, and gain actionable financial insights. The app includes budgeting tools, transaction categorization, recurring subscription detection, trend analytics, quiz-based financial awareness features, and CSV export functionality. Mona is designed to make financial stability more intuitive, personalized, and engaging for users.
 
 ## Coachlink
-### Madeline Templeton() & Kit Jackson
+### Madeline Templeton & Kit Jackson
 CoachLinks is the hub for parent/player-coach interactions; we have everything from finding experienced coaches to scheduling sessions to communicating real-time updates will be centralized. By connecting players, their parents, and coaches, everyone will enjoy a more organized and efficient experience.
 
 ## 2025
