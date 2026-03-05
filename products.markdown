@@ -12,16 +12,21 @@ layout: default
 
 Fountainhead is the first completely free premium screenwriting editor aimed at finding the next generation of filmmakers. 
 
+## Dropcal
+### [https://dropcal.ai/welcome](https://dropcal.ai/welcome)
+### [Lucas Kover Wolf](https://www.linkedin.com/in/lucas-kover-wolf/)
+One click scheduling from anywhere
+
 ## BloomBetter
 ### [https://www.bloom-pots.com](https://www.bloom-pots.com)
 ### [Bruno Rodriguez-Mendez](https://www.linkedin.com/in/bruno-rodriguez-mendez-18723725b/) & [Ayaan Jamal](https://www.linkedin.com/in/ayaan-jamal-496228396/)
 
 BloomBetter is building smart plant pots that use real-time sensor data and a species-specific deterministic model to tell users exactly what their plant needs—water, light, or temperature adjustments—through a mobile and web app.
 
-## Dropcal
-### [https://dropcal.ai/welcome](https://dropcal.ai/welcome)
-### [Lucas Kover Wolf](https://www.linkedin.com/in/lucas-kover-wolf/)
-One click scheduling from anywhere
+## Munchy Munchy
+### [https://munchymunchy.com/](https://munchymunchy.com/)
+### [Ellie Hong](https://www.linkedin.com/in/ellie-h-5bb551344/)
+Munchy Munchy is a food tour optimizer that creates personalized, walkable culinary itineraries based on your specific city, budget, and time constraints. By leveraging AI-powered audio narration and social sharing, the app transforms city exploration into an affordable, seamless adventure for hungry travelers and locals alike.
 
 ## Mona
 ### [Alessandro Guerrero](https://www.linkedin.com/in/alessandro-guerrero/) & [Fabio Villatoro](https://www.linkedin.com/in/fabiovillatoro/)
