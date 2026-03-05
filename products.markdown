@@ -4,7 +4,7 @@ layout: default
 
 # B* Products
 
-## 2026
+# 2026
 
 ## Fountainhead
 ### [https://fountainhead.site](https://fountainhead.site)
@@ -41,7 +41,7 @@ Mona is an AI-powered personal finance app built in SwiftUI with Firebase. It he
 ### [Madeline Templeton](https://www.linkedin.com/in/madeline-templeton-18a71a359/) & Kit Jackson
 CoachLinks is the hub for parent/player-coach interactions; we have everything from finding experienced coaches to scheduling sessions to communicating real-time updates will be centralized. By connecting players, their parents, and coaches, everyone will enjoy a more organized and efficient experience.
 
-## 2025
+# 2025
 
 ## [Word Golf](/wordgolf)
 ### [https://word.golf](https://word.golf)
@@ -60,13 +60,13 @@ Pagio reimagines how kids interact with stories by tackling the “fourth grade 
 
 ForReelFlies is a one stop shop for fly fishermen and outdoorsmen. We connect fly tiers and consumers on a centralized, secure platform.
 
-## 2024
+# 2024
 
 ## [ATA](https://talktoata.com)
 ### [Julian Dai](https://www.linkedin.com/in/julian-dai-a3bab1211/) & [Noah Rousell](https://www.linkedin.com/in/noah-rousell/)
 ATA (Artificial Teaching Assistant) is an adaptable LLM-powered teaching assistant designed to guide and conceptually teach students.  ATA uses cutting-edge AI to provide a combination of conceptual understanding, debugging assistance, and logistical support to students, all tailored to the specifics of your course content.
 
-## 2023
+# 2023
 
 ## [heartBeats](https://heartbeatsapp.netlify.app/)
 ### [Maya Magavi](https://www.linkedin.com/in/maya-magavi-13988b211/) & [Dalton Simonson](https://www.linkedin.com/in/dalton-simonson-023b04251/)
