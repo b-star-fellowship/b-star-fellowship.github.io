@@ -17,6 +17,10 @@ Fountainhead is the first completely free premium screenwriting editor aimed at 
 ### [Lucas Kover Wolf](https://www.linkedin.com/in/lucas-kover-wolf/)
 One click scheduling from anywhere
 
+## PMARC
+### [Peyton Marcotte](https://www.linkedin.com/in/peytonmarcotte/)
+PMARC (Precision Motion and Resistance Cube) is a hand-held exercise device originally developed with NASA funding to measure and train astronauts' hand and wrist muscles. After realizing the implications beyond spaceflight (rehabilitation, athletics, and everyday strength training), the PMARC intellectual property was reclaimed from NASA to enable independent commercialization. PMARC pairs with a companion app, allowing users to monitor strength, progress, and training metrics.
+
 ## BloomBetter
 ### [https://www.bloom-pots.com](https://www.bloom-pots.com)
 ### [Bruno Rodriguez-Mendez](https://www.linkedin.com/in/bruno-rodriguez-mendez-18723725b/) & [Ayaan Jamal](https://www.linkedin.com/in/ayaan-jamal-496228396/)
