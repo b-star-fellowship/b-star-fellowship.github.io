@@ -40,7 +40,7 @@ Cookster turns short-form cooking videos into structured recipes.
 ## Mona
 ### [Alessandro Guerrero](https://www.linkedin.com/in/alessandro-guerrero/) & [Fabio Villatoro](https://www.linkedin.com/in/fabiovillatoro/)
 
-Mona is an AI-powered personal finance app built in SwiftUI with Firebase. It helps users manage budgets, track spending, analyze transaction patterns, and gain actionable financial insights. The app includes budgeting tools, transaction categorization, recurring subscription detection, trend analytics, quiz-based financial awareness features, and CSV export functionality. Mona is designed to make financial stability more intuitive, personalized, and engaging for users.
+Mona is an AI-powered personal finance app that helps users manage budgets, track spending, analyze transaction patterns, and gain actionable financial insights. The app includes budgeting tools, transaction categorization, recurring subscription detection, trend analytics, quiz-based financial awareness features, and CSV export functionality.
 
 ## Coachlink
 ### [Madeline Templeton](https://www.linkedin.com/in/madeline-templeton-18a71a359/) & Kit Jackson
