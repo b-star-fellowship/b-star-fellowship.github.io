@@ -32,6 +32,11 @@ BloomBetter is building smart plant pots that use real-time sensor data and a sp
 ### [Ellie Hong](https://www.linkedin.com/in/ellie-h-5bb551344/)
 Munchy Munchy is a food tour optimizer that creates personalized, walkable culinary itineraries based on your specific city, budget, and time constraints. By leveraging AI-powered audio narration and social sharing, the app transforms city exploration into an affordable, seamless adventure for hungry travelers and locals alike.
 
+## Cookster
+### [https://cookster.vercel.app](https://cookster.vercel.app)
+### [Donny Nguyen](https://www.linkedin.com/in/donny-nguyen-ab2842281/)
+Cookster turns short-form cooking videos into structured recipes.
+
 ## Mona
 ### [Alessandro Guerrero](https://www.linkedin.com/in/alessandro-guerrero/) & [Fabio Villatoro](https://www.linkedin.com/in/fabiovillatoro/)
 
