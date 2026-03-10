@@ -4,7 +4,7 @@ layout: default
 
 # B\*: Build Something
 
-B\* is the **Brown Startup Fellowship**; a 10 week summer fellowship for Brown University computer science students to build and launch software.
+B\* is the **Brown Startup Fellowship**; a 10 week summer fellowship for Brown University computer science students to build and launch software using artificial intelligence tools.
 
 Every year, we give teams of students **$5,000 per person** to build their software project.  From **June 1 - Sept 1**, B\* fellows build, iterate, test, and launch/publish their projects.
 
