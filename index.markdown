@@ -20,7 +20,3 @@ Every year, we give teams of students **$5,000 per person** to build their softw
 
 #### What kind of projects have B* fellows built in the past?
 To get a sense for what kind of products you can build in B\*, check out our fellows' work [here](/products).
-
-# Resources
- - [Why should you work on a startup?](/inspo)
- - [How I would get a Software Engineer job in 2025](/jobs)
