@@ -27,11 +27,6 @@ PMARC (Precision Motion and Resistance Cube) is a hand-held exercise device orig
 
 BloomBetter is building smart plant pots that use real-time sensor data and a species-specific deterministic model to tell users exactly what their plant needs—water, light, or temperature adjustments—through a mobile and web app.
 
-## Munchy Munchy
-### [https://munchymunchy.com/](https://munchymunchy.com/)
-### [Ellie Hong](https://www.linkedin.com/in/ellie-h-5bb551344/)
-Munchy Munchy is a food tour optimizer that creates personalized, walkable culinary itineraries based on your specific city, budget, and time constraints. By leveraging AI-powered audio narration and social sharing, the app transforms city exploration into an affordable, seamless adventure for hungry travelers and locals alike.
-
 ## Cookster
 ### [https://cookster.vercel.app](https://cookster.vercel.app)
 ### [Donny Nguyen](https://www.linkedin.com/in/donny-nguyen-ab2842281/)
