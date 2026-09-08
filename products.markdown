@@ -23,7 +23,7 @@ PMARC (Precision Motion and Resistance Cube) is a hand-held exercise device orig
 
 ## BloomBetter
 ### [https://www.bloom-pots.com](https://www.bloom-pots.com)
-### [Bruno Rodriguez-Mendez](https://www.linkedin.com/in/bruno-rodriguez-mendez-18723725b/) & [Ayaan Jamal](https://www.linkedin.com/in/ayaan-jamal-496228396/)
+### [Bruno Rodriguez-Mendez](https://www.linkedin.com/in/bruno-rodriguez-mendez-18723725b/) & [Jenny Zhu](https://www.linkedin.com/in/jenny-zhu-a1101a256/)
 
 BloomBetter is building smart plant pots that use real-time sensor data and a species-specific deterministic model to tell users exactly what their plant needs—water, light, or temperature adjustments—through a mobile and web app.
 
@@ -37,9 +37,10 @@ Cookster turns short-form cooking videos into structured recipes.
 
 Mona is an AI-powered personal finance app that helps users manage budgets, track spending, analyze transaction patterns, and gain actionable financial insights. The app includes budgeting tools, transaction categorization, recurring subscription detection, trend analytics, quiz-based financial awareness features, and CSV export functionality.
 
-## Coachlink
+## KADI
+### [https://kadi.coach/](https://kadi.coach/)
 ### [Madeline Templeton](https://www.linkedin.com/in/madeline-templeton-18a71a359/) & Kit Jackson
-CoachLinks is the hub for parent/player-coach interactions; we have everything from finding experienced coaches to scheduling sessions to communicating real-time updates will be centralized. By connecting players, their parents, and coaches, everyone will enjoy a more organized and efficient experience.
+Kadi is the hub for parent/player-coach interactions; we have everything from finding experienced coaches to scheduling sessions to communicating real-time updates will be centralized. By connecting players, their parents, and coaches, everyone will enjoy a more organized and efficient experience.
 
 # 2025
 
