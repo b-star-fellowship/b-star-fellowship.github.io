@@ -10,17 +10,17 @@ stats:
 
 questions:
   - question: What is Brown AI Studio?
-    answer: Brown AI Studio is an alumni-led summer fellowship for Brown University students who want to build and launch software using AI tools. Students join as Brown AI Fellows and spend 10 weeks working full time on their own products.
+    answer: Brown AI Studio is a summer fellowship for Brown University students who want to create products, games or art. Students join as Brown AI Fellows and spend 10 weeks working full time on their own products.
   - question: Who can become a Brown AI Fellow?
     answer: The fellowship is for Brown University students building software with AI tools. Apply solo or with a teammate. Teams have one or two people, work full time on their product, and live in the same city during the fellowship.
   - question: Do I need an idea or a working prototype?
-    answer: Bring an idea you want to pursue. There’s a strong preference for a working prototype, and you should have experience building software on a team, whether in a class like CS32 or outside the classroom.
+    answer: Bring an idea you want to pursue. We strongly prefer a minimal working prototype, and you should have experience building things in a team, whether in a class like CS32 or outside the classroom.
   - question: Does my product have to be an AI product?
-    answer: The program is about using AI tools to build and launch software. Your product needs a software component, but it can be a web app, mobile app, game, command line tool, robotics product, or something else entirely.
+    answer: No!  We just want you to make something unique that has never existed before.  You'll want to use AI tools for your work, they'll let you accomplish much more, quickly.  The difference between slop and something real is caring enough to dedicate attention to detail for a long period of time.  This fellowship is to empower you to make something great while learning hands on.
   - question: What does the fellowship include?
     answer: Fellows receive $5,000 per person for a 10-week summer fellowship, along with weekly mentorship from Brown alumni. You’ll spend the summer building, testing, iterating, and launching your product.
   - question: Who runs the studio, and who are the mentors?
-    answer: Brown alumni run Brown AI Studio, bringing their experience building software back to the next generation of Brown founders. Our mentor directory starts with Sam Dooman, a Brown CS alumnus and founding engineer at Down Dog, and will grow as more mentors join.
+    answer: We're a group of Brown alumni who work at top AI companies and startups, who want to give back. The program was originally started by Sam Dooman, who studied music and computer science at Brown.
     link: /mentors/
     link_label: Meet the mentors
   - question: When can I apply?
