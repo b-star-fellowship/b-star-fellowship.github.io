@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/studio.css' | relative_url }}">
   {% feed_meta %}
   <script src="{{ '/assets/js/studio.js' | relative_url }}" defer></script>
+  {% if page.home %}<script src="{{ '/assets/js/hero-network.js' | relative_url }}" defer></script>{% endif %}
 </head>
 <body class="{% if page.home %}home-page{% else %}inner-page{% endif %}">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,7 +29,7 @@
         <a href="{{ '/mentors/' | relative_url }}"{% if page.url == '/mentors/' %} aria-current="page"{% endif %}>Mentors</a>
         <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
         <a href="{{ '/#faq' | relative_url }}">FAQ</a>
-        <a class="button button-small" href="{{ '/apply/' | relative_url }}">Become a fellow {% include arrow.html %}</a>
+        <a class="button button-small" href="{{ '/apply/' | relative_url }}">Become a Brown AI Fellow {% include arrow.html %}</a>
       </nav>
     </div>
   </header>

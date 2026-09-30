@@ -17,9 +17,10 @@ description: Articles, founder interviews, and resources by Sam Dooman.
       <a href="{{ post.url | relative_url }}"><div><h2>{{ post.title }}</h2><p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p></div>{% include arrow.html %}</a>
     </article>
     {% endfor %}
-    {% for article in site.data.writing %}
+    {% assign archived_writing = site.data.writing | sort: 'date' | reverse %}
+    {% for article in archived_writing %}
     <article class="writing-row">
-      <div class="writing-meta"><span>{{ article.category }}</span><span>By Sam Dooman</span></div>
+      <div class="writing-meta"><span>{{ article.category }}</span><span>By Sam Dooman</span><time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%B %-d, %Y' }}</time></div>
       <a href="{{ article.url | relative_url }}"><div><h2>{{ article.title }}</h2><p>{{ article.description }}</p></div>{% include arrow.html %}</a>
     </article>
     {% endfor %}

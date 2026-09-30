@@ -728,7 +728,7 @@ gap:22px;
 }
 }
 
-@media(max-width:900px) {
+@media(max-width:1024px) {
 .header-inner {
 height:85px;
 }
@@ -1041,7 +1041,7 @@ color:var(--accent);
 .text-link { font-size: 14px; }
 .eyebrow { font-size: 12px; letter-spacing: 1.2px; }
 
-/* The hero background is just a quiet field of moving light on a grid. */
+/* A quiet graph traversal behind the hero typography. */
 .hero-section { position: relative; overflow: hidden; isolation: isolate; }
 .hero { position: relative; padding-block: 104px 110px; min-height: 590px; }
 .hero-copy { position: relative; z-index: 1; }
@@ -1059,13 +1059,12 @@ color:var(--accent);
 .hero-field {
   position: absolute;
   z-index: -1;
-  width: 70%;
-  right: -2%;
-  top: 0;
-  bottom: 0;
+  width: 62%;
+  right: 2%;
+  top: 24px;
+  bottom: 24px;
   overflow: hidden;
   opacity: .75;
-  mask-image: linear-gradient(90deg, transparent, #000 68%);
   pointer-events: none;
 }
 .field-grid {
@@ -1075,22 +1074,22 @@ color:var(--accent);
   background-size: 32px 32px;
   mask-image: linear-gradient(0deg, transparent, #000 30%, #000 75%, transparent);
 }
-.field-signal {
-  position: absolute;
-  top: calc(64px + var(--row) * 64px);
-  left: 0;
-  width: 150px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #e7c6a9);
-  animation: signal-travel 24s linear infinite;
-  animation-delay: var(--delay);
-  opacity: 0;
-}
-.field-signal::after { content: ''; position: absolute; right: 0; top: -1px; width: 3px; height: 3px; background: #f0dbc9; }
-@keyframes signal-travel {
-  0% { transform: translateX(-180px); opacity: 0; }
-  15%, 65% { opacity: .6; }
-  100% { transform: translateX(1100px); opacity: 0; }
+.network-graph { position: absolute; inset: 0; width: 100%; height: 100%; }
+.field-grid { opacity: .32; }
+.network-edge { stroke: #d1ac86; stroke-width: 1; opacity: .19; transition: opacity .8s; }
+.network-edge.is-visited { opacity: .32; }
+.network-trace { stroke: #e4b887; stroke-width: 1.5; fill: none; opacity: 0; }
+.network-trace.is-route { opacity: .62; }
+.network-trace.is-backtracking { opacity: .35; }
+.network-node { fill: #bc9979; opacity: .48; transition: fill .6s, opacity .6s; }
+.network-node.is-visited { fill: #f0d4b3; opacity: .92; }
+.network-halo { fill: none; stroke: #e8c296; stroke-width: 1; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.network-halo.is-pulsing { animation: network-arrival 1.2s ease-out; }
+.network-tail { fill: #f0cfaa; }
+.network-spark { fill: #ffe8ca; filter: drop-shadow(0 0 5px #ecc99d); }
+@keyframes network-arrival {
+  from { transform: scale(.4); opacity: .7; }
+  to { transform: scale(1.8); opacity: 0; }
 }
 .stat span { font-size: 13px; }
 .fellowship-content > p { font-size: 16px; }
@@ -1217,7 +1216,7 @@ color:var(--accent);
   .hero { padding-block: 80px; min-height: 550px; }
   .hero h1 { font-size: 73px; }
   .hero-description { font-size: 17px; max-width: 480px; }
-  .hero-field { width: 85%; opacity: .55; }
+  .hero-field { width: 72%; opacity: .55; }
   .feature-card { grid-template-columns: 1fr 1fr; }
   .feature-copy { padding: 28px; }
   .feature-copy h3 { font-size: 31px; }
@@ -1245,7 +1244,7 @@ color:var(--accent);
   .hero-description { font-size: 16px; line-height: 1.8; max-width: 450px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 22px; margin-top: 30px; }
   .hero-actions .button { font-size: 14px; padding: 16px 20px; gap: 19px; }
-  .hero-field { width: 100%; opacity: .35; mask-image: linear-gradient(90deg, transparent 10%, #000); }
+  .hero-field { width: calc(100% - 40px); right: 20px; opacity: .35; }
   .field-grid { background-size: 26px 26px; }
   .stat span { font-size: 12px; }
   .eyebrow { font-size: 12px; }
@@ -1292,7 +1291,8 @@ color:var(--accent);
   .byline-role { display: block; font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .field-signal { animation: none; opacity: 0; }
+  .network-halo { animation: none !important; opacity: 0; }
+  .network-spark, .network-tail, .network-trace { display: none; }
   .carousel-slide { animation: none; }
 }
 @media print {
@@ -1349,8 +1349,8 @@ color:var(--accent);
 .cohort-heading { font-family: var(--mono); font-size: 24px; line-height: 1.3; letter-spacing: -.5px; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 18px; margin-bottom: 30px; }
 .product-list { display: grid; gap: 36px; }
 .product-list-card { scroll-margin-top: 30px; }
-.product-list-card .product-visual { min-height: 600px; }
-.product-list-card .product-image { height: 390px; }
+.product-list-card .product-visual { min-height: 450px; }
+.product-list-card .product-image { height: 280px; }
 .mentors-heading h1 { margin-top: 0; }
 
 @media (max-width: 1100px) {
@@ -1399,4 +1399,21 @@ color:var(--accent);
   .product-list { gap: 28px; }
   .cohort-heading { margin-bottom: 24px; }
   #fellowship-title { max-width: 340px; }
+}
+
+/* Compact directory cards keep the full summaries visible. */
+.product-list-card .product-image-frame { padding-block: 20px; }
+.product-list-card .product-visual-fallback { padding-block: 45px; }
+.product-list-card .feature-copy { padding: 26px; min-height: 0; }
+.product-list-card .feature-copy h3 { margin-block: 13px 5px; }
+.product-list-card .product-focus { margin-top: 18px; }
+.product-list-card .founder-list { margin-block: 20px; gap: 10px; }
+.product-list-card .product-summary { line-height: 1.7; }
+.benefit-list p a { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.prose .article-date { color: var(--muted); font-size: 13px; margin: -14px 0 24px; }
+@media (max-width: 640px) {
+  .product-list-card .product-visual { min-height: 280px; }
+  .product-list-card .product-image { height: 190px; }
+  .product-list-card .product-image-frame { padding-block: 16px; }
+  .product-list-card .feature-copy { padding: 23px; }
 }

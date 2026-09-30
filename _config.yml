@@ -27,3 +27,4 @@ exclude:
   - vendor
   - readme.md
   - scripts
+  - _private

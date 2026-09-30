@@ -1,6 +1,6 @@
 # Brown AI Studio
 
-A custom Jekyll site. The landing page is HTML and Liquid; articles and ordinary pages stay in Markdown. No Node build, JavaScript framework, or third-party font service is required. The former B* content and URLs are preserved, except the unpublished Jekyll starter post.
+A custom Jekyll site. The landing page is HTML and Liquid; articles and ordinary pages stay in Markdown. No Node build, JavaScript framework, or third-party font service is required. The former B* articles and URLs are preserved, except the unpublished Jekyll starter post and the private Prompts draft.
 
 ## Local preview
 
@@ -60,16 +60,16 @@ Existing files using `layout: default` continue to work and can keep their own M
 - `_data/product_media.json`: product imagery, each website’s original palette, and source URLs. Assets are stored under `assets/img/products/`.
 - `_includes/product-carousel.html` and `_includes/product-card.html`: shared product presentation. The full directory displays one combined summary and focus areas for each product; the homepage uses the shorter summary.
 - `products.html`: Products page, preserving the original `/products/` URL.
-- `work/fountainhead.md`: Markdown fellow spotlight.
 - `assets/css/studio.css`: shared visual styles and responsive layouts.
 - `_layouts/base.html`: shared navigation, metadata, and footer.
 - `_config.yml`: brand metadata, contact email, and application status/link.
 - `assets/js/studio.js`: mobile navigation and the product carousel. Rotation advances every six seconds while visible, pauses on hover and focus, and starts paused for reduced-motion users. Prev/next, product selectors, and a Play/Pause control work independently of autoplay.
 - `_data/mentors.yml`: the mentor directory. Add a record with a name, degree, program, graduation year, photo, bio paragraphs, and links to add another mentor. Each subtitle is rendered from `degree`, `program`, and `graduation_year`.
 - `mentors.html`: the mentor directory layout.
-- `_data/writing.yml`: the original articles and resources linked from the blog.
+- `_data/writing.yml`: the original articles and resources linked from the blog, ordered newest first. Existing article dates come from their first addition in Git history and are also stored in each page’s front matter.
+- `_private/prompts.txt`: the unpublished Prompts text, excluded from Jekyll builds and ignored by Git so future pushes do not expose it. Existing public Git history is unchanged.
 - `_includes/byline.html`: article authorship. Existing writing has an explicit Sam Dooman author field.
-- The homepage background uses a CSS dot grid and subtle moving lines, with reduced-motion support.
+- `assets/js/hero-network.js`: the homepage network animation. A spark follows a depth-first traversal, lighting branches and retracing them on backtracking. It pauses offscreen and when the tab is hidden; reduced-motion users see a static network.
 
 ## Draft details to review
 

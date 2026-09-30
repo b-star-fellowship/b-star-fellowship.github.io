@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Sam Dooman
+date: 2025-06-15
 title: Exit Interview Questions
 ---
 

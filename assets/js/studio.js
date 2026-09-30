@@ -23,7 +23,7 @@
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.header-inner')) closeMenu();
   });
-  window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
+  window.matchMedia('(min-width: 1025px)').addEventListener('change', closeMenu);
 })();
 
 (() => {

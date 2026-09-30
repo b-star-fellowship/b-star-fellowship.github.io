@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Sam Dooman
+date: 2024-03-17
 title: Essays, talks & interviews
 ---
 

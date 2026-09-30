@@ -13,11 +13,11 @@ Brown AI Studio is an **alumni-led, 10-week summer fellowship** for Brown Univer
 <div class="application-note">
 {% if site.application_url != empty %}
 <p><strong>Ready to build?</strong> Tell us about your team and the idea you want to bring to life.</p>
-<a class="button" href="{{ site.application_url | escape }}">Apply to be a Brown AI Fellow {% include arrow.html %}</a>
+<a class="button" href="{{ site.application_url | escape }}">Become a Brown AI Fellow {% include arrow.html %}</a>
 {% else %}
 <p><strong>{{ site.application_status }}</strong></p>
 <p>Application dates and the next cohort’s form will be posted here. In the meantime, get in touch to ask about the fellowship.</p>
-<a class="button" href="mailto:{{ site.email }}?subject=Brown%20AI%20Studio%20fellowship">Ask about the next cohort {% include arrow.html direction="diagonal" %}</a>
+<a class="button" href="mailto:{{ site.email }}?subject=Brown%20AI%20Studio%20fellowship">Become a Brown AI Fellow {% include arrow.html direction="diagonal" %}</a>
 {% endif %}
 </div>
 
@@ -33,7 +33,7 @@ Brown AI Studio is an **alumni-led, 10-week summer fellowship** for Brown Univer
 
 A web app. A game. A creative tool. Something that makes someone’s day a little easier. Your product needs a software component; AI tools are part of how you bring it to life.
 
-Explore [Fountainhead]({{ '/work/fountainhead/' | relative_url }}), a free screenwriting editor from fellows Chris and Brian Zou, or browse [Products]({{ '/products/' | relative_url }}).
+Explore [Fountainhead]({{ '/products/#fountainhead' | relative_url }}), a free screenwriting editor from fellows Chris and Brian Zou, or browse [Products]({{ '/products/' | relative_url }}).
 
 ## Come with a point of view
 

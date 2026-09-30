@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Sam Dooman
+date: 2025-08-30
 title: Pagio — Fellow conversation
 ---
 

@@ -37,7 +37,7 @@
   </div>
   <div class="product-links">
     {% if product.website %}<a class="text-link" href="{{ product.website }}">Visit website {% include arrow.html direction="diagonal" %}</a>{% endif %}
-    {% if product.story_url %}<a class="text-link" href="{{ product.story_url | relative_url }}">{% if product.id == 'fountainhead' %}Product spotlight{% else %}Founder interview{% endif %} {% include arrow.html %}</a>{% endif %}
+    {% if product.story_url %}<a class="text-link" href="{{ product.story_url | relative_url }}">Founder interview {% include arrow.html %}</a>{% endif %}
     {% unless product.website or product.story_url %}<span class="product-private-note">Learn more through the founder profiles above.</span>{% endunless %}
   </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Sam Dooman
+date: 2024-10-13
 title: How I would get a Software Engineer job in 2025
 ---
 

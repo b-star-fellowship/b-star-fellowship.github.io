@@ -5,8 +5,8 @@ stats:
     label: A summer to go all in
   - value: "1–2 people"
     label: Small teams. Big ambition.
-  - value: "Alumni-led"
-    label: Brown builders supporting Brown builders
+  - value: "Mentorship"
+    label: Support from Brown alumni building with AI
 
 questions:
   - question: What is Brown AI Studio?

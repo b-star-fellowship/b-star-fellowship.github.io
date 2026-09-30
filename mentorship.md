@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Sam Dooman
+date: 2025-07-31
 title: Mentorship is overrated.
 ---
 
