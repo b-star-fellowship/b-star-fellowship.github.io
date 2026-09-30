@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Pagio — Fellow conversation
 ---
 
 # [Pagio (2025)](https://pagio.app)

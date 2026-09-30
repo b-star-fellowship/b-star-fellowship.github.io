@@ -1,0 +1,32 @@
+stats:
+  - value: "$5,000"
+    label: Funding per fellow
+  - value: "10 weeks"
+    label: A summer to go all in
+  - value: "1–2 people"
+    label: Small teams. Big ambition.
+  - value: "Your idea."
+    label: From what if to what’s next
+
+featured:
+  name: Fountainhead
+  category: Creative tools
+  headline: Every great film starts with a blank page.
+  description: Chris and Brian Zou are building a free screenwriting editor for the next generation of filmmakers. A tool that helps a story find its way onto the screen.
+  fellows: Chris Zou & Brian Zou
+  url: /work/fountainhead/
+  project_url: https://fountainhead.site
+
+questions:
+  - question: Who can become a Brown AI Fellow?
+    answer: The fellowship is for Brown University students building software with AI tools. Apply solo or with a teammate. Teams have one or two people, work full time on their project, and live in the same city during the fellowship.
+  - question: Do I need an idea or a working prototype?
+    answer: Bring an idea you want to pursue. There’s a strong preference for a working prototype, and you should have experience building software on a team, whether in a class like CS32 or outside the classroom.
+  - question: Does my product have to be an AI product?
+    answer: The program is about using AI tools to build and launch software. Your project needs a software component, but it can be a web app, mobile app, game, command line tool, robotics project, or something else entirely.
+  - question: What does the fellowship include?
+    answer: Fellows receive $5,000 per person for a 10-week summer fellowship, with brief weekly mentorship calls with Sam Dooman. You’ll spend the summer building, testing, iterating, and launching your project.
+  - question: Who’s behind the studio?
+    answer: The program is run by Sam Dooman, the first employee at Down Dog. Sam helped the company scale to millions of users during the COVID-19 lockdowns and works directly with fellows through weekly mentorship calls.
+  - question: When can I apply?
+    answer: Visit the fellowship page for current application details, what to prepare, and how to get in touch with questions about the next cohort.

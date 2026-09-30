@@ -1,15 +1,28 @@
-title: B*
-logo: /assets/img/bstar.png
+title: Brown AI Studio
 email: bstarfellowship@gmail.com
-description: https://bstar.software # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: b-star-fellowship 
+description: A summer fellowship for Brown University builders. Become a Brown AI Fellow and turn an ambitious idea into real software with AI, funding, and mentorship.
+baseurl: ""
+url: "https://bstar.software"
+lang: en-US
 
-# Build settings
-theme: jekyll-theme-minimal
+# Set to the current application form when the next cohort opens.
+application_url: ""
+application_status: "Next cohort details coming soon"
+
 plugins:
   - jekyll-feed
 
+permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - readme.md
+  - scripts

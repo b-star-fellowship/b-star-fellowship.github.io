@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Word Golf — Fellow conversation
 ---
 
 # [Word Golf (2025)](https://word.golf)

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Inside mentorship
 ---
 
 # Mentorship is overrated.
@@ -12,7 +13,7 @@ As for the second question, modern AI tools will enable you to make incremental 
 
 So I hope to be primarily useful with personal anecdotes, wins, and losses from building [Down Dog](https://www.downdogapp.com).  I'll try to highlight what information was available at the time & what the relevant tradeoffs were.  Hopefully, that's a good jumping off point for how to think through approaching different problems while building your startup.
 
-Below is a collection of snippets from my mentorship calls with B* fellows, summarized by Gemini for brevity.  If you find these helpful or interesting, let me know!
+Below is a collection of snippets from my mentorship calls with Brown AI Fellows, summarized by Gemini for brevity.  If you find these helpful or interesting, let me know!
 
 # Pagio - August 21st
 ## Jerry & Adithya:

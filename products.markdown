@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Fellow projects
 ---
 
-# B* Products
+# Built by fellows
 
 # 2026
 
