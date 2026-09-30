@@ -1,6 +1,10 @@
 ---
 layout: default
+author: Sam Dooman
+title: Essays, talks & interviews
 ---
+
+# Essays, talks & interviews
 
 Here are some essays, talks, and interviews that have informed my decisions to work at a startup.
 

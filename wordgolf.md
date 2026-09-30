@@ -1,5 +1,6 @@
 ---
 layout: default
+author: Sam Dooman
 title: Word Golf — Fellow conversation
 ---
 

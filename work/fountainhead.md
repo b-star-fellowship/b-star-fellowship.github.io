@@ -22,6 +22,4 @@ A screenplay is the beginning of a much bigger project. Fountainhead focuses on 
 
 ---
 
-This spotlight is a short introduction based on the studio’s [fellow project directory]({{ '/products' | relative_url }}). The editor illustration on our homepage is a concept preview, not a screenshot of the live product.
-
 [Discover more fellow projects]({{ '/products' | relative_url }}) · [Become a Brown AI Fellow]({{ '/apply/' | relative_url }})

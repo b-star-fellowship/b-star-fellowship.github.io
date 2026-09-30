@@ -5,19 +5,54 @@ stats:
     label: A summer to go all in
   - value: "1–2 people"
     label: Small teams. Big ambition.
-  - value: "Your idea."
-    label: From what if to what’s next
+  - value: "Alumni-led"
+    label: Brown builders supporting Brown builders
 
-featured:
-  name: Fountainhead
-  category: Creative tools
-  headline: Every great film starts with a blank page.
-  description: Chris and Brian Zou are building a free screenwriting editor for the next generation of filmmakers. A tool that helps a story find its way onto the screen.
-  fellows: Chris Zou & Brian Zou
-  url: /work/fountainhead/
-  project_url: https://fountainhead.site
+projects:
+  - id: fountainhead
+    name: Fountainhead
+    wordmark: fountainhead
+    domain: fountainhead.site
+    category: Creative tools
+    headline: A place for the next screenplay.
+    description: A free screenwriting editor for the next generation of filmmakers, with premium editing tools available to every writer.
+    fellows: Chris Zou & Brian Zou
+    url: /work/fountainhead/
+    link_label: Meet the project
+  - id: kadi
+    name: KADI
+    wordmark: KADI
+    domain: kadi.coach
+    category: Sports & coaching
+    headline: More coaching. Less coordination.
+    description: A hub for players, parents, and coaches. Find experienced coaches, schedule sessions, and keep everyone up to date in one place.
+    fellows: Madeline Templeton & Kit Jackson
+    url: https://kadi.coach/
+    link_label: Explore KADI
+  - id: wordgolf
+    name: Word Golf
+    wordmark: word.golf
+    domain: word.golf
+    category: Games & language
+    headline: A word game built on connections.
+    description: Navigate from one word to another using the relationships in pretrained word embeddings. Five rounds, with a two-click path hiding in every puzzle.
+    fellows: Eric Xia & Julian Beaudry
+    url: /wordgolf
+    link_label: Read the founder conversation
+  - id: pagio
+    name: Pagio
+    wordmark: pagio
+    domain: pagio.app
+    category: Reading & education
+    headline: Help kids find their way into a book.
+    description: Personalized conversations, creative activities, and audio discussions that connect to what a child is reading and what interests them.
+    fellows: Jerry Zheng & Adithya Sriram
+    url: /pagio
+    link_label: Read the founder conversation
 
 questions:
+  - question: What is Brown AI Studio?
+    answer: Brown AI Studio is an alumni-led summer fellowship for Brown University students who want to build and launch software using AI tools. Students join as Brown AI Fellows and spend 10 weeks working full time on their own projects.
   - question: Who can become a Brown AI Fellow?
     answer: The fellowship is for Brown University students building software with AI tools. Apply solo or with a teammate. Teams have one or two people, work full time on their project, and live in the same city during the fellowship.
   - question: Do I need an idea or a working prototype?
@@ -25,8 +60,12 @@ questions:
   - question: Does my product have to be an AI product?
     answer: The program is about using AI tools to build and launch software. Your project needs a software component, but it can be a web app, mobile app, game, command line tool, robotics project, or something else entirely.
   - question: What does the fellowship include?
-    answer: Fellows receive $5,000 per person for a 10-week summer fellowship, with brief weekly mentorship calls with Sam Dooman. You’ll spend the summer building, testing, iterating, and launching your project.
-  - question: Who’s behind the studio?
-    answer: The program is run by Sam Dooman, the first employee at Down Dog. Sam helped the company scale to millions of users during the COVID-19 lockdowns and works directly with fellows through weekly mentorship calls.
+    answer: Fellows receive $5,000 per person for a 10-week summer fellowship, along with weekly mentorship from Brown alumni. You’ll spend the summer building, testing, iterating, and launching your project.
+  - question: Who runs the studio, and who are the mentors?
+    answer: Brown alumni run Brown AI Studio, bringing their experience building software back to the next generation of Brown founders. Our mentor directory starts with Sam Dooman, a Brown CS alumnus and founding engineer at Down Dog, and will grow as more mentors join.
+    link: /mentors/
+    link_label: Meet the mentors
   - question: When can I apply?
     answer: Visit the fellowship page for current application details, what to prepare, and how to get in touch with questions about the next cohort.
+    link: /apply/
+    link_label: About becoming a fellow

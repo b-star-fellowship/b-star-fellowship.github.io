@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Inside mentorship
+author: Sam Dooman
+title: Mentorship is overrated.
 ---
 
 # Mentorship is overrated.

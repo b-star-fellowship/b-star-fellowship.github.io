@@ -1,6 +1,6 @@
 title: Brown AI Studio
 email: bstarfellowship@gmail.com
-description: A summer fellowship for Brown University builders. Become a Brown AI Fellow and turn an ambitious idea into real software with AI, funding, and mentorship.
+description: An alumni-led summer fellowship for Brown University builders. Become a Brown AI Fellow and turn an ambitious idea into real software with AI, funding, and mentorship.
 baseurl: ""
 url: "https://bstar.software"
 lang: en-US
@@ -19,6 +19,7 @@ defaults:
       type: posts
     values:
       layout: post
+      author: Sam Dooman
 
 exclude:
   - Gemfile

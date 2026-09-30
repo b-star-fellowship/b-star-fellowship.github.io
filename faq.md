@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A few good questions.
+title: Frequently asked questions.
 permalink: /faq/
 eyebrow: BROWN AI STUDIO / FAQ
 ---
@@ -8,10 +8,9 @@ eyebrow: BROWN AI STUDIO / FAQ
 ## {{ item.question }}
 
 {{ item.answer }}
+{% if item.link %}
+[{{ item.link_label }}]({{ item.link | relative_url }})
+{% endif %}
 {% endfor %}
 
 [Learn about becoming a Brown AI Fellow]({{ '/apply/' | relative_url }})
-
-## What happened to B*?
-
-B*, the Brown Startup Fellowship, is now Brown AI Studio. Participants are Brown AI Fellows. The new name keeps the same invitation at its heart: build something.

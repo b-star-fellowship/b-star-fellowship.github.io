@@ -6,7 +6,9 @@ eyebrow: BECOME A BROWN AI FELLOW
 description: Bring an idea you can’t leave alone. Give it the time, focus, and support it deserves.
 ---
 
-Brown AI Studio is a 10-week summer fellowship for Brown University students building and launching software with AI tools. Fellows receive **$5,000 per person** and meet weekly with [Sam Dooman](https://www.linkedin.com/in/sam-dooman-7463a2105/), the first employee at Down Dog.
+Brown AI Studio is an **alumni-led, 10-week summer fellowship** for Brown University students building and launching software with AI tools. Fellows receive **$5,000 per person** and weekly mentorship from Brown alumni with experience building software.
+
+[Meet the mentors]({{ '/mentors/' | relative_url }}) and learn about the people supporting your summer of building.
 
 <div class="application-note">
 {% if site.application_url != empty %}

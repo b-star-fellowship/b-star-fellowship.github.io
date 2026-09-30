@@ -3,5 +3,8 @@ layout: base
 ---
 <div class="page-shell container">
   <a class="back-link" href="{{ '/' | relative_url }}">{% include arrow.html direction="back" %} Back to the studio</a>
-  <article class="prose">{{ content }}</article>
+  <article class="prose">
+    {% if page.author %}{% include byline.html author=page.author %}{% endif %}
+    {{ content }}
+  </article>
 </div>

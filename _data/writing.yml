@@ -1,0 +1,32 @@
+- title: Mentorship is overrated.
+  category: Mentorship
+  url: /mentorship
+  description: Notes and conversations about building software, drawing on experience at Down Dog.
+- title: How I would get a Software Engineer job in 2025
+  category: Careers
+  url: /jobs
+  description: A practical guide to finding roles, preparing for interviews, and evaluating offers.
+- title: Word Golf
+  category: Fellow conversation · 2025
+  url: /wordgolf
+  description: A conversation with Eric Xia and Julian Beaudry about their word game, its players, and what comes after launch.
+- title: Pagio
+  category: Fellow conversation · 2025
+  url: /pagio
+  description: A conversation with Jerry Zheng and Adithya Sriram about helping children engage with reading.
+- title: ForReelFlies
+  category: Fellow conversation · 2025
+  url: /forreelflies
+  description: A conversation with Ryan Klivansky and Matt Bockelmann about building a fly-fishing marketplace.
+- title: Exit Interview Questions
+  category: Resources
+  url: /questions
+  description: Questions for reflecting on a project, its users, and the experience of building it.
+- title: Prompts
+  category: Resources
+  url: /prompts
+  description: Working prompts for mentorship, meeting notes, and coaching.
+- title: Essays, talks & interviews
+  category: Reading list
+  url: /inspo
+  description: A collection of links that informed Sam’s decision to work at a startup.

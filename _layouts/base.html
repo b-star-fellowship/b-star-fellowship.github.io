@@ -19,13 +19,14 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Brown AI Studio home">
-        {% include mark.html %}<span>Brown<span class="wordmark-second">AI Studio</span></span>
+        <span>Brown<span class="wordmark-second">AI Studio</span></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="{{ '/#fellowship' | relative_url }}">The fellowship</a>
         <a href="{{ '/#work' | relative_url }}">Fellow work</a>
-        <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Journal</a>
+        <a href="{{ '/mentors/' | relative_url }}"{% if page.url == '/mentors/' %} aria-current="page"{% endif %}>Mentors</a>
+        <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
         <a href="{{ '/#faq' | relative_url }}">FAQ</a>
         <a class="button button-small" href="{{ '/apply/' | relative_url }}">Become a fellow {% include arrow.html %}</a>
       </nav>
@@ -34,8 +35,8 @@
   <main id="main">{{ content }}</main>
   <footer class="site-footer">
     <div class="container footer-top">
-      <div><a class="wordmark" href="{{ '/' | relative_url }}">{% include mark.html %}<span>Brown<span class="wordmark-second">AI Studio</span></span></a><p>A little curiosity. A lot of possibility.</p></div>
-      <div class="footer-links"><a href="{{ '/products' | relative_url }}">Fellow projects</a><a href="{{ '/blog/' | relative_url }}">Journal</a><a href="{{ '/mentorship' | relative_url }}">Mentorship</a><a href="mailto:{{ site.email }}">Get in touch {% include arrow.html direction="diagonal" %}</a></div>
+      <div><a class="wordmark" href="{{ '/' | relative_url }}"><span>Brown<span class="wordmark-second">AI Studio</span></span></a><p>An alumni-led fellowship for Brown builders.</p></div>
+      <div class="footer-links"><a href="{{ '/products' | relative_url }}">Fellow projects</a><a href="{{ '/blog/' | relative_url }}">Blog</a><a href="{{ '/mentors/' | relative_url }}">Mentors</a><a href="mailto:{{ site.email }}">Get in touch {% include arrow.html direction="diagonal" %}</a></div>
     </div>
     <div class="container footer-bottom"><span>© {{ 'now' | date: '%Y' }} Brown AI Studio</span><span>Formerly B*, the Brown Startup Fellowship.</span><a href="{{ '/feed.xml' | relative_url }}">RSS {% include arrow.html direction="diagonal" %}</a></div>
   </footer>

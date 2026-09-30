@@ -1,5 +1,7 @@
 ---
 layout: default
+author: Sam Dooman
+title: Prompts
 ---
 
 # Prompts 

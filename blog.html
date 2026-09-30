@@ -1,12 +1,27 @@
 ---
 layout: base
-title: The studio journal
+title: Writing & conversations
 permalink: /blog/
-description: Notes, projects, and conversations from Brown AI Studio. The work behind making something real.
+description: Articles, founder interviews, and resources by Sam Dooman.
 ---
 <div class="container page-shell">
-  <div class="blog-header"><p class="eyebrow">THE STUDIO JOURNAL</p><h1>Notes on<br><span class="blue-text">making things.</span></h1><p>Ideas in progress. Lessons from the launch. Conversations with the people doing the building.</p></div>
-  <div class="post-list">{% for post in site.posts %}<a class="post-list-item" href="{{ post.url | relative_url }}"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time><div><h2>{{ post.title }}</h2><p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p></div>{% include arrow.html %}</a>{% endfor %}</div>
-  <h2 class="archive-heading">From the fellow archives</h2>
-  <div class="journal-grid"><a class="journal-card" href="{{ '/wordgolf' | relative_url }}"><span class="eyebrow">Fellow conversation / 2025</span><h3>Word Golf</h3><p>Eric Xia and Julian Beaudry on building a game with word embeddings and learning from its players.</p><span class="journal-card-bottom">Read the conversation {% include arrow.html %}</span></a><a class="journal-card" href="{{ '/pagio' | relative_url }}"><span class="eyebrow">Fellow conversation / 2025</span><h3>Pagio</h3><p>Jerry Zheng and Adithya Sriram on helping kids find their way into the world of a book.</p><span class="journal-card-bottom">Read the conversation {% include arrow.html %}</span></a><a class="journal-card" href="{{ '/forreelflies' | relative_url }}"><span class="eyebrow">Fellow conversation / 2025</span><h3>ForReelFlies</h3><p>Ryan Klivansky and Matt Bockelmann on building a marketplace for fly fishermen.</p><span class="journal-card-bottom">Read the conversation {% include arrow.html %}</span></a></div>
+  <header class="blog-header">
+    <p class="eyebrow">BLOG</p>
+    <h1>Writing &<br><span class="blue-text">conversations.</span></h1>
+    <p>Articles, founder interviews, and resources by <a href="{{ '/mentors/#sam-dooman' | relative_url }}">Sam Dooman</a>.</p>
+  </header>
+  <div class="post-list">
+    {% for post in site.posts %}
+    <article class="writing-row">
+      <div class="writing-meta"><span>{{ post.category | default: 'Article' }}</span><span>By {{ post.author | default: 'Sam Dooman' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time></div>
+      <a href="{{ post.url | relative_url }}"><div><h2>{{ post.title }}</h2><p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p></div>{% include arrow.html %}</a>
+    </article>
+    {% endfor %}
+    {% for article in site.data.writing %}
+    <article class="writing-row">
+      <div class="writing-meta"><span>{{ article.category }}</span><span>By Sam Dooman</span></div>
+      <a href="{{ article.url | relative_url }}"><div><h2>{{ article.title }}</h2><p>{{ article.description }}</p></div>{% include arrow.html %}</a>
+    </article>
+    {% endfor %}
+  </div>
 </div>
