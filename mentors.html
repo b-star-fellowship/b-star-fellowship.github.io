@@ -6,20 +6,18 @@ description: Meet the Brown alumni supporting Brown AI Fellows, starting with Sa
 ---
 <div class="container page-shell mentors-page">
   <header class="mentors-heading">
-    <p class="eyebrow">THE MENTORS</p>
-    <h1>Brown alumni.<br><span>In your corner.</span></h1>
-    <p>Brown AI Studio is led by alumni who bring experience building software back to Brown students. Meet the people behind the weekly conversations.</p>
+    <h1>The Mentors</h1>
+    <p>Brown AI Studio is led by alumni who operate AI and consumer software companies.</p>
   </header>
   <div class="mentor-list">
     {% for mentor in site.data.mentors %}
     <article class="mentor-profile" id="{{ mentor.id }}">
       <figure class="mentor-photo">
         <img src="{{ mentor.photo | relative_url }}" alt="{{ mentor.name }}" width="651" height="800"{% unless forloop.first %} loading="lazy"{% endunless %}>
-        <figcaption>Photo via <a href="{{ mentor.photo_source }}">Brown Computer Science</a></figcaption>
       </figure>
       <div class="mentor-bio">
         <h2>{{ mentor.name }}</h2>
-        <p class="mentor-role">{{ mentor.role }}</p>
+        <p class="mentor-education">{{ mentor.degree }} {{ mentor.program }}{% if mentor.graduation_year %} · {{ mentor.graduation_year }}{% endif %}</p>
         {% for paragraph in mentor.bio %}<p>{{ paragraph }}</p>{% endfor %}
         <div class="mentor-links">
           {% for link in mentor.links %}<a class="text-link" href="{{ link.url | relative_url }}">{{ link.label }} {% include arrow.html direction="diagonal" %}</a>{% endfor %}
@@ -28,5 +26,4 @@ description: Meet the Brown alumni supporting Brown AI Fellows, starting with Sa
     </article>
     {% endfor %}
   </div>
-  <p class="mentor-coming">More mentors will be added as they join the studio.</p>
 </div>

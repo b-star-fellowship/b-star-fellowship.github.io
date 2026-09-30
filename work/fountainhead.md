@@ -6,7 +6,7 @@ eyebrow: FELLOW SPOTLIGHT / FOUNTAINHEAD
 description: A free screenwriting editor for the next generation of filmmakers, built by Chris and Brian Zou.
 ---
 
-<dl class="case-facts"><div><dt>The project</dt><dd>Fountainhead · Creative tools</dd></div><div><dt>The builders</dt><dd><a href="https://www.linkedin.com/in/chris-zou-138290262/">Chris Zou</a> & Brian Zou</dd></div></dl>
+<dl class="case-facts"><div><dt>The product</dt><dd>Fountainhead · Creative tools</dd></div><div><dt>The builders</dt><dd><a href="https://www.linkedin.com/in/chris-zou-138290262/">Chris Zou</a> & Brian Zou</dd></div></dl>
 
 ## Give the next story somewhere to start.
 
@@ -16,10 +16,10 @@ It’s an example of the kind of work that belongs in the studio: a small team, 
 
 ## The idea, out in the world
 
-A screenplay is the beginning of a much bigger project. Fountainhead focuses on that first step: giving a filmmaker a tool to start writing.
+A screenplay is the first step toward a finished film. Fountainhead focuses on that first step: giving a filmmaker a tool to start writing.
 
 [Explore Fountainhead](https://fountainhead.site){: .button }
 
 ---
 
-[Discover more fellow projects]({{ '/products' | relative_url }}) · [Become a Brown AI Fellow]({{ '/apply/' | relative_url }})
+[Products]({{ '/products/' | relative_url }}) · [Become a Brown AI Fellow]({{ '/apply/' | relative_url }})

@@ -25,18 +25,18 @@ Brown AI Studio is an **alumni-led, 10-week summer fellowship** for Brown Univer
 
 - You’re a Brown University student with a software idea you want to pursue.
 - You’re building solo or with one teammate. Two-person teams live in the same city during the program.
-- You can work full time on your project over the summer.
+- You can work full time on your product over the summer.
 - You’ve built software on a team before, in a class like CS32 or outside the classroom.
 - You’re ready to build, talk to users, and keep improving. A working prototype is strongly preferred.
 
 ## What could you build?
 
-A web app. A game. A creative tool. Something that makes someone’s day a little easier. Your project needs a software component; AI tools are part of how you bring it to life.
+A web app. A game. A creative tool. Something that makes someone’s day a little easier. Your product needs a software component; AI tools are part of how you bring it to life.
 
-Explore [Fountainhead]({{ '/work/fountainhead/' | relative_url }}), a free screenwriting editor from fellows Chris and Brian Zou, or browse [the full collection of fellow projects]({{ '/products' | relative_url }}).
+Explore [Fountainhead]({{ '/work/fountainhead/' | relative_url }}), a free screenwriting editor from fellows Chris and Brian Zou, or browse [Products]({{ '/products/' | relative_url }}).
 
 ## Come with a point of view
 
-Think about who you want to build for, the problem they face, and what you’ve already tried. A prototype, a conversation with a potential user, or a lesson from an earlier project can be a useful place to start.
+Think about who you want to build for, the problem they face, and what you’ve already tried. A prototype, a conversation with a potential user, or a lesson from an earlier product can be a useful place to start.
 
 [More questions? Read the FAQ.]({{ '/#faq' | relative_url }})

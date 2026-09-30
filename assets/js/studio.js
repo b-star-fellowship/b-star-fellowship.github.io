@@ -33,6 +33,7 @@
   if (slides.length < 2) return;
 
   const controls = carousel.querySelector('[data-carousel-controls]');
+  const picker = carousel.querySelector('.carousel-pagination');
   const choices = [...carousel.querySelectorAll('[data-slide-to]')];
   const playback = carousel.querySelector('[data-rotation]');
   const playbackLabel = carousel.querySelector('[data-rotation-label]');
@@ -62,9 +63,14 @@
       slide.inert = !selected;
       choices[position].setAttribute('aria-pressed', String(selected));
     });
+    const choice = choices[current];
+    if (choice.offsetLeft < picker.scrollLeft) picker.scrollLeft = choice.offsetLeft;
+    else if (choice.offsetLeft + choice.offsetWidth > picker.scrollLeft + picker.clientWidth) {
+      picker.scrollLeft = choice.offsetLeft + choice.offsetWidth - picker.clientWidth;
+    }
     counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
     // Automatic changes stay silent for assistive technology.
-    if (announce) status.textContent = `${slides[current].dataset.name}, project ${current + 1} of ${slides.length}`;
+    if (announce) status.textContent = `${slides[current].dataset.name}, product ${current + 1} of ${slides.length}`;
     schedule();
   }
 

@@ -54,13 +54,18 @@ Existing files using `layout: default` continue to work and can keep their own M
 ## Where to edit
 
 - `index.html`: landing page structure and copy.
-- `_data/studio.yml`: program facts, FAQ answers, and the project carousel.
+- `_data/studio.yml`: program facts and FAQ answers.
+- `_data/products.json`: all products, including full descriptions, cohort, founders, website, and interview links. Set `featured` to `true` to include a product in the homepage carousel. The Products page includes every record in a vertical list, grouped by cohort from newest to oldest.
+- `_data/fellows.json`: founder names, profile links, and verified portraits. The 13 downloaded photos live in `assets/img/fellows/<person-name>.jpg`; the `photo` field points to that local file. `photo_source` and `photo_source_image` preserve provenance only and are never used as image URLs in the page. Profiles without a verified photo display initials.
+- `_data/product_media.json`: product imagery, each website’s original palette, and source URLs. Assets are stored under `assets/img/products/`.
+- `_includes/product-carousel.html` and `_includes/product-card.html`: shared product presentation. The full directory displays one combined summary and focus areas for each product; the homepage uses the shorter summary.
+- `products.html`: Products page, preserving the original `/products/` URL.
 - `work/fountainhead.md`: Markdown fellow spotlight.
 - `assets/css/studio.css`: shared visual styles and responsive layouts.
 - `_layouts/base.html`: shared navigation, metadata, and footer.
 - `_config.yml`: brand metadata, contact email, and application status/link.
-- `assets/js/studio.js`: mobile navigation and the project carousel. Rotation advances every six seconds while visible, pauses on hover and focus, and starts paused for reduced-motion users. Prev/next, project selectors, and a Play/Pause control work independently of autoplay.
-- `_data/mentors.yml`: the mentor directory. Add a record with a name, role, photo, bio paragraphs, and links to add another mentor.
+- `assets/js/studio.js`: mobile navigation and the product carousel. Rotation advances every six seconds while visible, pauses on hover and focus, and starts paused for reduced-motion users. Prev/next, product selectors, and a Play/Pause control work independently of autoplay.
+- `_data/mentors.yml`: the mentor directory. Add a record with a name, degree, program, graduation year, photo, bio paragraphs, and links to add another mentor. Each subtitle is rendered from `degree`, `program`, and `graduation_year`.
 - `mentors.html`: the mentor directory layout.
 - `_data/writing.yml`: the original articles and resources linked from the blog.
 - `_includes/byline.html`: article authorship. Existing writing has an explicit Sam Dooman author field.
@@ -70,7 +75,10 @@ Existing files using `layout: default` continue to work and can keep their own M
 
 - The $5,000 grant, 10-week duration, 1–2-person team size, and eligibility copy come from the previous site. Confirm details for the next cohort.
 - The existing directory lists Fountainhead in 2026. The feature avoids calling it “last year” so the draft does not introduce a conflicting cohort date.
-- The carousel features Fountainhead, KADI, Word Golf, and Pagio. Its covers are typographic project cards, not screenshots. The original ForReelFlies interview remains in the writing archive, but the project is not a homepage example.
+- The homepage carousel features Fountainhead, KADI, Word Golf, and Pagio. The Products page includes all 13 products, including ForReelFlies; its interview also remains in the writing archive.
+- Product panels use imagery and colors from their public websites. PMARC and Mona have no website in the original directory, so they use simple text covers. Source URLs are retained in the media data for future updates.
+- Thirteen founder portraits were verified through public LinkedIn, Brown, personal, and YC pages. The other ten profiles retain initials. Portrait provenance is recorded in `_data/fellows.json`; no login-only LinkedIn images are required at runtime.
+- The site uses a brown palette. Each product’s panel retains its own brand colors.
 - The old application link was for 2025. Put the current URL in `application_url` when ready; the fellowship page then displays an application button. Until then it uses the existing public contact email.
 - No new blog posts have been created. The draft announcement from the first version was removed.
 - Sam’s headshot comes from the Brown CS profile linked on his mentor card. The optimized image is stored locally as `assets/img/sam-dooman.jpg`.
