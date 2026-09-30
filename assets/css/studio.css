@@ -629,6 +629,23 @@ max-width:100%;
   height:auto;
 }
 
+.prose .article-photo {
+  margin:36px 0;
+}
+
+.prose .article-photo img {
+  display:block;
+  width:100%;
+  border-radius:4px;
+}
+
+.prose .article-photo figcaption {
+  margin-top:10px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
 .prose table {
 display:block;
   overflow-x:auto;
@@ -1021,7 +1038,7 @@ padding:0;
 color:var(--accent);
 }
 
-/* A typographic identity, without an AI-style symbol. */
+/* Brown AI Studio wordmark and B* monogram. */
 [hidden] { display: none !important; }
 .sr-only {
   position: absolute;
@@ -1035,6 +1052,7 @@ color:var(--accent);
   border: 0;
 }
 .wordmark { font-size: 25px; line-height: 1.05; letter-spacing: -.8px; }
+.wordmark-symbol { width: 52px; height: 52px; flex-shrink: 0; }
 .wordmark-second { color: var(--accent); }
 .site-nav { gap: 25px; font-size: 14px; }
 .button-small { font-size: 14px; }
@@ -1162,7 +1180,6 @@ color:var(--accent);
 /* Existing writing is attributed, with the original Markdown URLs intact. */
 .prose .byline { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; font-size: 14px; margin-bottom: 23px; color: #cbbbad; }
 .prose .byline a { text-decoration: none; }
-.byline-role { padding-left: 12px; margin-left: 8px; border-left: 1px solid var(--line); color: var(--muted); }
 .blog-header a { color: var(--accent); text-underline-offset: 4px; text-decoration: underline; }
 .writing-row { display: grid; grid-template-columns: 220px 1fr; gap: 35px; border-top: 1px solid var(--line); padding-block: 32px; }
 .writing-meta { display: flex; flex-direction: column; gap: 6px; color: var(--muted); font-size: 13px; }
@@ -1205,7 +1222,7 @@ color:var(--accent);
   .mentor-profile { grid-template-columns: 275px 1fr; gap: 40px; }
 }
 @media (max-width: 900px) {
-  .hero { padding-block: 80px; min-height: 550px; }
+  .hero { padding-block: 80px 160px; min-height: 550px; }
   .hero h1 { font-size: 73px; }
   .hero-description { font-size: 17px; max-width: 480px; }
   .hero-field { width: 72%; opacity: .55; }
@@ -1231,7 +1248,8 @@ color:var(--accent);
 }
 @media (max-width: 640px) {
   .wordmark { font-size: 21px; }
-  .hero { padding-block: 65px 70px; min-height: auto; }
+  .wordmark-symbol { width: 44px; height: 44px; }
+  .hero { padding-block: 65px 190px; min-height: auto; }
   .hero h1 { font-size: clamp(50px, 13vw, 76px); margin-bottom: 28px; line-height: 1.05; letter-spacing: -.05em; }
   .hero-description { font-size: 16px; line-height: 1.8; max-width: 450px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 22px; margin-top: 30px; }
@@ -1279,7 +1297,6 @@ color:var(--accent);
   .mentor-photo { max-width: 330px; }
   .mentor-bio h2 { font-size: 38px; }
   .mentor-links { gap: 18px 23px; }
-  .byline-role { display: block; font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .network-halo { animation: none !important; opacity: 0; }

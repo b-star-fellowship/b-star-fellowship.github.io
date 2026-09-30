@@ -36,8 +36,8 @@
   });
 
   // Fill the open spaces with evenly separated nodes, keeping the layout organic.
-  const targetNodeCount = 192;
-  const targetConnectionCount = 402;
+  const targetNodeCount = 384;
+  const targetConnectionCount = 804;
   const fillCandidates = Array.from({ length: 1200 }, (_, index) => {
     const point = [
       55 + ((index + 1) * .754877666 % 1) * 880,
@@ -143,16 +143,15 @@
     return steps;
   }
 
-  // Each pair includes a few dead-end branches before reaching its destination.
+  // Start along the open lower-left edge, then search toward the upper right.
+  // Each pair includes dead-end branches before reaching its destination.
   const searches = [
-    { start: 24, end: 103, seed: 21 },
-    { start: 20, end: 15, seed: 108 },
-    { start: 6, end: 19, seed: 105 },
-    { start: 4, end: 148, seed: 129 },
-    { start: 11, end: 177, seed: 150 },
-    { start: 15, end: 68, seed: 26 },
-    { start: 2, end: 0, seed: 55 },
-    { start: 0, end: 45, seed: 68 },
+    { start: 100, end: 6, seed: 1231 },
+    { start: 316, end: 287, seed: 1479 },
+    { start: 131, end: 156, seed: 1429 },
+    { start: 353, end: 296, seed: 4489 },
+    { start: 104, end: 53, seed: 7752 },
+    { start: 150, end: 296, seed: 6728 },
   ];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let cycle = 0;
@@ -181,7 +180,7 @@
     const [x1, y1] = points[step.returning ? step.to : step.from];
     const [x2, y2] = points[step.returning ? step.from : step.to];
     distance = Math.hypot(x2 - x1, y2 - y1);
-    travelTime = Math.max(360, Math.min(650, distance * 6));
+    travelTime = Math.max(270, Math.min(490, distance * 4.5));
     const trace = traces[step.edge];
     Object.entries({ x1, y1, x2, y2, 'stroke-dasharray': distance }).forEach(([name, value]) => trace.setAttribute(name, value));
     trace.classList.add('is-route');
@@ -232,7 +231,7 @@
         pulse(step.to);
         if (step.returning) traces[step.edge].classList.remove('is-route', 'is-backtracking');
       }
-      const pause = step.found ? 1100 : 100;
+      const pause = step.found ? 900 : 75;
       if (elapsed >= travelTime + pause) {
         elapsed = 0;
         stepIndex += 1;

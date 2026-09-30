@@ -80,7 +80,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 - Thirteen founder portraits were verified through public LinkedIn, Brown, personal, and YC pages. The other ten profiles retain initials. Portrait provenance is recorded in `_data/fellows.json`; no login-only LinkedIn images are required at runtime.
 - The site uses a brown palette. Each product’s panel retains its own brand colors.
 - The old application link was for 2025. Put the current URL in `application_url` when ready; the fellowship page then displays an application button. Until then it uses the existing public contact email.
-- No new blog posts have been created. The draft announcement from the first version was removed.
+- The KADI summer interview is in `_posts/2026-09-30-kadi-summer-2026.md`, reconstructed from the June 18, July 16, and July 31 check-ins. Its product details and usage reflect those calls through July 31.
 - Sam’s headshot comes from the Brown CS profile linked on his mentor card. The optimized image is stored locally as `assets/img/sam-dooman.jpg`.
 - Sam’s bio is based on the existing site and the Brown CS profile; additional mentors can be added without changing the page layout.
 - This is a local draft. No domain changes or publishing have been performed.
