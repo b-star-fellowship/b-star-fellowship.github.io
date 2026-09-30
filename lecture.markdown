@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# B*: Build Something
+# Brown AI Studio: Build with AI
 ### ↓ Scan for $10,000 ↓
 
-![B* QR Code](/assets/img/bstar_qr.png)
+![Studio website QR code](/assets/img/bstar_qr.png)

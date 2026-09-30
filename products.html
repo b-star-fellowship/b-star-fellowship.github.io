@@ -1,0 +1,27 @@
+---
+layout: base
+title: Products
+permalink: /products/
+description: Explore the software, tools, and companies built by Brown AI Fellows across every cohort.
+---
+<div class="container page-shell products-page">
+  <header class="products-heading">
+    <div><h1>Products</h1><p>Explore what Brown AI Fellows have built, starting with the latest cohort.</p></div>
+    <span class="products-count">{{ site.data.products | size }} products · 2023–2026</span>
+  </header>
+  {% assign cohorts = site.data.products | group_by: 'cohort' | sort: 'name' | reverse %}
+  <div class="product-directory">
+    {% for cohort in cohorts %}
+    <section class="product-cohort" aria-labelledby="cohort-{{ cohort.name }}">
+      <h2 id="cohort-{{ cohort.name }}" class="cohort-heading">{{ cohort.name }}</h2>
+      <div class="product-list">
+        {% for product in cohort.items %}
+        <article class="feature-card product-list-card" id="{{ product.id }}" data-product-id="{{ product.id }}" data-cohort="{{ product.cohort }}" aria-labelledby="{{ product.id }}-title">
+          {% include product-card.html product=product detailed=true heading_id=product.id %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+</div>

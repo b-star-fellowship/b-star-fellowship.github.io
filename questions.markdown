@@ -1,5 +1,8 @@
 ---
 layout: default
+author: Sam Dooman
+date: 2025-06-15
+title: Exit Interview Questions
 ---
 
 # Exit Interview Questions
@@ -31,4 +34,4 @@ layout: default
 
 ### Summer Experience
  - What were the 3 most important features/improvements you made this summer?
- - What would you change about the B* fellowship if you were in charge?
+ - What would you change about the Brown AI Studio fellowship if you were in charge?

@@ -1,0 +1,2 @@
+<p class="byline">By {% if include.author == 'Sam Dooman' %}<a href="{{ '/mentors/#sam-dooman' | relative_url }}">Sam Dooman</a>{% else %}{{ include.author }}{% endif %}</p>
+{% if page.date and page.layout != 'post' %}<p class="article-date"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time></p>{% endif %}

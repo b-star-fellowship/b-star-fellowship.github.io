@@ -1,0 +1,43 @@
+{% assign product = include.product %}
+{% assign media = site.data.product_media[product.id] %}
+<div class="product-visual" style="--product-bg: {{ media.background | default: '#4e3629' }}; --product-ink: {{ media.text | default: '#f7f0e7' }}; --product-accent: {{ media.accent | default: '#d1ac86' }};">
+  <div class="product-visual-heading">
+    {% if media.logo %}<img class="product-logo" src="{{ media.logo | relative_url }}" alt="{{ product.name }}" loading="lazy">{% else %}<span>{{ product.name }}</span>{% endif %}
+    <span>{{ product.cohort }}</span>
+  </div>
+  {% if media.image %}
+  <div class="product-image-frame{% if media.logo_art %} product-logo-art{% endif %}{% if media.image_fit == 'cover' %} product-image-cover{% endif %}">
+    <img class="product-image" src="{{ media.image | relative_url }}" alt="{{ media.alt | default: product.name | escape }}" loading="lazy" width="1200" height="800">
+  </div>
+  {% else %}
+  <div class="product-visual-fallback"><strong>{{ product.name }}</strong><p>{{ product.headline }}</p></div>
+  {% endif %}
+  <div class="product-visual-bottom"><span>{{ product.category }}</span>{% if product.website %}<a href="{{ product.website }}" aria-label="Visit {{ product.name }}">{{ product.domain }} {% include arrow.html direction="diagonal" %}</a>{% endif %}</div>
+</div>
+<div class="feature-copy">
+  <p class="eyebrow">{{ product.cohort }} <span aria-hidden="true">/</span> {{ product.category }}</p>
+  <h3{% if include.heading_id %} id="{{ include.heading_id }}-title"{% endif %}>{{ product.name }}</h3>
+  {% if include.detailed %}
+  <p class="product-summary">{{ product.description | default: product.summary }}</p>
+  <ul class="product-focus" aria-label="Product focus">{% for item in product.focus %}<li>{{ item }}</li>{% endfor %}</ul>
+  {% else %}
+  <h4>{{ product.headline }}</h4>
+  <p class="product-summary">{{ product.summary }}</p>
+  {% endif %}
+  <div class="founder-list" aria-label="Product founders">
+    {% for fellow_id in product.fellows %}
+    {% assign fellow = site.data.fellows[fellow_id] %}
+    <div class="founder">
+      {% if fellow.url %}<a href="{{ fellow.url }}" class="founder-avatar" aria-label="{{ fellow.name }}’s profile">{% else %}<span class="founder-avatar">{% endif %}
+        {% if fellow.photo %}<img src="{{ fellow.photo | relative_url }}" alt="{{ fellow.name }}" loading="lazy" width="48" height="48" style="object-position: {{ fellow.photo_position | default: '50% 50%' }};">{% else %}<span aria-hidden="true">{{ fellow.initials }}</span>{% endif %}
+      {% if fellow.url %}</a>{% else %}</span>{% endif %}
+      <div>{% if fellow.url %}<a href="{{ fellow.url }}">{{ fellow.name }}</a>{% else %}<span>{{ fellow.name }}</span>{% endif %}<small>Brown AI Fellow · {{ product.cohort }}</small></div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="product-links">
+    {% if product.website %}<a class="text-link" href="{{ product.website }}">Visit website {% include arrow.html direction="diagonal" %}</a>{% endif %}
+    {% if product.story_url %}<a class="text-link" href="{{ product.story_url | relative_url }}">Fellow interview {% include arrow.html %}</a>{% endif %}
+    {% unless product.website or product.story_url %}<span class="product-private-note">Learn more through the founder profiles above.</span>{% endunless %}
+  </div>
+</div>

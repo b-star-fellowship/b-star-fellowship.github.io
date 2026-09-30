@@ -1,0 +1,28 @@
+---
+layout: base
+title: Writing & conversations
+permalink: /blog/
+description: Articles, fellow interviews, and resources by Sam Dooman.
+---
+<div class="container page-shell">
+  <header class="blog-header">
+    <p class="eyebrow">BLOG</p>
+    <h1>Writing &<br><span class="accent-text">conversations.</span></h1>
+    <p>Articles, fellow interviews, and resources by <a href="{{ '/mentors/#sam-dooman' | relative_url }}">Sam Dooman</a>.</p>
+  </header>
+  <div class="post-list">
+    {% for post in site.posts %}
+    <article class="writing-row">
+      <div class="writing-meta"><span>{{ post.category | default: 'Article' }}</span><span>By {{ post.author | default: 'Sam Dooman' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time></div>
+      <a href="{{ post.url | relative_url }}"><div><h2>{{ post.title }}</h2><p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p></div>{% include arrow.html %}</a>
+    </article>
+    {% endfor %}
+    {% assign archived_writing = site.data.writing | sort: 'date' | reverse %}
+    {% for article in archived_writing %}
+    <article class="writing-row">
+      <div class="writing-meta"><span>{{ article.category }}</span><span>By Sam Dooman</span><time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%B %-d, %Y' }}</time></div>
+      <a href="{{ article.url | relative_url }}"><div><h2>{{ article.title }}</h2><p>{{ article.description }}</p></div>{% include arrow.html %}</a>
+    </article>
+    {% endfor %}
+  </div>
+</div>

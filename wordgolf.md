@@ -1,5 +1,8 @@
 ---
 layout: default
+author: Sam Dooman
+date: 2025-08-30
+title: Word Golf — Fellow conversation
 ---
 
 # [Word Golf (2025)](https://word.golf)

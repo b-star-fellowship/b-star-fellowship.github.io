@@ -1,6 +1,11 @@
 ---
 layout: default
+author: Sam Dooman
+date: 2024-03-17
+title: Essays, talks & interviews
 ---
+
+# Essays, talks & interviews
 
 Here are some essays, talks, and interviews that have informed my decisions to work at a startup.
 

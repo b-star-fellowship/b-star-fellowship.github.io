@@ -1,0 +1,29 @@
+---
+layout: base
+title: Mentors
+permalink: /mentors/
+description: Meet the Brown alumni supporting Brown AI Fellows, starting with Sam Dooman, founding engineer at Down Dog.
+---
+<div class="container page-shell mentors-page">
+  <header class="mentors-heading">
+    <h1>The Mentors</h1>
+    <p>Brown AI Studio is led by alumni who operate AI and consumer software companies.</p>
+  </header>
+  <div class="mentor-list">
+    {% for mentor in site.data.mentors %}
+    <article class="mentor-profile" id="{{ mentor.id }}">
+      <figure class="mentor-photo">
+        <img src="{{ mentor.photo | relative_url }}" alt="{{ mentor.name }}" width="651" height="800"{% unless forloop.first %} loading="lazy"{% endunless %}>
+      </figure>
+      <div class="mentor-bio">
+        <h2>{{ mentor.name }}</h2>
+        <p class="mentor-education">{{ mentor.degree }} {{ mentor.program }}{% if mentor.graduation_year %} · {{ mentor.graduation_year }}{% endif %}</p>
+        {% for paragraph in mentor.bio %}<p>{{ paragraph }}</p>{% endfor %}
+        <div class="mentor-links">
+          {% for link in mentor.links %}<a class="text-link" href="{{ link.url | relative_url }}">{{ link.label }} {% include arrow.html direction="diagonal" %}</a>{% endfor %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="showcase{% if include.detailed %} showcase-directory{% endif %}" data-carousel role="region" aria-roledescription="carousel" aria-label="Products">
+  <div class="carousel-toolbar" data-carousel-controls hidden>
+    <div class="carousel-pagination" role="group" aria-label="Choose a product">
+      {% for product in include.products %}<button type="button" data-slide-to="{{ forloop.index0 }}" aria-controls="{{ include.id }}-{{ product.id }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"><span class="product-index">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span>{{ product.name }}{% if include.detailed %}<small>{{ product.cohort }}</small>{% endif %}</span></button>{% endfor %}
+    </div>
+    <div class="carousel-controls">
+      <span class="carousel-counter" data-counter>01 / {{ include.products.size | prepend: '0' | slice: -2, 2 }}</span>
+      <button class="carousel-playback" type="button" data-rotation aria-label="Pause automatic rotation"><span data-rotation-label>Pause</span></button>
+      <button class="icon-button" type="button" data-previous aria-label="Previous product">{% include arrow.html direction="back" %}</button>
+      <button class="icon-button" type="button" data-next aria-label="Next product">{% include arrow.html %}</button>
+    </div>
+  </div>
+  <div class="carousel-slides" aria-live="off">
+    {% for product in include.products %}
+    <article class="feature-card carousel-slide" id="{{ include.id }}-{{ product.id }}" data-slide data-product-id="{{ product.id }}" data-name="{{ product.name | escape }}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ product.name | escape }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"{% unless forloop.first %} inert{% endunless %}>
+      {% include product-card.html product=product detailed=include.detailed %}
+    </article>
+    {% endfor %}
+  </div>
+  <p class="sr-only" data-carousel-status aria-live="polite" aria-atomic="true"></p>
+  <noscript><p>All products:</p><ul>{% for product in include.products %}<li><strong>{{ product.name }} ({{ product.cohort }})</strong> — {{ product.description }} {% if product.website %}<a href="{{ product.website }}">Visit website</a>{% endif %}</li>{% endfor %}</ul></noscript>
+</div>

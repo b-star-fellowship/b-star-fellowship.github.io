@@ -1,0 +1,29 @@
+stats:
+  - value: "$5,000"
+    label: Funding per fellow
+  - value: "10 weeks"
+    label: A summer to go all in
+  - value: "1–2 people"
+    label: Small teams. Big ambition.
+  - value: "Mentorship"
+    label: Support from Brown alumni building with AI
+
+questions:
+  - question: What is Brown AI Studio?
+    answer: Brown AI Studio is a summer fellowship for Brown University students who want to create products, games or art. Students join as Brown AI Fellows and spend 10 weeks working full time on their own products.
+  - question: Who can become a Brown AI Fellow?
+    answer: The fellowship is for Brown University students building software with AI tools. Apply solo or with a teammate. Teams have one or two people, work full time on their product, and live in the same city during the fellowship.
+  - question: Do I need an idea or a working prototype?
+    answer: Bring an idea you want to pursue. We strongly prefer a minimal working prototype, and you should have experience building things in a team, whether in a class like CS32 or outside the classroom.
+  - question: Does my product have to be an AI product?
+    answer: No!  We primarily want you to create unique things.  You'll want to use AI tools for your work, because they open up a world of possibility.  The difference between slop and great work is sustained care, and attention to detail.  The Brown AI Studio mentors have all used AI to do great work that improves lives, and you can do it too.
+  - question: What does the fellowship include?
+    answer: Fellows receive $5,000 per person for a 10-week summer fellowship, along with weekly mentorship from Brown alumni. You’ll spend the summer building, testing, iterating, and launching your product.
+  - question: Who runs the studio, and who are the mentors?
+    answer: We're a group of Brown alumni who work at top AI companies and startups, who want to give back. The program was originally started by Sam Dooman, who studied music and computer science at Brown.
+    link: /mentors/
+    link_label: Meet the mentors
+  - question: When can I apply?
+    answer: Visit the fellowship page for current application details, what to prepare, and how to get in touch with questions about the next cohort.
+    link: /apply/
+    link_label: About becoming a fellow

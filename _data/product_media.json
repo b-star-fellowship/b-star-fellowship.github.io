@@ -1,0 +1,133 @@
+{
+  "fountainhead": {
+    "image": "/assets/img/products/fountainhead.jpg",
+    "alt": "Official screenplay collaboration preview with Chris and Savanna editing cursors",
+    "background": "#FDFDFD",
+    "text": "#101828",
+    "accent": "#BEE1F5",
+    "source_page": "https://fountainhead.site/landing",
+    "source_image": "https://pub-e834549d55d94caba280adda69b53c92.r2.dev/landing/Final_NoSound_1.mp4",
+    "image_kind": "unaltered frame at 4.0 seconds from official landing hero video",
+    "palette_source": "https://fountainhead.site/landing"
+  },
+  "kadi": {
+    "image": "/assets/img/products/kadi.png",
+    "alt": "KADI branding and three published phone UI screenshots for schedule, home and payments",
+    "background": "#0759AD",
+    "text": "#FFFFFF",
+    "accent": "#1488EF",
+    "source_page": "https://kadi.coach/",
+    "source_image": "https://kadi.coach/og.png",
+    "image_kind": "official Open Graph image",
+    "palette_source": "https://kadi.coach/main.dart.js"
+  },
+  "wordgolf": {
+    "image": "/assets/img/products/wordgolf.jpg",
+    "alt": "Actual word-neighbor game board and fruit-to-porch tutorial",
+    "background": "#181818",
+    "text": "#C6BCA4",
+    "accent": "#F1CD50",
+    "source_page": "https://word.golf/",
+    "source_image": "https://word.golf/",
+    "image_kind": "direct screenshot of live official tutorial interface via browser; no separate image URL",
+    "palette_source": "https://word.golf/static/util/colors.js"
+  },
+  "pagio": {
+    "image": "/assets/img/products/pagio.png",
+    "alt": "Real reading dashboard with colorful activity cards, leaderboard and book recommendations",
+    "background": "#FFE6CC",
+    "text": "#260E02",
+    "accent": "#00C7C7",
+    "source_page": "https://www.pagio.app/",
+    "source_image": "https://www.pagio.app/recommendations.jpg",
+    "image_kind": "official hero product screenshot, alt=Student Dashboard",
+    "palette_source": "https://www.pagio.app/_next/static/css/ab1acea74a9bff47.css?dpl=dpl_7AqPrPEopdH3sFkhqK6m9j9dbwzp"
+  },
+  "dropcal": {
+    "image": "/assets/img/products/dropcal.png",
+    "alt": "Dropcal’s scheduling interface with input options",
+    "background": "#ffffff",
+    "text": "#171717",
+    "accent": "#1170c5",
+    "source_page": "https://dropcal.ai/welcome",
+    "source_image": "https://dropcal.ai/assets/phone-light-B-YHAeiA.png",
+    "image_kind": "Official website asset",
+    "palette_source": "https://dropcal.ai/assets/index-DswD51Zr.css"
+  },
+  "bloombetter": {
+    "image": "/assets/img/products/bloombetter.png",
+    "alt": "BloomBetter’s published smart planter prototype views",
+    "background": "#f4efe6",
+    "text": "#2f261f",
+    "accent": "#3f5f46",
+    "source_page": "https://www.bloom-pots.com",
+    "source_image": "https://www.bloom-pots.com/hero-v1.png",
+    "image_kind": "Official website asset",
+    "palette_source": "https://www.bloom-pots.com/_next/static/chunks/2gc5_9c26nd52.css"
+  },
+  "cookster": {
+    "image": "/assets/img/products/cookster.svg",
+    "alt": "The Cookster logo from its website",
+    "background": "#f6f0e2",
+    "text": "#2a241e",
+    "accent": "#b85b3f",
+    "source_page": "https://cookster.vercel.app",
+    "source_image": "https://cookster.vercel.app/logo3.svg",
+    "image_kind": "Official website asset",
+    "palette_source": "https://cookster.vercel.app/_next/static/chunks/541b50164393c521.css",
+    "logo_art": true
+  },
+  "forreelflies": {
+    "image": "/assets/img/products/forreelflies.webp",
+    "alt": "A fishing fly photographed for the ForReelFlies marketplace",
+    "background": "#ffffff",
+    "text": "#171717",
+    "accent": "#206c3c",
+    "source_page": "https://forreelflies.com/",
+    "source_image": "https://www.forreelflies.com/_next/static/media/dryfly.dabec343.webp",
+    "image_kind": "Official website asset",
+    "palette_source": "https://www.forreelflies.com/_next/static/css/de3e8e97b470d70c.css"
+  },
+  "ata": {
+    "image": "/assets/img/products/ata.png",
+    "alt": "ATA’s stool illustration and wordmark",
+    "background": "#fafafa",
+    "text": "#18181b",
+    "accent": "#9333ea",
+    "source_page": "https://talktoata.com",
+    "source_image": "https://www.talktoata.com/ata_logo_2.png",
+    "image_kind": "Official website asset",
+    "palette_source": "https://www.talktoata.com/assets/index-Da7ymrFS.js",
+    "logo_art": true
+  },
+  "heartbeats": {
+    "image": "/assets/img/products/heartbeats.png",
+    "alt": "heartBeats’ pyramid interval workout chart",
+    "background": "#242424",
+    "text": "#ffffff",
+    "accent": "#c92b2b",
+    "source_page": "https://heartbeatsapp.netlify.app/",
+    "source_image": "https://heartbeatsapp.netlify.app/assets/pyramidIntervalMode-7417b963.png",
+    "image_kind": "Official website asset",
+    "palette_source": "https://heartbeatsapp.netlify.app/assets/index-4f1cbf83.css"
+  },
+  "brush-up": {
+    "image": "/assets/img/products/brush-up.png",
+    "alt": "A Brush Up art-history quiz with a Monet painting",
+    "background": "#fffcf9",
+    "text": "#2d1f1f",
+    "accent": "#3a4bbb",
+    "source_page": "https://brush-up.netlify.app/",
+    "source_image": "https://brush-up.netlify.app/images/Question-Screenshot.png",
+    "image_kind": "Official website asset",
+    "palette_source": "https://brush-up.netlify.app/assets/index-8afe3276.css"
+  },
+  "pmarc": {
+    "available": false,
+    "reason": "No public website supplied in the product directory."
+  },
+  "mona": {
+    "available": false,
+    "reason": "No public website supplied in the product directory."
+  }
+}

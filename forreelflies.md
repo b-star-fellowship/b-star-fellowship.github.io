@@ -1,5 +1,8 @@
 ---
 layout: default
+author: Sam Dooman
+date: 2025-08-30
+title: ForReelFlies — Fellow conversation
 ---
 
 # [For Reel Flies (2025)](https://forreelflies.com)
@@ -48,5 +51,5 @@ Matt: Just do it. Use university resources. Write out your idea and workflow—s
 
 ### Sam: How could this summer program improve?  
 Matt: Focus on passion. Ryan and I clicked because he loves coding and I love fishing. Pairing passion is key.  
-Ryan: Flexibility helped too—we each worked other jobs and brought ideas back to this project. Taking breaks actually fueled creativity.  
-Matt: Programs could be customized—more funding for time-intensive projects, or lighter support for groups who already bring passion.  
+Ryan: Flexibility helped too—we each worked other jobs and brought ideas back to this product. Taking breaks actually fueled creativity.\
+Matt: Programs could be customized—more funding for time-intensive products, or lighter support for groups who already bring passion.

@@ -1,5 +1,8 @@
 ---
 layout: default
+author: Sam Dooman
+date: 2025-08-30
+title: Pagio — Fellow conversation
 ---
 
 # [Pagio (2025)](https://pagio.app)
@@ -44,7 +47,7 @@ Jerry: Best—seeing teachers and parents gush that Pagio would help their kids.
 Adithya: Same—creating something kids use daily is amazing. Hardest—juggling product, outreach, pitch decks, legal, all at once, with no clear “right path.”  
 
 ### Sam: Any advice for other students starting companies?
-Jerry: Focus on 5 real users with real problems—if you solve for them, others will follow. Be honest about whether this is a side project or your real focus.  
+Jerry: Focus on 5 real users with real problems—if you solve for them, others will follow. Be honest about whether this is a product you’re building on the side or your real focus.\
 Adithya: Be resilient. You’ll face rejection and failure. Iterate until you find product-market fit. And sell—go talk to people. I once approached a family on a train from Paris to Amsterdam and got them signed up on the spot.  
 
 ### Sam: Any favorite rejection stories?

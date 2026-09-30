@@ -1,0 +1,268 @@
+[
+  {
+    "id": "fountainhead",
+    "name": "Fountainhead",
+    "cohort": 2026,
+    "category": "Creative tools",
+    "headline": "A free screenwriting editor for filmmakers.",
+    "summary": "Premium screenwriting tools, available for free to the next generation of filmmakers.",
+    "website": "https://fountainhead.site",
+    "focus": [
+      "Screenwriting",
+      "Creative tools"
+    ],
+    "fellows": [
+      "chris-zou",
+      "brian-zou"
+    ],
+    "featured": true,
+    "description": "Fountainhead is a free screenwriting editor that makes premium writing tools available to the next generation of filmmakers.",
+    "domain": "fountainhead.site"
+  },
+  {
+    "id": "dropcal",
+    "name": "Dropcal",
+    "cohort": 2026,
+    "category": "Productivity",
+    "headline": "One-click scheduling from anywhere.",
+    "summary": "Turn information into calendar events with one-click scheduling.",
+    "website": "https://dropcal.ai/welcome",
+    "focus": [
+      "Scheduling",
+      "Calendars"
+    ],
+    "fellows": [
+      "lucas-kover-wolf"
+    ],
+    "description": "Dropcal turns information into calendar events, bringing one-click scheduling to wherever you find your plans.",
+    "featured": false,
+    "domain": "dropcal.ai"
+  },
+  {
+    "id": "pmarc",
+    "name": "PMARC",
+    "cohort": 2026,
+    "category": "Hardware & fitness",
+    "headline": "Measure and train hand and wrist strength.",
+    "summary": "A handheld exercise device paired with an app for tracking strength, progress, and training metrics.",
+    "focus": [
+      "Hardware",
+      "Strength tracking",
+      "Companion app"
+    ],
+    "fellows": [
+      "peyton-marcotte"
+    ],
+    "description": "PMARC (Precision Motion and Resistance Cube) is a handheld device for measuring and training hand and wrist strength. Originally developed with NASA funding for astronauts, it is being commercialized independently for rehabilitation, athletics, and everyday strength training. A companion app lets users track strength, progress, and training metrics.",
+    "featured": false
+  },
+  {
+    "id": "bloombetter",
+    "name": "BloomBetter",
+    "cohort": 2026,
+    "category": "Connected devices",
+    "headline": "A plant pot that knows what your plant needs.",
+    "summary": "Smart plant pots use sensor data and a species-specific model to guide watering, light, and temperature adjustments.",
+    "website": "https://www.bloom-pots.com",
+    "focus": [
+      "Plant care",
+      "Sensors",
+      "Mobile & web"
+    ],
+    "fellows": [
+      "bruno-rodriguez-mendez",
+      "jenny-zhu"
+    ],
+    "description": "BloomBetter builds smart plant pots that use real-time sensor data and a species-specific model to identify what a plant needs. A mobile and web app guides users through watering, light, and temperature adjustments.",
+    "featured": false,
+    "domain": "bloom-pots.com"
+  },
+  {
+    "id": "cookster",
+    "name": "Cookster",
+    "cohort": 2026,
+    "category": "Food & cooking",
+    "headline": "From cooking video to usable recipe.",
+    "summary": "Turn short-form cooking videos into structured recipes.",
+    "website": "https://cookster.vercel.app",
+    "focus": [
+      "Recipe extraction",
+      "Short-form video"
+    ],
+    "fellows": [
+      "donny-nguyen"
+    ],
+    "description": "Cookster turns short-form cooking videos into structured recipes, making it easier to use the recipes you discover while watching.",
+    "featured": false,
+    "domain": "cookster.vercel.app"
+  },
+  {
+    "id": "mona",
+    "name": "Mona",
+    "cohort": 2026,
+    "category": "Personal finance",
+    "headline": "A clearer view of everyday finances.",
+    "summary": "An AI-powered personal finance app for budgets, spending, transaction patterns, and financial insights.",
+    "focus": [
+      "Budgeting",
+      "Spending trends",
+      "Subscription tracking"
+    ],
+    "fellows": [
+      "alessandro-guerrero",
+      "fabio-villatoro"
+    ],
+    "description": "Mona is an AI-powered personal finance app for managing budgets, tracking spending, and understanding transaction patterns. It combines transaction categorization, recurring subscription detection, and trend analysis with financial insights, quiz-based learning, and CSV exports.",
+    "featured": false
+  },
+  {
+    "id": "kadi",
+    "name": "KADI",
+    "cohort": 2026,
+    "category": "Sports & coaching",
+    "headline": "Players, parents, and coaches in one place.",
+    "summary": "Find coaches, schedule sessions, and keep everyone up to date in one place.",
+    "website": "https://kadi.coach/",
+    "story_url": "/blog/kadi-summer-2026/",
+    "focus": [
+      "Coach discovery",
+      "Scheduling",
+      "Team communication"
+    ],
+    "fellows": [
+      "madeline-templeton",
+      "kit-jackson"
+    ],
+    "featured": true,
+    "description": "KADI brings players, parents, and coaches together in one place. Users can find experienced coaches, schedule sessions, and share real-time updates to keep training organized and everyone informed.",
+    "domain": "kadi.coach"
+  },
+  {
+    "id": "wordgolf",
+    "name": "Word Golf",
+    "cohort": 2025,
+    "category": "Games & language",
+    "headline": "A word game built on connections.",
+    "summary": "Navigate between words using pretrained word embeddings. Five rounds, with a two-click path hidden in every puzzle.",
+    "website": "https://word.golf",
+    "story_url": "/wordgolf/",
+    "focus": [
+      "Word embeddings",
+      "Daily puzzles",
+      "Multiplayer races"
+    ],
+    "fellows": [
+      "eric-xia",
+      "julian-beaudry"
+    ],
+    "featured": true,
+    "description": "Word Golf is a five-round word game built on pretrained word embeddings. In each round, players navigate from a starting word to a distant target by choosing related words from a 4-by-7 grid. Connections such as danger → fragile → falter → linger reveal how words bridge different meanings. The target is highlighted when it comes into reach, and every puzzle has a two-click path to discover.",
+    "domain": "word.golf"
+  },
+  {
+    "id": "pagio",
+    "name": "Pagio",
+    "cohort": 2025,
+    "category": "Reading & education",
+    "headline": "Help kids find their way into a book.",
+    "summary": "Personalized conversations, creative activities, and audio discussions that connect to what a child is reading.",
+    "website": "https://pagio.app",
+    "story_url": "/pagio/",
+    "focus": [
+      "Reading engagement",
+      "Audio conversations",
+      "Creative activities"
+    ],
+    "fellows": [
+      "jerry-zheng",
+      "adithya-sriram"
+    ],
+    "featured": true,
+    "description": "Pagio helps children stay engaged with reading through conversations and activities tailored to their books, interests, and reading levels. It draws on specific moments in each chapter and connects themes across chapters and books. Children can discuss stories through real-time audio, turn their own stories into comics, and earn rewards as they progress. The aim is to make reading more engaging through the fourth-grade literacy slump and beyond.",
+    "domain": "pagio.app"
+  },
+  {
+    "id": "forreelflies",
+    "name": "ForReelFlies",
+    "cohort": 2025,
+    "category": "Outdoor recreation",
+    "headline": "A marketplace for fly fishermen.",
+    "summary": "Connect fly tiers and buyers on a centralized marketplace for fly fishing and the outdoors.",
+    "website": "https://forreelflies.com/",
+    "story_url": "/forreelflies/",
+    "focus": [
+      "Marketplace",
+      "Fly fishing"
+    ],
+    "fellows": [
+      "ryan-klivansky",
+      "matt-bockelmann"
+    ],
+    "description": "ForReelFlies connects fly tiers and buyers through a centralized marketplace for fly fishing and the outdoors, giving anglers a place to discover and buy flies.",
+    "featured": false,
+    "domain": "forreelflies.com"
+  },
+  {
+    "id": "ata",
+    "name": "ATA",
+    "cohort": 2024,
+    "category": "Education",
+    "headline": "A teaching assistant tailored to the course.",
+    "summary": "An adaptable LLM-powered teaching assistant for conceptual understanding, debugging, and course logistics.",
+    "website": "https://talktoata.com",
+    "focus": [
+      "AI teaching assistant",
+      "Conceptual learning",
+      "Course support"
+    ],
+    "fellows": [
+      "julian-dai",
+      "noah-rousell"
+    ],
+    "description": "ATA (Artificial Teaching Assistant) is an adaptable, LLM-powered teaching assistant tailored to a course’s content. It helps students build conceptual understanding while offering debugging assistance and support with course logistics.",
+    "featured": false,
+    "domain": "talktoata.com"
+  },
+  {
+    "id": "heartbeats",
+    "name": "heartBeats",
+    "cohort": 2023,
+    "category": "Music & fitness",
+    "headline": "A playlist for the workout ahead.",
+    "summary": "Generate workout playlists from Spotify preferences, workout type, duration, intensity, and projected heart rate.",
+    "website": "https://heartbeatsapp.netlify.app/",
+    "focus": [
+      "Spotify",
+      "Workout playlists",
+      "Personalization"
+    ],
+    "fellows": [
+      "maya-magavi",
+      "dalton-simonson"
+    ],
+    "description": "heartBeats connects to Spotify to generate personalized workout playlists. It combines music preferences and chosen genres with the workout’s length, type, intensity, and projected heart rate to match the music to the session.",
+    "featured": false,
+    "domain": "heartbeatsapp.netlify.app"
+  },
+  {
+    "id": "brush-up",
+    "name": "Brush Up",
+    "cohort": 2023,
+    "category": "Art & education",
+    "headline": "Explore art, one movement at a time.",
+    "summary": "Learn about art movements, artists, and techniques through interactive modules.",
+    "website": "https://brush-up.netlify.app/",
+    "focus": [
+      "Art history",
+      "Learning modules",
+      "Artist discovery"
+    ],
+    "fellows": [
+      "charles-levy",
+      "ethan-jiang"
+    ],
+    "description": "Brush Up makes art education accessible through interactive learning modules. Users explore art movements, unlock artists, and learn to recognize their techniques and paintings as they progress.",
+    "featured": false,
+    "domain": "brush-up.netlify.app"
+  }
+]

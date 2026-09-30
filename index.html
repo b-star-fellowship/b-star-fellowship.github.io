@@ -1,0 +1,79 @@
+---
+layout: base
+home: true
+description: Build the future with AI. An alumni-led summer fellowship giving Brown students the funding and mentorship to build and launch software.
+---
+<section class="hero-section" aria-labelledby="hero-title">
+  <div class="hero-field" aria-hidden="true">
+    <svg class="network-graph" data-neural-network viewBox="0 0 960 640" preserveAspectRatio="xMidYMid meet" focusable="false"></svg>
+  </div>
+  <div class="hero container">
+    <div class="hero-copy">
+      <h1 id="hero-title">Build something<br><span>that matters</span></h1>
+      <p class="hero-description">A summer fellowship for Brown students.  Create software, games, art, and whatever you can dream up.</p>
+      <div class="hero-actions">
+        <a class="button" href="{{ '/apply/' | relative_url }}">Become a Brown AI Fellow {% include arrow.html %}</a>
+        <a class="text-link" href="#work">See Our Work {% include arrow.html direction="down" %}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container stats-strip" aria-label="The fellowship at a glance">
+  {% for stat in site.data.studio.stats %}<div class="stat"><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></div>{% endfor %}
+</div>
+
+<section class="section container fellowship" id="fellowship" aria-labelledby="fellowship-title">
+  <div class="section-intro">
+    <p class="eyebrow">THE FELLOWSHIP</p>
+    <h2 id="fellowship-title">10 weeks of hands on learning</h2>
+  </div>
+  <div class="fellowship-content">
+    <p class="section-lede">Build something you want to see in the world.</p>
+    <p>Brown AI Studio is a ed program for small teams of Brown students. As a Brown AI Fellow, you’ll use AI tools to develop your own product, test it with users, and launch it.</p>
+    <div class="benefit-list">
+      <div><div><h3>Funding to focus.</h3><p>$5,000 per fellow for a summer of full-time work on your product.</p></div></div>
+      <div><div><h3>Brown alumni in your corner.</h3><p>Mentorship and practical feedback from alumni with experience building and shipping product to millions of users.</p><a class="text-link" href="{{ '/mentors/' | relative_url }}">Meet the mentors {% include arrow.html %}</a></div></div>
+      <div><div><h3>Learn by doing.</h3><p>Talk to users, test your assumptions, and keep improving what you build.</p></div></div>
+    </div>
+    <a class="text-link" href="{{ '/apply/' | relative_url }}">About the fellowship {% include arrow.html %}</a>
+  </div>
+</section>
+
+<section class="section work-section" id="work" aria-labelledby="work-title">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">BUILT BY FELLOWS</p><h2 id="work-title">Featured Products</h2></div>
+      <a class="text-link" href="{{ '/products/' | relative_url }}">See All Products {% include arrow.html %}</a>
+    </div>
+    {% assign featured_products = site.data.products | where: 'featured', true %}
+    {% include product-carousel.html products=featured_products id='featured' %}
+  </div>
+</section>
+
+<section class="section container faq-section" id="faq" aria-labelledby="faq-title">
+  <div>
+    <p class="eyebrow">FAQ</p>
+    <h2 id="faq-title">Frequently<br>asked questions.</h2>
+    <p>About the program, eligibility, and applying.</p>
+    <a class="text-link" href="mailto:{{ site.email }}">Still have a question? {% include arrow.html direction="diagonal" %}</a>
+  </div>
+  <div class="faq-list">
+    {% for item in site.data.studio.questions %}
+    <details{% if forloop.first %} open{% endif %}>
+      <summary>{{ item.question }}<span class="faq-icon" aria-hidden="true"></span></summary>
+      <div class="faq-answer">
+        <p>{{ item.answer }}</p>
+        {% if item.link %}<a class="text-link" href="{{ item.link | relative_url }}">{{ item.link_label }} {% include arrow.html %}</a>{% endif %}
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="closing-section">
+  <div class="container closing-inner">
+    <h2>What will you<br><span>build this summer?</span></h2>
+    <a class="button button-dark" href="{{ '/apply/' | relative_url }}">Become a Brown AI Fellow {% include arrow.html %}</a>
+  </div>
+</section>

@@ -1,5 +1,8 @@
 ---
 layout: default
+author: Sam Dooman
+date: 2024-10-13
+title: How I would get a Software Engineer job in 2025
 ---
 
 # How I would get a Software Engineer job in 2025
@@ -24,13 +27,13 @@ Following this guide takes significant time and effort.  IMO it's a worthwhile i
 
  - Keep it simple with 3 sections: **Experience, Education,** and **Languages & Tools** (in that order)
 
- - Put actual paid work as the first entries under Experience, and any big projects from your coursework or before Brown as their own entries after that.
+ - Put actual paid work as the first entries under Experience, and any substantial products you built during your coursework or before Brown as their own entries after that.
 
- - Try to nclude meaningful metrics for your contributions to jobs & projects.  How much money did your work earn the company, or how many hours did your work save them?  How many people did your feature affect?
+ - Try to nclude meaningful metrics for your contributions to jobs & products.  How much money did your work earn the company, or how many hours did your work save them?  How many people did your feature affect?
 
  - Under Education, add Brown University & write all of your CS classes.
 
- - Under Technologies & Languages add the programming languages, technologies (like Git, AWS, any special command line stuff, etc.) & frameworks (like Rails, React, PyTorch) you've used in your classes and projects and feel comfortable with.   These are important keywords for recruiters, application reviewers, and AIs.
+ - Under Technologies & Languages add the programming languages, technologies (like Git, AWS, any special command line stuff, etc.) & frameworks (like Rails, React, PyTorch) you've used to build products and feel comfortable with.   These are important keywords for recruiters, application reviewers, and AIs.
 
  - Make sure that you have a LinkedIn account, and it contains all the information you're putting into the primary resume.  Ideally with a professional headshot.
 
