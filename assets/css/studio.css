@@ -1067,16 +1067,8 @@ color:var(--accent);
   opacity: .75;
   pointer-events: none;
 }
-.field-grid {
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, #e6c4a755 1px, transparent 1.5px);
-  background-size: 32px 32px;
-  mask-image: linear-gradient(0deg, transparent, #000 30%, #000 75%, transparent);
-}
 .network-graph { position: absolute; inset: 0; width: 100%; height: 100%; }
-.field-grid { opacity: .32; }
-.network-edge { stroke: #d1ac86; stroke-width: 1; opacity: .19; transition: opacity .8s; }
+.network-edge { stroke: #d1ac86; stroke-width: 1; opacity: .209; transition: opacity .8s; }
 .network-edge.is-visited { opacity: .32; }
 .network-trace { stroke: #e4b887; stroke-width: 1.5; fill: none; opacity: 0; }
 .network-trace.is-route { opacity: .62; }
@@ -1245,7 +1237,6 @@ color:var(--accent);
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 22px; margin-top: 30px; }
   .hero-actions .button { font-size: 14px; padding: 16px 20px; gap: 19px; }
   .hero-field { width: calc(100% - 40px); right: 20px; opacity: .35; }
-  .field-grid { background-size: 26px 26px; }
   .stat span { font-size: 12px; }
   .eyebrow { font-size: 12px; }
   .fellowship-content > p { font-size: 16px; }

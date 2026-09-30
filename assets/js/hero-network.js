@@ -21,15 +21,48 @@
   // Split the long branches into smaller hops, with a little spatial variation.
   const connections = [];
   branches.forEach(([from, to], index) => {
-    const middle = layoutPoints.length;
-    layoutPoints.push([
-      (layoutPoints[from][0] + layoutPoints[to][0]) / 2 + Math.sin(index * 1.9) * 9,
-      (layoutPoints[from][1] + layoutPoints[to][1]) / 2 + Math.cos(index * 1.3) * 9,
-    ]);
-    connections.push([from, middle], [middle, to]);
+    let previous = from;
+    for (let hop = 1; hop < 3; hop += 1) {
+      const next = layoutPoints.length;
+      const progress = hop / 3;
+      layoutPoints.push([
+        layoutPoints[from][0] + (layoutPoints[to][0] - layoutPoints[from][0]) * progress + Math.sin(index * 1.9 + hop) * 14,
+        layoutPoints[from][1] + (layoutPoints[to][1] - layoutPoints[from][1]) * progress + Math.cos(index * 1.3 + hop) * 14,
+      ]);
+      connections.push([previous, next]);
+      previous = next;
+    }
+    connections.push([previous, to]);
   });
 
-  // A few short cross-links create a mesh while retaining the branch tips.
+  // Fill the open spaces with evenly separated nodes, keeping the layout organic.
+  const targetNodeCount = 192;
+  const targetConnectionCount = 402;
+  const fillCandidates = Array.from({ length: 1200 }, (_, index) => {
+    const point = [
+      55 + ((index + 1) * .754877666 % 1) * 880,
+      55 + ((index + 1) * .569840291 % 1) * 535,
+    ];
+    let distance = Infinity;
+    let nearest = 0;
+    layoutPoints.forEach(([x, y], node) => {
+      const gap = Math.hypot(point[0] - x, point[1] - y);
+      if (gap < distance) { distance = gap; nearest = node; }
+    });
+    return { point, distance, nearest };
+  });
+  while (layoutPoints.length < targetNodeCount) {
+    const next = fillCandidates.reduce((best, candidate) => candidate.distance > best.distance ? candidate : best);
+    const node = layoutPoints.length;
+    layoutPoints.push(next.point);
+    connections.push([next.nearest, node]);
+    fillCandidates.forEach(candidate => {
+      const gap = Math.hypot(candidate.point[0] - next.point[0], candidate.point[1] - next.point[1]);
+      if (gap < candidate.distance) { candidate.distance = gap; candidate.nearest = node; }
+    });
+  }
+
+  // Short cross-links form a dense mesh without introducing long jumps.
   const degrees = layoutPoints.map(() => 0);
   connections.forEach(([a, b]) => { degrees[a] += 1; degrees[b] += 1; });
   const candidates = [];
@@ -37,18 +70,16 @@
     layoutPoints.slice(from + 1).forEach(([otherX, otherY], offset) => {
       const to = from + offset + 1;
       const distance = Math.hypot(otherX - x, otherY - y);
-      if (distance < 45 || distance > 105 || degrees[from] === 1 || degrees[to] === 1) return;
+      if (distance < 20 || distance > 105) return;
       if (connections.some(([a, b]) => (a === from && b === to) || (a === to && b === from))) return;
       candidates.push({ from, to, distance });
     });
   });
-  let crossLinks = 0;
   candidates.sort((a, b) => a.distance - b.distance).forEach(({ from, to }) => {
-    if (crossLinks >= 12 || degrees[from] >= 4 || degrees[to] >= 4) return;
+    if (connections.length >= targetConnectionCount || degrees[from] >= 6 || degrees[to] >= 6) return;
     connections.push([from, to]);
     degrees[from] += 1;
     degrees[to] += 1;
-    crossLinks += 1;
   });
 
   const points = layoutPoints.map(point => [...point]);
@@ -79,25 +110,50 @@
   element('path', { d: 'M0 -6 L1.4 -1.4 L6 0 L1.4 1.4 L0 6 L-1.4 1.4 L-6 0 L-1.4 -1.4 Z' }, spark);
   element('circle', { r: 1.8 }, spark);
 
-  // Every discovery descends one edge; every return retraces that same edge.
-  function depthFirstWalk(root) {
+  // Stop at the destination, then unwind the successful route to its start.
+  function depthFirstSearch(root, goal, seed) {
     const visited = new Set([root]);
     const steps = [];
+    let state = seed;
+    function random() {
+      state ^= state << 13;
+      state ^= state >>> 17;
+      state ^= state << 5;
+      return (state >>> 0) / 4294967296;
+    }
     function visit(from) {
-      const neighbors = [...adjacency[from]].sort((a, b) => points[b.node][0] - points[a.node][0]);
-      neighbors.forEach(({ node: to, edge }) => {
-        if (visited.has(to)) return;
+      if (from === goal) return true;
+      const neighbors = [...adjacency[from]];
+      // Stable shuffling gives each pair its own exploration order at every size.
+      for (let index = neighbors.length - 1; index > 0; index -= 1) {
+        const other = Math.floor(random() * (index + 1));
+        [neighbors[index], neighbors[other]] = [neighbors[other], neighbors[index]];
+      }
+      for (const { node: to, edge } of neighbors) {
+        if (visited.has(to)) continue;
         visited.add(to);
-        steps.push({ from, to, edge, returning: false });
-        visit(to);
-        steps.push({ from: to, to: from, edge, returning: true });
-      });
+        steps.push({ from, to, edge, returning: false, found: to === goal });
+        const found = visit(to);
+        steps.push({ from: to, to: from, edge, returning: true, unwinding: found });
+        if (found) return true;
+      }
+      return false;
     }
     visit(root);
     return steps;
   }
 
-  const roots = [4, 11, 15, 2];
+  // Each pair includes a few dead-end branches before reaching its destination.
+  const searches = [
+    { start: 24, end: 103, seed: 21 },
+    { start: 20, end: 15, seed: 108 },
+    { start: 6, end: 19, seed: 105 },
+    { start: 4, end: 148, seed: 129 },
+    { start: 11, end: 177, seed: 150 },
+    { start: 15, end: 68, seed: 26 },
+    { start: 2, end: 0, seed: 55 },
+    { start: 0, end: 45, seed: 68 },
+  ];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let cycle = 0;
   let walk;
@@ -153,11 +209,11 @@
     edges.forEach(edge => edge.classList.remove('is-visited'));
     nodes.forEach(node => node.classList.remove('is-visited'));
     traces.forEach(trace => trace.classList.remove('is-route', 'is-backtracking'));
-    const root = roots[cycle % roots.length];
-    walk = depthFirstWalk(root);
+    const { start, end, seed } = searches[cycle % searches.length];
+    walk = depthFirstSearch(start, end, seed);
     stepIndex = 0;
     elapsed = 0;
-    pulse(root);
+    pulse(start);
     beginStep();
   }
 
@@ -165,20 +221,28 @@
     if (lastTime !== null) elapsed += Math.min(time - lastTime, 80);
     lastTime = time;
     if (stepIndex === walk.length) {
-      if (elapsed >= 1200) { cycle += 1; reset(); }
+      if (elapsed >= 800) { cycle += 1; reset(); }
     } else {
       const progress = Math.min(elapsed / travelTime, 1);
       draw(progress * progress * (3 - 2 * progress));
       if (progress === 1 && !arrived) {
         arrived = true;
-        edges[step.edge].classList.add('is-visited');
+        edges[step.edge].classList.toggle('is-visited', !step.returning);
+        if (step.returning) nodes[step.from].classList.remove('is-visited');
         pulse(step.to);
         if (step.returning) traces[step.edge].classList.remove('is-route', 'is-backtracking');
       }
-      if (elapsed >= travelTime + 100) {
+      const pause = step.found ? 1100 : 100;
+      if (elapsed >= travelTime + pause) {
         elapsed = 0;
         stepIndex += 1;
         if (stepIndex < walk.length) beginStep();
+        else {
+          nodes[step.to].classList.remove('is-visited');
+          halos[step.to].classList.remove('is-pulsing');
+          spark.setAttribute('opacity', 0);
+          tails.forEach(tail => tail.setAttribute('opacity', 0));
+        }
       }
     }
     frameId = window.requestAnimationFrame(animate);
