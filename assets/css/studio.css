@@ -1422,3 +1422,40 @@ color:var(--accent);
   .product-list-card .product-image-frame { padding-block: 16px; }
   .product-list-card .feature-copy { padding: 23px; }
 }
+
+/* A quiet, full-screen slide for showing the fellowship during lectures. */
+.lecture-stage {
+  width: min(1440px, calc(100% - 112px));
+  min-height: 100svh;
+  margin-inline: auto;
+  padding-block: 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  align-items: center;
+  gap: clamp(40px, 6vw, 100px);
+}
+.lecture-copy .wordmark { margin-bottom: clamp(40px, 7vh, 80px); }
+.lecture-copy .eyebrow { margin-bottom: 20px; }
+.lecture-copy h1 { font-size: clamp(48px, 5.4vw, 88px); font-weight: 500; line-height: 1.05; letter-spacing: -.05em; }
+.lecture-copy h1 span { color: var(--accent); }
+.lecture-description { max-width: 430px; margin-top: 28px; font-size: clamp(18px, 1.8vw, 25px); line-height: 1.5; color: var(--muted); }
+.lecture-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; max-width: 450px; margin: 36px 0 0; padding-top: 24px; border-top: 1px solid var(--line); }
+.lecture-facts dt { font-size: clamp(28px, 3vw, 40px); line-height: 1.2; letter-spacing: -.03em; }
+.lecture-facts dd { margin: 9px 0 0; font-size: 14px; color: var(--muted); }
+.lecture-code { width: min(100%, 560px, calc(100svh - 190px)); margin: 0; justify-self: center; text-align: center; }
+.lecture-qr { display: block; border-radius: 10px; overflow: hidden; }
+.lecture-qr img { display: block; width: 100%; height: auto; }
+.lecture-code figcaption { margin-top: 25px; }
+.lecture-code figcaption p { font-size: 16px; color: var(--muted); }
+.lecture-url { display: inline-flex; align-items: center; gap: 14px; margin-top: 5px; font-size: clamp(25px, 3vw, 42px); font-weight: 500; letter-spacing: -.04em; color: var(--accent); }
+.lecture-url .arrow { width: 30px; height: 30px; }
+@media (max-width: 760px) {
+  .lecture-stage { width: calc(100% - 40px); grid-template-columns: 1fr; padding-block: 32px 48px; gap: 42px; }
+  .lecture-copy .wordmark { margin-bottom: 42px; }
+  .lecture-copy h1 { font-size: clamp(43px, 9vw, 64px); }
+  .lecture-description { font-size: 18px; margin-top: 22px; }
+  .lecture-facts { margin-top: 26px; padding-top: 20px; }
+  .lecture-code { width: min(100%, 440px); }
+  .lecture-code figcaption { margin-top: 18px; }
+  .lecture-url { font-size: 32px; }
+}

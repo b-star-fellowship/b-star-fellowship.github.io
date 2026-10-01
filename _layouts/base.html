@@ -28,8 +28,9 @@
   <script src="{{ '/assets/js/studio.js' | relative_url }}" defer></script>
   {% if page.home %}<script src="{{ '/assets/js/hero-network.js' | relative_url }}" defer></script>{% endif %}
 </head>
-<body class="{% if page.home %}home-page{% else %}inner-page{% endif %}">
+<body class="{% if page.home %}home-page{% elsif page.lecture %}lecture-page{% else %}inner-page{% endif %}">
   <a class="skip-link" href="#main">Skip to content</a>
+  {% unless page.lecture %}
   <header class="site-header">
     <div class="container header-inner">
       <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Brown AI Studio home">
@@ -47,13 +48,16 @@
       </nav>
     </div>
   </header>
+  {% endunless %}
   <main id="main">{{ content }}</main>
+  {% unless page.lecture %}
   <footer class="site-footer">
     <div class="container footer-top">
-      <div><a class="wordmark" href="{{ '/' | relative_url }}"><img class="wordmark-symbol" src="{{ '/assets/img/studio-mark.svg' | relative_url }}" width="52" height="52" alt="" aria-hidden="true"><span>Brown<span class="wordmark-second">AI Studio</span></span></a><p>An alumni-led fellowship for Brown builders.</p></div>
+      <div><a class="wordmark" href="{{ '/' | relative_url }}"><img class="wordmark-symbol" src="{{ '/assets/img/studio-mark.svg' | relative_url }}" width="52" height="52" alt="" aria-hidden="true"><span>Brown<span class="wordmark-second">AI Studio</span></span></a><p>A fellowship for Brown builders.</p></div>
       <div class="footer-links"><a href="{{ '/products/' | relative_url }}">Products</a><a href="{{ '/blog/' | relative_url }}">Blog</a><a href="{{ '/mentors/' | relative_url }}">Mentors</a><a href="mailto:{{ site.email }}">Get in touch {% include arrow.html direction="diagonal" %}</a></div>
     </div>
     <div class="container footer-bottom"><span>© {{ 'now' | date: '%Y' }} Brown AI Studio</span><span>Formerly B*, the Brown Startup Fellowship.</span><a href="{{ '/feed.xml' | relative_url }}">RSS {% include arrow.html direction="diagonal" %}</a></div>
   </footer>
+  {% endunless %}
 </body>
 </html>
