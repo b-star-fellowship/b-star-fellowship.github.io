@@ -5,9 +5,8 @@ baseurl: ""
 url: "https://brownai.studio"
 lang: en-US
 
-# Set to the current application form when the next cohort opens.
-application_url: ""
-application_status: "Next cohort details coming soon"
+# Shared destination for the calls to action on the application page.
+application_url: "https://forms.gle/t6J7NtFfMFNCmxRm6"
 
 plugins:
   - jekyll-feed

@@ -62,7 +62,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 - `products.html`: Products page, preserving the original `/products/` URL.
 - `assets/css/studio.css`: shared visual styles and responsive layouts.
 - `_layouts/base.html`: shared navigation, metadata, and footer.
-- `_config.yml`: brand metadata, contact email, and application status/link.
+- `_config.yml`: brand metadata, contact email, and the `application_url` shared by the application page’s three calls to action.
 - `assets/js/studio.js`: mobile navigation and the product carousel. Rotation advances every 12 seconds while visible, pauses while hovered, and stops after manual navigation or keyboard focus. Reduced-motion users get manual navigation only.
 - `assets/img/studio-social.svg` and `studio-social.png`: the program-branded link preview. The SVG is the editable source; export it at 1200 × 630 to update the PNG used by Open Graph and Twitter metadata in `_layouts/base.html`.
 - `_data/mentors.yml`: the mentor directory. Add a record with a name, degree, program, graduation year, photo, bio paragraphs, and links to add another mentor. Each subtitle is rendered from `degree`, `program`, and `graduation_year`.
@@ -80,7 +80,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 - Product panels use imagery and colors from their public websites. PMARC and Mona have no website in the original directory, so they use simple text covers. Source URLs are retained in the media data for future updates.
 - Thirteen founder portraits were verified through public LinkedIn, Brown, personal, and YC pages. The other ten profiles retain initials. Portrait provenance is recorded in `_data/fellows.json`; no login-only LinkedIn images are required at runtime.
 - The site uses a brown palette. Each product’s panel retains its own brand colors.
-- The old application link was for 2025. Put the current URL in `application_url` when ready; the fellowship page then displays an application button. Until then it uses the existing public contact email.
+- The application page links to the Google Form supplied for the program. Update `application_url` in `_config.yml` to change all three application calls to action together.
 - The KADI summer interview is in `_posts/2026-09-30-kadi-summer-2026.md`, reconstructed from the June 18, July 16, and July 31 check-ins. Its product details and usage reflect those calls through July 31.
 - Sam’s headshot comes from the Brown CS profile linked on his mentor card. The optimized image is stored locally as `assets/img/sam-dooman.jpg`.
 - Sam’s bio is based on the existing site and the Brown CS profile; additional mentors can be added without changing the page layout.
