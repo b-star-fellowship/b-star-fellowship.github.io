@@ -2,7 +2,7 @@
 layout: base
 title: Mentors
 permalink: /mentors/
-description: Meet the Brown alumni supporting Brown AI Fellows, starting with Sam Dooman, founding engineer at Down Dog.
+description: Meet the mentors supporting Brown AI Fellows and the Brown AI Studio alumni building products of their own.
 ---
 <div class="container page-shell mentors-page">
   <header class="mentors-heading">
@@ -11,19 +11,17 @@ description: Meet the Brown alumni supporting Brown AI Fellows, starting with Sa
   </header>
   <div class="mentor-list">
     {% for mentor in site.data.mentors %}
-    <article class="mentor-profile" id="{{ mentor.id }}">
-      <figure class="mentor-photo">
-        <img src="{{ mentor.photo | relative_url }}" alt="{{ mentor.name }}" width="651" height="800"{% unless forloop.first %} loading="lazy"{% endunless %}>
-      </figure>
-      <div class="mentor-bio">
-        <h2>{{ mentor.name }}</h2>
-        <p class="mentor-education">{{ mentor.degree }} {{ mentor.program }}{% if mentor.graduation_year %} · {{ mentor.graduation_year }}{% endif %}</p>
-        {% for paragraph in mentor.bio %}<p>{{ paragraph }}</p>{% endfor %}
-        <div class="mentor-links">
-          {% for link in mentor.links %}<a class="text-link" href="{{ link.url | relative_url }}">{{ link.label }} {% include arrow.html direction="diagonal" %}</a>{% endfor %}
-        </div>
-      </div>
-    </article>
+    {% capture education %}{{ mentor.degree }} {{ mentor.program }}{% if mentor.graduation_year %} · {{ mentor.graduation_year }}{% endif %}{% endcapture %}
+    {% include person-profile.html person=mentor id=mentor.id subtitle=education bio=mentor.bio links=mentor.links heading_level=2 %}
     {% endfor %}
   </div>
+  <section class="alumni-section" aria-labelledby="alumni-heading">
+    <h2 id="alumni-heading">Brown AI Studio Alumni</h2>
+    <div class="alumni-list">
+      {% for alumnus in site.data.alumni %}
+      {% assign person = site.data.fellows[alumnus.fellow] %}
+      {% include person-profile.html person=person id=alumnus.fellow subtitle=alumnus.subtitle bio=alumnus.bio links=alumnus.links heading_level=3 %}
+      {% endfor %}
+    </div>
+  </section>
 </div>

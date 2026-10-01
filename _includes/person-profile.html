@@ -1,0 +1,19 @@
+<article class="mentor-profile" id="{{ include.id }}" aria-labelledby="{{ include.id }}-name">
+  <div class="mentor-photo">
+    {% if include.person.photo %}
+    <img src="{{ include.person.photo | relative_url }}" alt="{{ include.person.name | escape }}" width="96" height="96"{% if include.heading_level == 3 %} loading="lazy"{% endif %}>
+    {% else %}
+    <span class="mentor-initials" aria-hidden="true">{{ include.person.initials }}</span>
+    {% endif %}
+  </div>
+  <div class="mentor-identity">
+    <h{{ include.heading_level }} id="{{ include.id }}-name">{{ include.person.name }}</h{{ include.heading_level }}>
+    <p class="mentor-education">{{ include.subtitle }}</p>
+  </div>
+  <div class="mentor-bio">
+    {% for paragraph in include.bio %}<p>{{ paragraph }}</p>{% endfor %}
+    <div class="mentor-links">
+      {% for link in include.links %}<a class="text-link" href="{{ link.url | relative_url }}">{{ link.label }} {% include arrow.html direction="diagonal" %}</a>{% endfor %}
+    </div>
+  </div>
+</article>

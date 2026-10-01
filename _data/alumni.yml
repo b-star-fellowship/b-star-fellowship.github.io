@@ -1,0 +1,40 @@
+# Career details checked against public LinkedIn profiles on 2026-10-01.
+# Fellowship projects come from the existing product directory. Names and
+# portraits are shared with _data/fellows.json; unavailable portraits use initials.
+- fellow: julian-dai
+  subtitle: Software engineer · Ramp
+  bio:
+    - Julian builds purchasing and payments software at Ramp. He co-created ATA, an AI teaching assistant for course concepts, debugging, and class logistics.
+  links:
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/julian-dai/
+    - label: ATA
+      url: /products/#ata
+  sources:
+    - https://www.linkedin.com/in/julian-dai
+    - https://juliandai.net/
+
+- fellow: adithya-sriram
+  subtitle: Studio · Pagio
+  bio:
+    - Adithya works at Studio in New York. He co-created Pagio, a reading companion that helps children explore books through conversations and creative activities.
+  links:
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/adithya-sriram/
+    - label: Pagio
+      url: /products/#pagio
+  sources:
+    - https://www.linkedin.com/in/adithya-sriram
+
+- fellow: ryan-klivansky
+  subtitle: DeepFeat · ForReelFlies
+  bio:
+    - Ryan works at DeepFeat, applying AI to underwater inspections and engineering reports. He co-created ForReelFlies, a marketplace connecting fly tiers with anglers.
+  links:
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/ryan-klivansky/
+    - label: ForReelFlies
+      url: /products/#forreelflies
+  sources:
+    - https://www.linkedin.com/in/ryan-klivansky
+    - https://www.linkedin.com/company/deepfeat
