@@ -62,7 +62,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 - `products.html`: Products page, preserving the original `/products/` URL.
 - `assets/css/studio.css`: shared visual styles and responsive layouts.
 - `_layouts/base.html`: shared navigation, metadata, and footer.
-- `_config.yml`: brand metadata, contact email, and the `application_url` shared by the application page’s three calls to action.
+- `_config.yml`: brand metadata and the `application_url` shared by the application page’s three calls to action.
 - `assets/js/studio.js`: mobile navigation and the product carousel. Rotation advances every 12 seconds while visible, pauses while hovered, and stops after manual navigation or keyboard focus. Reduced-motion users get manual navigation only.
 - `assets/img/studio-social.svg` and `studio-social.png`: the program-branded link preview. The SVG is the editable source; export it at 1200 × 630 to update the PNG used by Open Graph and Twitter metadata in `_layouts/base.html`.
 - `lecture.markdown`: the full-screen lecture slide at `/lecture/`, with a large QR code pointing to `https://brownai.studio`. Its `lecture: true` flag omits the shared navigation and footer for presenting.
