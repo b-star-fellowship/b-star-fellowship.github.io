@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Brown AI Studio — Build something that matters.</title>
+  <desc>A summer fellowship for Brown students, in the studio's brown and cream palette.</desc>
+  <defs>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop stop-color="#171310"/>
+      <stop offset="1" stop-color="#171310" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#171310"/>
+  <g fill="none" stroke="#4d3b2e" stroke-width="1.5">
+    <path d="M775 76 890 140 1000 65 1138 116 1230 68M890 140 847 256 952 311 1094 243 1138 116M1000 65 1013 178 1094 243 1225 291M775 76 726 203 847 256 790 385 899 449 952 311 1013 178 890 140M726 203 695 329 790 385 744 518 859 582 899 449 1032 488 1094 243M952 311 1082 378 1200 400 1132 529 1032 488 985 622M1082 378 1132 529 1240 587M859 582 1032 488M1138 116 1225 291 1200 400"/>
+  </g>
+  <g fill="#7c6048">
+    <circle cx="775" cy="76" r="4"/><circle cx="890" cy="140" r="4"/>
+    <circle cx="1000" cy="65" r="4"/><circle cx="1138" cy="116" r="4"/>
+    <circle cx="726" cy="203" r="4"/><circle cx="847" cy="256" r="4"/>
+    <circle cx="1013" cy="178" r="4"/><circle cx="1094" cy="243" r="4"/>
+    <circle cx="695" cy="329" r="4"/><circle cx="952" cy="311" r="4"/>
+    <circle cx="790" cy="385" r="4"/><circle cx="1082" cy="378" r="4"/>
+    <circle cx="899" cy="449" r="4"/><circle cx="1032" cy="488" r="4"/>
+    <circle cx="744" cy="518" r="4"/><circle cx="1132" cy="529" r="4"/>
+    <circle cx="859" cy="582" r="4"/><circle cx="985" cy="622" r="4"/>
+  </g>
+  <path d="m899 449 53-138 142-68" fill="none" stroke="#d1ac86" stroke-width="2"/>
+  <circle cx="1094" cy="243" r="19" fill="#d1ac86" opacity=".09"/>
+  <circle cx="1094" cy="243" r="9" fill="#d1ac86" opacity=".16"/>
+  <circle cx="1094" cy="243" r="4" fill="#d1ac86"/>
+  <rect x="645" width="290" height="630" fill="url(#fade)"/>
+  <svg x="60" y="49" width="76" height="76" viewBox="0 0 64 64" fill="#d1ac86">
+    <path fill-rule="evenodd" d="M8 12h17c11 0 17 4 17 12 0 5-3 8-7 9 6 1 9 5 9 10 0 8-6 12-18 12H8V12zm9 8v10h8c6 0 8-2 8-5s-2-5-8-5h-8zm0 17v10h9c6 0 9-1 9-5 0-3-3-5-9-5h-9z"/>
+    <path d="M51 7v16m-7-12 14 8m-14 0 14-8" fill="none" stroke="#d1ac86" stroke-width="3.5" stroke-linecap="round"/>
+  </svg>
+  <g font-family="Avenir Next, Segoe UI, sans-serif">
+    <text x="153" y="80" fill="#f3ede5" font-size="29" font-weight="600" letter-spacing="-.8">Brown</text>
+    <text x="153" y="111" fill="#f3ede5" font-size="29" font-weight="600" letter-spacing="-.8">AI Studio</text>
+    <text x="64" y="278" fill="#f3ede5" font-size="82" font-weight="500" letter-spacing="-4">Build something</text>
+    <text x="64" y="373" fill="#d1ac86" font-size="82" font-weight="500" letter-spacing="-4">that matters.</text>
+    <text x="68" y="446" fill="#c6b7a9" font-size="27">A summer fellowship for Brown students.</text>
+    <text x="68" y="562" fill="#d1ac86" font-size="22" letter-spacing=".2">brownai.studio</text>
+  </g>
+</svg>

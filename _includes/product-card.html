@@ -15,7 +15,6 @@
   <div class="product-visual-bottom"><span>{{ product.category }}</span>{% if product.website %}<a href="{{ product.website }}" aria-label="Visit {{ product.name }}">{{ product.domain }} {% include arrow.html direction="diagonal" %}</a>{% endif %}</div>
 </div>
 <div class="feature-copy">
-  <p class="eyebrow">{{ product.cohort }} <span aria-hidden="true">/</span> {{ product.category }}</p>
   <h3{% if include.heading_id %} id="{{ include.heading_id }}-title"{% endif %}>{{ product.name }}</h3>
   {% if include.detailed %}
   <p class="product-summary">{{ product.description | default: product.summary }}</p>

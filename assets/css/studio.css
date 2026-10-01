@@ -1142,7 +1142,6 @@ color:var(--accent);
 .cover-pagio { background: #eac788; color: #4e3213; }
 .cover-pagio .cover-wordmark { font-family: Georgia, serif; font-size: clamp(72px, 9vw, 120px); font-style: italic; letter-spacing: -.055em; }
 .feature-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 40px; min-width: 0; }
-.feature-copy .eyebrow { font-size: 12px; }
 .feature-copy h3 { font-size: 39px; letter-spacing: -1.6px; line-height: 1.15; font-weight: 500; margin: 22px 0 17px; }
 .feature-copy h4 { font-size: 22px; line-height: 1.4; letter-spacing: -.5px; font-weight: 500; }
 .feature-copy > p:not(.eyebrow) { font-size: 16px; color: #c6b7a9; line-height: 1.8; margin-top: 16px; }
@@ -1157,8 +1156,6 @@ color:var(--accent);
 .product-index { font: 11px var(--mono); opacity: .6; }
 .carousel-controls { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .carousel-counter { font: 12px var(--mono); color: var(--muted); margin-right: 5px; }
-.carousel-playback { min-width: 58px; min-height: 44px; background: none; border: 0; color: #cec0b4; font-size: 13px; cursor: pointer; }
-.carousel-playback:hover { color: var(--accent); }
 .icon-button { display: flex; justify-content: center; align-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid #625142; border-radius: 50%; background: none; color: var(--accent); cursor: pointer; }
 .icon-button:hover { background: #423224; }
 .showcase noscript a { color: var(--accent); text-decoration: underline; }
@@ -1331,7 +1328,7 @@ color:var(--accent);
 .product-visual-bottom a { display: flex; align-items: center; gap: 6px; font-size: 13px; }
 .product-visual-bottom .arrow { width: 17px; height: 17px; }
 .feature-copy { padding: 32px; }
-.feature-copy h3 { margin-block: 20px 15px; }
+.feature-copy h3 { margin-block: 0 15px; }
 .feature-copy h4 { font-size: 21px; }
 .feature-copy > p:not(.eyebrow) { color: var(--muted); }
 .founder-list { display: flex; flex-direction: column; gap: 15px; margin-block: 27px; }
@@ -1413,7 +1410,7 @@ color:var(--accent);
 .product-list-card .product-image-frame { padding-block: 20px; }
 .product-list-card .product-visual-fallback { padding-block: 45px; }
 .product-list-card .feature-copy { padding: 26px; min-height: 0; }
-.product-list-card .feature-copy h3 { margin-block: 13px 5px; }
+.product-list-card .feature-copy h3 { margin-block: 0 5px; }
 .product-list-card .product-focus { margin-top: 18px; }
 .product-list-card .founder-list { margin-block: 20px; gap: 10px; }
 .product-list-card .product-summary { line-height: 1.7; }

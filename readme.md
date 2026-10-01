@@ -63,7 +63,8 @@ Existing files using `layout: default` continue to work and can keep their own M
 - `assets/css/studio.css`: shared visual styles and responsive layouts.
 - `_layouts/base.html`: shared navigation, metadata, and footer.
 - `_config.yml`: brand metadata, contact email, and application status/link.
-- `assets/js/studio.js`: mobile navigation and the product carousel. Rotation advances every six seconds while visible, pauses on hover and focus, and starts paused for reduced-motion users. Prev/next, product selectors, and a Play/Pause control work independently of autoplay.
+- `assets/js/studio.js`: mobile navigation and the product carousel. Rotation advances every 12 seconds while visible, pauses while hovered, and stops after manual navigation or keyboard focus. Reduced-motion users get manual navigation only.
+- `assets/img/studio-social.svg` and `studio-social.png`: the program-branded link preview. The SVG is the editable source; export it at 1200 × 630 to update the PNG used by Open Graph and Twitter metadata in `_layouts/base.html`.
 - `_data/mentors.yml`: the mentor directory. Add a record with a name, degree, program, graduation year, photo, bio paragraphs, and links to add another mentor. Each subtitle is rendered from `degree`, `program`, and `graduation_year`.
 - `mentors.html`: the mentor directory layout.
 - `_data/writing.yml`: the original articles and resources linked from the blog, ordered newest first. Existing article dates come from their first addition in Git history and are also stored in each page’s front matter.
@@ -75,7 +76,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 
 - The $5,000 grant, 10-week duration, 1–2-person team size, and eligibility copy come from the previous site. Confirm details for the next cohort.
 - The existing directory lists Fountainhead in 2026. The feature avoids calling it “last year” so the draft does not introduce a conflicting cohort date.
-- The homepage carousel features Fountainhead, KADI, Word Golf, and Pagio. The Products page includes all 13 products, including ForReelFlies; its interview also remains in the writing archive.
+- The homepage carousel features Fountainhead, KADI, Word Golf, Pagio, and ForReelFlies. The Products page includes all 13 products; the ForReelFlies interview also remains in the writing archive.
 - Product panels use imagery and colors from their public websites. PMARC and Mona have no website in the original directory, so they use simple text covers. Source URLs are retained in the media data for future updates.
 - Thirteen founder portraits were verified through public LinkedIn, Brown, personal, and YC pages. The other ten profiles retain initials. Portrait provenance is recorded in `_data/fellows.json`; no login-only LinkedIn images are required at runtime.
 - The site uses a brown palette. Each product’s panel retains its own brand colors.

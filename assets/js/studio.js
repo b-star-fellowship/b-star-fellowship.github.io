@@ -35,12 +35,10 @@
   const controls = carousel.querySelector('[data-carousel-controls]');
   const picker = carousel.querySelector('.carousel-pagination');
   const choices = [...carousel.querySelectorAll('[data-slide-to]')];
-  const playback = carousel.querySelector('[data-rotation]');
-  const playbackLabel = carousel.querySelector('[data-rotation-label]');
   const counter = carousel.querySelector('[data-counter]');
   const status = carousel.querySelector('[data-carousel-status]');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const delay = 6000;
+  const delay = 12000;
   let current = 0;
   let paused = reducedMotion.matches;
   let hovered = false;
@@ -49,8 +47,6 @@
 
   function schedule() {
     window.clearTimeout(timer);
-    playbackLabel.textContent = paused ? 'Play' : 'Pause';
-    playback.setAttribute('aria-label', paused ? 'Start automatic rotation' : 'Pause automatic rotation');
     if (paused || hovered || !inView || document.hidden) return;
     timer = window.setTimeout(() => show(current + 1), delay);
   }
@@ -68,7 +64,7 @@
     else if (choice.offsetLeft + choice.offsetWidth > picker.scrollLeft + picker.clientWidth) {
       picker.scrollLeft = choice.offsetLeft + choice.offsetWidth - picker.clientWidth;
     }
-    counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+    counter.textContent = `${current + 1}/${slides.length}`;
     // Automatic changes stay silent for assistive technology.
     if (announce) status.textContent = `${slides[current].dataset.name}, product ${current + 1} of ${slides.length}`;
     schedule();
@@ -82,15 +78,12 @@
   carousel.querySelector('[data-previous]').addEventListener('click', () => select(current - 1));
   carousel.querySelector('[data-next]').addEventListener('click', () => select(current + 1));
   choices.forEach((button) => button.addEventListener('click', () => select(Number(button.dataset.slideTo))));
-  playback.addEventListener('click', () => {
-    paused = !paused;
-    schedule();
-  });
   carousel.addEventListener('mouseenter', () => { hovered = true; schedule(); });
   carousel.addEventListener('mouseleave', () => { hovered = false; schedule(); });
-  carousel.addEventListener('focusin', (event) => {
-    // Keep the rotation control usable; moving focus into a slide or selector stops rotation.
-    if (!playback.contains(event.target)) { paused = true; schedule(); }
+  carousel.addEventListener('focusin', () => {
+    // Keep a focused product or control from rotating out from under keyboard users.
+    paused = true;
+    schedule();
   });
   carousel.addEventListener('keydown', (event) => {
     if (!event.target.closest('.carousel-controls, .carousel-pagination')) return;
