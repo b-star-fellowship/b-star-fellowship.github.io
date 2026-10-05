@@ -74,7 +74,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 - `_data/writing.yml`: the original articles and resources linked from the blog, ordered newest first. Existing article dates come from their first addition in Git history and are also stored in each page’s front matter.
 - `_private/prompts.txt`: the unpublished Prompts text, excluded from Jekyll builds and ignored by Git so future pushes do not expose it. Existing public Git history is unchanged.
 - `_includes/byline.html`: article authorship. Existing writing has an explicit Sam Dooman author field.
-- `assets/js/hero-network.js`: the homepage network animation. A spark follows a depth-first traversal, lighting branches and retracing them on backtracking. It pauses offscreen and when the tab is hidden; reduced-motion users see a static network.
+- `assets/js/hero-network.js`: the homepage network animation. One spark builds a subtle path across the viewport, exploring and retracing dead-end branches before reaching its destination and unwinding. Motion continues as the page scrolls, pauses when the tab is hidden, and is disabled for reduced-motion users.
 
 ## Draft details to review
 

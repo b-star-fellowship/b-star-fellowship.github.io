@@ -2,88 +2,23 @@
   const svg = document.querySelector('[data-neural-network]');
   if (!svg) return;
 
-  const layoutPoints = [
-    [55, 315], [190, 280], [310, 180], [450, 115], [595, 155],
-    [755, 100], [900, 170], [600, 65], [765, 260], [920, 310],
-    [475, 260], [615, 330], [790, 400], [935, 470], [650, 470],
-    [475, 450], [325, 365], [325, 515], [495, 575], [655, 590],
-    [810, 560], [195, 460], [145, 590], [105, 155], [250, 75],
-    [355, 55], [95, 60], [915, 55],
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const searches = [
+    { start: [.06, .24], end: [.94, .72] },
+    { start: [.91, .83], end: [.08, .17] },
+    { start: [.87, .12], end: [.12, .85] },
+    { start: [.08, .68], end: [.92, .3] },
+    { start: [.35, .88], end: [.72, .08] },
+    { start: [.76, .18], end: [.2, .9] },
   ];
-  const branches = [
-    [0, 1], [0, 23], [0, 21], [1, 2], [1, 16], [2, 3], [2, 10],
-    [2, 24], [3, 4], [3, 25], [4, 5], [4, 7], [5, 6], [5, 27],
-    [6, 8], [8, 9], [8, 11], [10, 11], [11, 12], [11, 14],
-    [12, 13], [12, 20], [14, 15], [14, 19], [15, 16], [15, 18],
-    [16, 17], [17, 18], [17, 21], [18, 19], [20, 19], [21, 22],
-    [23, 24], [23, 26],
-  ];
-  // Split the long branches into smaller hops, with a little spatial variation.
-  const connections = [];
-  branches.forEach(([from, to], index) => {
-    let previous = from;
-    for (let hop = 1; hop < 3; hop += 1) {
-      const next = layoutPoints.length;
-      const progress = hop / 3;
-      layoutPoints.push([
-        layoutPoints[from][0] + (layoutPoints[to][0] - layoutPoints[from][0]) * progress + Math.sin(index * 1.9 + hop) * 14,
-        layoutPoints[from][1] + (layoutPoints[to][1] - layoutPoints[from][1]) * progress + Math.cos(index * 1.3 + hop) * 14,
-      ]);
-      connections.push([previous, next]);
-      previous = next;
-    }
-    connections.push([previous, to]);
-  });
-
-  // Fill the open spaces with evenly separated nodes, keeping the layout organic.
-  const targetNodeCount = 384;
-  const targetConnectionCount = 804;
-  const fillCandidates = Array.from({ length: 1200 }, (_, index) => {
-    const point = [
-      55 + ((index + 1) * .754877666 % 1) * 880,
-      55 + ((index + 1) * .569840291 % 1) * 535,
-    ];
-    let distance = Infinity;
-    let nearest = 0;
-    layoutPoints.forEach(([x, y], node) => {
-      const gap = Math.hypot(point[0] - x, point[1] - y);
-      if (gap < distance) { distance = gap; nearest = node; }
-    });
-    return { point, distance, nearest };
-  });
-  while (layoutPoints.length < targetNodeCount) {
-    const next = fillCandidates.reduce((best, candidate) => candidate.distance > best.distance ? candidate : best);
-    const node = layoutPoints.length;
-    layoutPoints.push(next.point);
-    connections.push([next.nearest, node]);
-    fillCandidates.forEach(candidate => {
-      const gap = Math.hypot(candidate.point[0] - next.point[0], candidate.point[1] - next.point[1]);
-      if (gap < candidate.distance) { candidate.distance = gap; candidate.nearest = node; }
-    });
-  }
-
-  // Short cross-links form a dense mesh without introducing long jumps.
-  const degrees = layoutPoints.map(() => 0);
-  connections.forEach(([a, b]) => { degrees[a] += 1; degrees[b] += 1; });
-  const candidates = [];
-  layoutPoints.forEach(([x, y], from) => {
-    layoutPoints.slice(from + 1).forEach(([otherX, otherY], offset) => {
-      const to = from + offset + 1;
-      const distance = Math.hypot(otherX - x, otherY - y);
-      if (distance < 20 || distance > 105) return;
-      if (connections.some(([a, b]) => (a === from && b === to) || (a === to && b === from))) return;
-      candidates.push({ from, to, distance });
-    });
-  });
-  candidates.sort((a, b) => a.distance - b.distance).forEach(({ from, to }) => {
-    if (connections.length >= targetConnectionCount || degrees[from] >= 6 || degrees[to] >= 6) return;
-    connections.push([from, to]);
-    degrees[from] += 1;
-    degrees[to] += 1;
-  });
-
-  const points = layoutPoints.map(point => [...point]);
-  const adjacency = points.map(() => []);
+  let points = [];
+  let adjacency = [];
+  let routeNodes = [];
+  let traveler;
+  let layoutWidth = 0;
+  let layoutHeight = 0;
+  let frameId = null;
+  let lastTime = null;
 
   function element(tag, attributes, parent = svg) {
     const node = document.createElementNS('http://www.w3.org/2000/svg', tag);
@@ -92,26 +27,15 @@
     return node;
   }
 
-  const edges = connections.map(([from, to], index) => {
-    adjacency[from].push({ node: to, edge: index });
-    adjacency[to].push({ node: from, edge: index });
-    return element('line', {
-      x1: points[from][0], y1: points[from][1],
-      x2: points[to][0], y2: points[to][1], class: 'network-edge',
-    });
-  });
-  const traces = connections.map(() => element('line', { class: 'network-trace' }));
-  const halos = points.map(([cx, cy]) => element('circle', { cx, cy, r: 8, class: 'network-halo' }));
-  const nodes = points.map(([cx, cy]) => element('circle', { cx, cy, r: 2.5, class: 'network-node' }));
-  const tails = Array.from({ length: 7 }, (_, index) => element('circle', {
-    r: 1.8 - index * .16, class: 'network-tail', opacity: 0,
-  }));
-  const spark = element('g', { class: 'network-spark' });
-  element('path', { d: 'M0 -6 L1.4 -1.4 L6 0 L1.4 1.4 L0 6 L-1.4 1.4 L-6 0 L-1.4 -1.4 Z' }, spark);
-  element('circle', { r: 1.8 }, spark);
+  // Stable, staggered points continue beyond every edge of the viewport.
+  function noise(index) {
+    const value = Math.sin(index * 127.1 + 311.7) * 43758.5453;
+    return value - Math.floor(value);
+  }
 
-  // Stop at the destination, then unwind the successful route to its start.
-  function depthFirstSearch(root, goal, seed) {
+  // Explore shuffled branches without steering toward the goal. Exhausted branches
+  // backtrack during the search; reaching the goal finally unwinds the whole route.
+  function depthFirstSearch(root, goal, seed, graph = adjacency) {
     const visited = new Set([root]);
     const steps = [];
     let state = seed;
@@ -123,18 +47,17 @@
     }
     function visit(from) {
       if (from === goal) return true;
-      const neighbors = [...adjacency[from]];
-      // Stable shuffling gives each pair its own exploration order at every size.
+      const neighbors = [...graph[from]];
       for (let index = neighbors.length - 1; index > 0; index -= 1) {
         const other = Math.floor(random() * (index + 1));
         [neighbors[index], neighbors[other]] = [neighbors[other], neighbors[index]];
       }
-      for (const { node: to, edge } of neighbors) {
+      for (const to of neighbors) {
         if (visited.has(to)) continue;
         visited.add(to);
-        steps.push({ from, to, edge, returning: false, found: to === goal });
+        steps.push({ from, to, returning: false, found: to === goal });
         const found = visit(to);
-        steps.push({ from: to, to: from, edge, returning: true, unwinding: found });
+        steps.push({ from: to, to: from, returning: true, unwinding: found });
         if (found) return true;
       }
       return false;
@@ -143,106 +66,165 @@
     return steps;
   }
 
-  // Start along the open lower-left edge, then search toward the upper right.
-  // Each pair includes dead-end branches before reaching its destination.
-  const searches = [
-    { start: 100, end: 6, seed: 1231 },
-    { start: 316, end: 287, seed: 1479 },
-    { start: 131, end: 156, seed: 1429 },
-    { start: 353, end: 296, seed: 4489 },
-    { start: 104, end: 53, seed: 7752 },
-    { start: 150, end: 296, seed: 6728 },
-  ];
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let cycle = 0;
-  let walk;
-  let stepIndex;
-  let step;
-  let distance;
-  let travelTime;
-  let elapsed = 0;
-  let arrived = false;
-  let pulsingNode = null;
-  let frameId = null;
-  let lastTime = null;
-  let visible = !('IntersectionObserver' in window);
-
-  function pulse(index) {
-    if (pulsingNode !== null) halos[pulsingNode].classList.remove('is-pulsing');
-    nodes[index].classList.add('is-visited');
-    halos[index].classList.add('is-pulsing');
-    pulsingNode = index;
+  function exploratorySearch(start, end, seed, graph = adjacency) {
+    let bestWalk;
+    let bestScore = Infinity;
+    // Choose a genuine DFS ordering with visible dead ends early in the search.
+    // A dense mesh can otherwise reach its goal before ever needing to retreat.
+    for (let attempt = 0; attempt < 64; attempt += 1) {
+      const walk = depthFirstSearch(start, end, seed + attempt * 1479, graph);
+      const exploration = walk.slice(0, walk.findIndex(step => step.found));
+      const firstReturn = exploration.findIndex(step => step.returning);
+      const returns = exploration.filter(step => step.returning).length;
+      const multiHopReturn = exploration.some((step, index) => step.returning && exploration[index + 1]?.returning);
+      const score = (firstReturn < 0 ? 1000 : firstReturn) + exploration.length / 24 +
+        (returns < 4 ? 1000 : 0) + (multiHopReturn ? 0 : 1000);
+      if (score < bestScore) { bestScore = score; bestWalk = walk; }
+    }
+    return bestWalk;
   }
 
-  function beginStep() {
-    step = walk[stepIndex];
-    arrived = false;
-    const [x1, y1] = points[step.returning ? step.to : step.from];
-    const [x2, y2] = points[step.returning ? step.from : step.to];
-    distance = Math.hypot(x2 - x1, y2 - y1);
-    travelTime = Math.max(270, Math.min(490, distance * 4.5));
-    const trace = traces[step.edge];
-    Object.entries({ x1, y1, x2, y2, 'stroke-dasharray': distance }).forEach(([name, value]) => trace.setAttribute(name, value));
-    trace.classList.add('is-route');
-    trace.classList.toggle('is-backtracking', step.returning);
-    draw(0);
+  function nearest([x, y], excluded = [], allowedNodes = routeNodes) {
+    const target = [x * layoutWidth, y * layoutHeight];
+    const candidates = allowedNodes.filter(node => !excluded.includes(node));
+    return candidates.reduce((best, index) =>
+      Math.hypot(points[index][0] - target[0], points[index][1] - target[1]) <
+      Math.hypot(points[best][0] - target[0], points[best][1] - target[1]) ? index : best, candidates[0]);
   }
 
-  function draw(progress) {
-    const [x1, y1] = points[step.from];
-    const [x2, y2] = points[step.to];
+  function largestComponent(graph) {
+    let largest = [];
+    const seen = new Set();
+    graph.forEach((neighbors, root) => {
+      if (!neighbors.length || seen.has(root)) return;
+      const component = [];
+      const pending = [root];
+      seen.add(root);
+      while (pending.length) {
+        const current = pending.pop();
+        component.push(current);
+        graph[current].forEach(node => {
+          if (!seen.has(node)) { seen.add(node); pending.push(node); }
+        });
+      }
+      if (component.length > largest.length) largest = component;
+    });
+    return largest;
+  }
+
+  function crossesRect([x, y], [otherX, otherY], rect) {
+    let near = 0;
+    let far = 1;
+    for (const [origin, delta, low, high] of [
+      [x, otherX - x, rect.left, rect.right],
+      [y, otherY - y, rect.top, rect.bottom],
+    ]) {
+      if (delta === 0) {
+        if (origin < low || origin > high) return false;
+      } else {
+        const first = (low - origin) / delta;
+        const second = (high - origin) / delta;
+        near = Math.max(near, Math.min(first, second));
+        far = Math.min(far, Math.max(first, second));
+        if (near > far) return false;
+      }
+    }
+    return true;
+  }
+
+  function openingSearch() {
+    const hero = document.querySelector('.hero-section');
+    const field = svg.getBoundingClientRect();
+    const bounds = hero.getBoundingClientRect();
+    const title = document.createRange();
+    title.selectNodeContents(hero.querySelector('h1'));
+    const copyRects = [
+      ...title.getClientRects(),
+      ...Array.from(hero.querySelectorAll('.hero-description, .hero-actions > *'), node => node.getBoundingClientRect()),
+    ].map(rect => ({
+      left: rect.left - field.left - 24, right: rect.right - field.left + 24,
+      top: rect.top - field.top - 24, bottom: rect.bottom - field.top + 24,
+    }));
+    const top = Math.max(12, bounds.top - field.top + 20);
+    const bottom = Math.min(layoutHeight - 12, bounds.bottom - field.top - 20);
+    const open = points.map(([x, y]) =>
+      x >= (layoutWidth < 640 ? 12 : layoutWidth * .45) && y >= top && y <= bottom);
+    // Only the opening search avoids the copy, including whole diagonal segments.
+    const graph = adjacency.map((neighbors, from) => neighbors.filter(to =>
+      open[from] && open[to] && !copyRects.some(rect => crossesRect(points[from], points[to], rect))));
+    const nodes = largestComponent(graph);
+    return { graph, nodes, start: [.84, (top + (bottom - top) * .65) / layoutHeight], end: [.6, top / layoutHeight] };
+  }
+
+  function beginStep(traveler) {
+    const step = traveler.walk[traveler.stepIndex];
+    traveler.from = points[step.from];
+    traveler.to = points[step.to];
+    traveler.distance = Math.hypot(traveler.to[0] - traveler.from[0], traveler.to[1] - traveler.from[1]);
+    traveler.returning = step.returning;
+    traveler.progress = 0;
+    // Keep every completed hop; backtracking shortens only the final segment.
+    const route = step.returning ? traveler.route.slice(0, -1) : traveler.route;
+    traveler.pathPrefix = route.map((node, index) => `${index ? 'L' : 'M'}${points[node].join(' ')}`).join(' ');
+  }
+
+  function reset(traveler) {
+    const search = searches[traveler.cycle % searches.length];
+    const opening = traveler.cycle === 0 ? openingSearch() : null;
+    const allowedNodes = opening ? opening.nodes : routeNodes;
+    // On a viewport without open hero space, wait for the next layout change.
+    if (allowedNodes.length < 2) { traveler.walk = []; return; }
+    // Once the previous route has fully unwound, start a different search.
+    const previousStart = traveler.walk?.[0]?.from;
+    const previousEnd = traveler.walk?.find(step => step.found)?.to;
+    const start = nearest(opening?.start ?? search.start, [previousStart], allowedNodes);
+    const end = nearest(opening?.end ?? search.end, [start, previousEnd], allowedNodes);
+    const seed = 1 + Math.floor(Math.random() * 2147483646);
+    traveler.walk = exploratorySearch(start, end, seed, opening?.graph ?? adjacency);
+    traveler.stepIndex = 0;
+    traveler.route = [start];
+    beginStep(traveler);
+  }
+
+  function draw(traveler) {
+    const progress = traveler.progress / traveler.distance;
+    const [x1, y1] = traveler.from;
+    const [x2, y2] = traveler.to;
     const x = x1 + (x2 - x1) * progress;
     const y = y1 + (y2 - y1) * progress;
-    spark.setAttribute('transform', `translate(${x} ${y})`);
-    spark.setAttribute('opacity', step.returning ? .7 : 1);
-    traces[step.edge].setAttribute('stroke-dashoffset', distance * (step.returning ? progress : 1 - progress));
-    tails.forEach((tail, index) => {
-      const behind = progress - (index + 1) * Math.min(5, distance / 14) / distance;
-      tail.setAttribute('cx', x1 + (x2 - x1) * Math.max(0, behind));
-      tail.setAttribute('cy', y1 + (y2 - y1) * Math.max(0, behind));
-      tail.setAttribute('opacity', behind < 0 ? 0 : (1 - index / tails.length) * (step.returning ? .28 : .55));
-    });
-  }
-
-  function reset() {
-    edges.forEach(edge => edge.classList.remove('is-visited'));
-    nodes.forEach(node => node.classList.remove('is-visited'));
-    traces.forEach(trace => trace.classList.remove('is-route', 'is-backtracking'));
-    const { start, end, seed } = searches[cycle % searches.length];
-    walk = depthFirstSearch(start, end, seed);
-    stepIndex = 0;
-    elapsed = 0;
-    pulse(start);
-    beginStep();
+    traveler.spark.setAttribute('transform', `translate(${x} ${y})`);
+    traveler.trace.setAttribute('d', `${traveler.pathPrefix} L${x} ${y}`);
   }
 
   function animate(time) {
-    if (lastTime !== null) elapsed += Math.min(time - lastTime, 80);
+    const delta = lastTime === null ? 0 : Math.min(time - lastTime, 64);
     lastTime = time;
-    if (stepIndex === walk.length) {
-      if (elapsed >= 800) { cycle += 1; reset(); }
+    if (traveler.pause > 0) {
+      traveler.pause = Math.max(0, traveler.pause - delta);
     } else {
-      const progress = Math.min(elapsed / travelTime, 1);
-      draw(progress * progress * (3 - 2 * progress));
-      if (progress === 1 && !arrived) {
-        arrived = true;
-        edges[step.edge].classList.toggle('is-visited', !step.returning);
-        if (step.returning) nodes[step.from].classList.remove('is-visited');
-        pulse(step.to);
-        if (step.returning) traces[step.edge].classList.remove('is-route', 'is-backtracking');
-      }
-      const pause = step.found ? 900 : 75;
-      if (elapsed >= travelTime + pause) {
-        elapsed = 0;
-        stepIndex += 1;
-        if (stepIndex < walk.length) beginStep();
-        else {
-          nodes[step.to].classList.remove('is-visited');
-          halos[step.to].classList.remove('is-pulsing');
-          spark.setAttribute('opacity', 0);
-          tails.forEach(tail => tail.setAttribute('opacity', 0));
+      let movement = delta / 1000 * traveler.speed;
+      // Carry excess distance into the next hop for continuous, constant-speed motion.
+      while (movement >= traveler.distance - traveler.progress) {
+        movement -= traveler.distance - traveler.progress;
+        const completed = traveler.walk[traveler.stepIndex];
+        if (completed.returning) traveler.route.pop();
+        else traveler.route.push(completed.to);
+        traveler.stepIndex += 1;
+        if (traveler.stepIndex === traveler.walk.length) {
+          traveler.cycle += 1;
+          reset(traveler);
+        } else beginStep(traveler);
+        const next = traveler.walk[traveler.stepIndex];
+        const deadEnd = !completed.returning && next.returning && !next.unwinding;
+        if (completed.found || deadEnd) {
+          // A brief hesitation makes a dead-end reversal readable at this speed.
+          traveler.pause = completed.found ? 600 : 140;
+          movement = 0;
+          break;
         }
       }
+      traveler.progress += movement;
+      draw(traveler);
     }
     frameId = window.requestAnimationFrame(animate);
   }
@@ -251,51 +233,77 @@
     if (frameId !== null) window.cancelAnimationFrame(frameId);
     frameId = null;
     lastTime = null;
-    if (!reducedMotion.matches && !document.hidden && visible) {
+    if (traveler?.walk.length && !reducedMotion.matches && !document.hidden) {
       frameId = window.requestAnimationFrame(animate);
     }
   }
 
-  let layoutWidth = 0;
-  let layoutHeight = 0;
   function fitNetwork() {
     const { width, height } = svg.getBoundingClientRect();
     if (!width || !height || (width === layoutWidth && height === layoutHeight)) return;
     layoutWidth = width;
     layoutHeight = height;
-    const inset = Math.min(30, width / 8, height / 8);
+    if (frameId !== null) window.cancelAnimationFrame(frameId);
+    frameId = null;
+    svg.replaceChildren();
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
-    layoutPoints.forEach(([x, y], index) => {
-      points[index] = [
-        inset + x / 960 * (width - inset * 2),
-        inset + y / 640 * (height - inset * 2),
-      ];
-      [nodes[index], halos[index]].forEach(node => {
-        node.setAttribute('cx', points[index][0]);
-        node.setAttribute('cy', points[index][1]);
+
+    const spacing = width < 640 ? 48 : 58;
+    const columns = Math.ceil(width / spacing) + 2;
+    const rows = Math.ceil(height / spacing) + 2;
+    const connections = [];
+    points = [];
+    for (let row = 0; row < rows; row += 1) {
+      for (let col = 0; col < columns; col += 1) {
+        const index = points.length;
+        const seed = row * 4096 + col;
+        points.push([
+          (col - .5 + (row % 2) * .5 + (noise(seed) - .5) * .8) * spacing,
+          (row - .5 + (noise(seed + 9127) - .5) * .8) * spacing,
+        ]);
+        if (col > 0) connections.push([index - 1, index]);
+        if (row > 0) {
+          connections.push([index - columns, index]);
+          const diagonal = col + (row % 2 ? 1 : -1);
+          if (diagonal >= 0 && diagonal < columns && noise(seed + 71) > .3) {
+            connections.push([(row - 1) * columns + diagonal, index]);
+          }
+        }
+      }
+    }
+
+    adjacency = points.map(() => []);
+    const onScreen = points.map(([x, y]) => x >= 12 && x <= width - 12 && y >= 12 && y <= height - 12);
+    connections.forEach(([from, to]) => {
+      // The mesh bleeds offscreen; the traversal stays visible, including retreats.
+      if (onScreen[from] && onScreen[to]) {
+        adjacency[from].push(to);
+        adjacency[to].push(from);
+      }
+      element('line', {
+        x1: points[from][0], y1: points[from][1],
+        x2: points[to][0], y2: points[to][1], class: 'network-edge',
       });
     });
-    connections.forEach(([from, to], index) => {
-      Object.entries({
-        x1: points[from][0], y1: points[from][1],
-        x2: points[to][0], y2: points[to][1],
-      }).forEach(([name, value]) => edges[index].setAttribute(name, value));
-    });
-    reset();
+    points.forEach(([cx, cy]) => element('circle', { cx, cy, r: 2, class: 'network-node' }));
+    routeNodes = largestComponent(adjacency);
+    if (routeNodes.length < 2) { traveler = null; return; }
+    const motion = element('g', { class: 'network-motion' });
+    const trace = element('path', { class: 'network-trace', opacity: .3 }, motion);
+    const spark = element('g', { class: 'network-spark', visibility: 'hidden' }, motion);
+    element('path', { d: 'M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z' }, spark);
+    traveler = { cycle: traveler?.cycle ?? 0, pause: 0, trace, spark, speed: width < 640 ? 70 : 90 };
+    reset(traveler);
+    if (traveler.walk.length) {
+      spark.removeAttribute('visibility');
+      draw(traveler);
+    }
     syncMotion();
   }
 
-  reset();
   fitNetwork();
   if ('ResizeObserver' in window) new ResizeObserver(fitNetwork).observe(svg);
   else window.addEventListener('resize', fitNetwork);
   document.addEventListener('visibilitychange', syncMotion);
   reducedMotion.addEventListener('change', syncMotion);
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      syncMotion();
-    }, { threshold: 0 }).observe(svg.closest('.hero-section'));
-  }
-  syncMotion();
 })();

@@ -29,6 +29,11 @@
   {% if page.home %}<script src="{{ '/assets/js/hero-network.js' | relative_url }}" defer></script>{% endif %}
 </head>
 <body class="{% if page.home %}home-page{% elsif page.lecture %}lecture-page{% else %}inner-page{% endif %}">
+  {% if page.home %}
+  <div class="network-field" aria-hidden="true">
+    <svg class="network-graph" data-neural-network focusable="false"></svg>
+  </div>
+  {% endif %}
   <a class="skip-link" href="#main">Skip to content</a>
   {% unless page.lecture %}
   <header class="site-header">
