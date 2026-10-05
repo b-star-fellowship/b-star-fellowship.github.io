@@ -41,7 +41,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="{{ '/#fellowship' | relative_url }}">The Fellowship</a>
         <a href="{{ '/products/' | relative_url }}"{% if page.url == '/products/' %} aria-current="page"{% endif %}>Products</a>
-        <a href="{{ '/mentors/' | relative_url }}"{% if page.url == '/mentors/' %} aria-current="page"{% endif %}>Mentors</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About Us</a>
         <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
         <a href="{{ '/#faq' | relative_url }}">FAQ</a>
         <a class="button button-small" href="{{ '/apply/' | relative_url }}">Become a Brown AI Fellow {% include arrow.html %}</a>
@@ -54,7 +54,7 @@
   <footer class="site-footer">
     <div class="container footer-top">
       <div><a class="wordmark" href="{{ '/' | relative_url }}"><img class="wordmark-symbol" src="{{ '/assets/img/studio-mark.svg' | relative_url }}" width="52" height="52" alt="" aria-hidden="true"><span>Brown<span class="wordmark-second">AI Studio</span></span></a><p>A fellowship for Brown builders.</p></div>
-      <div class="footer-links"><a href="{{ '/products/' | relative_url }}">Products</a><a href="{{ '/blog/' | relative_url }}">Blog</a><a href="{{ '/mentors/' | relative_url }}">Mentors</a><a href="{{ '/apply/' | relative_url }}">Apply {% include arrow.html %}</a></div>
+      <div class="footer-links"><a href="{{ '/products/' | relative_url }}">Products</a><a href="{{ '/blog/' | relative_url }}">Blog</a><a href="{{ '/about/' | relative_url }}">About Us</a><a href="{{ '/apply/' | relative_url }}">Apply {% include arrow.html %}</a></div>
     </div>
     <div class="container footer-bottom"><span>© {{ 'now' | date: '%Y' }} Brown AI Studio</span><span>Formerly B*, the Brown Startup Fellowship.</span><a href="{{ '/feed.xml' | relative_url }}">RSS {% include arrow.html direction="diagonal" %}</a></div>
   </footer>

@@ -67,10 +67,10 @@ Existing files using `layout: default` continue to work and can keep their own M
 - `assets/img/studio-social.svg` and `studio-social.png`: the program-branded link preview. The SVG is the editable source; export it at 1200 × 630 to update the PNG used by Open Graph and Twitter metadata in `_layouts/base.html`.
 - `lecture.markdown`: the full-screen lecture slide at `/lecture/`, with a large QR code pointing to `https://brownai.studio`. Its `lecture: true` flag omits the shared navigation and footer for presenting.
 - `assets/img/studio-qr.svg` and `studio-qr.png`: the branded QR code for slides and print, using the current B* mark and site colors. It has high error correction and a four-module quiet zone. On macOS, regenerate the SVG with `swift scripts/generate-studio-qr.swift`, then export the PNG with `rsvg-convert -w 1480 -h 1480 assets/img/studio-qr.svg -o assets/img/studio-qr.png` (requires librsvg). The generator contains the destination URL; update it if the domain changes.
-- `_data/mentors.yml`: the mentor directory. Add a record with a name, degree, program, graduation year, photo, bio paragraphs, and links to add another mentor. Each subtitle is rendered from `degree`, `program`, and `graduation_year`.
-- `mentors.html`: the mentor directory layout.
-- `_data/alumni.yml`: the alumni shown below the mentors, with short bios, links, and source URLs. Names and available portraits come from `_data/fellows.json`.
-- `_includes/person-profile.html`: the compact profile shared by mentors and alumni, with initials when no verified portrait is available.
+- `_data/leadership.yml`: the leadership profiles on About Us. Add a record with a name, degree, program, graduation year, photo, bio paragraphs, and links to add another leader. Each subtitle is rendered from `degree`, `program`, and `graduation_year`.
+- `about.html`: the About Us page at `/about/`, with Leadership followed by a smaller Mentors section. `mentors.html` redirects the former `/mentors/` URL and preserves profile anchors.
+- `_data/alumni.yml`: the fellowship alumni shown in the Mentors section, with short bios, links, and source URLs. Names and available portraits come from `_data/fellows.json`.
+- `_includes/person-profile.html`: the profile shared by leadership and mentors, with initials when no verified portrait is available.
 - `_data/writing.yml`: the original articles and resources linked from the blog, ordered newest first. Existing article dates come from their first addition in Git history and are also stored in each page’s front matter.
 - `_private/prompts.txt`: the unpublished Prompts text, excluded from Jekyll builds and ignored by Git so future pushes do not expose it. Existing public Git history is unchanged.
 - `_includes/byline.html`: article authorship. Existing writing has an explicit Sam Dooman author field.
@@ -86,8 +86,8 @@ Existing files using `layout: default` continue to work and can keep their own M
 - The site uses a brown palette. Each product’s panel retains its own brand colors.
 - The application page links to the Google Form supplied for the program. Update `application_url` in `_config.yml` to change all three application calls to action together.
 - The KADI summer interview is in `_posts/2026-09-30-kadi-summer-2026.md`, reconstructed from the June 18, July 16, and July 31 check-ins. Its product details and usage reflect those calls through July 31.
-- Sam’s headshot comes from the Brown CS profile linked on his mentor card. The optimized image is stored locally as `assets/img/sam-dooman.jpg`.
-- Sam’s bio is based on the existing site and the Brown CS profile; additional mentors can be added without changing the page layout.
+- Sam Dooman’s headshot comes from the Brown CS profile linked on his leadership profile. The optimized image is stored locally as `assets/img/sam-dooman.jpg`; his bio is based on the existing site and the Brown CS profile.
+- Sam Kortchmar’s bio and photo were supplied for his leadership profile. His photo is stored locally as `assets/img/sam-kortchmar.png`, alongside links to LinkedIn and RateMate.
 - This is a local draft. No domain changes or publishing have been performed.
 
 ## Build

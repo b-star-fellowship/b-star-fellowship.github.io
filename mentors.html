@@ -1,27 +1,18 @@
 ---
-layout: base
-title: Mentors
+layout: null
 permalink: /mentors/
-description: Meet the mentors supporting Brown AI Fellows and the Brown AI Studio alumni building products of their own.
 ---
-<div class="container page-shell mentors-page">
-  <header class="mentors-heading">
-    <h1>The Mentors</h1>
-    <p>Brown AI Studio is led by alumni who operate AI and consumer software companies.</p>
-  </header>
-  <div class="mentor-list">
-    {% for mentor in site.data.mentors %}
-    {% capture education %}{{ mentor.degree }} {{ mentor.program }}{% if mentor.graduation_year %} · {{ mentor.graduation_year }}{% endif %}{% endcapture %}
-    {% include person-profile.html person=mentor id=mentor.id subtitle=education bio=mentor.bio links=mentor.links heading_level=2 %}
-    {% endfor %}
-  </div>
-  <section class="alumni-section" aria-labelledby="alumni-heading">
-    <h2 id="alumni-heading">Brown AI Studio Alumni</h2>
-    <div class="alumni-list">
-      {% for alumnus in site.data.alumni %}
-      {% assign person = site.data.fellows[alumnus.fellow] %}
-      {% include person-profile.html person=person id=alumnus.fellow subtitle=alumnus.subtitle bio=alumnus.bio links=alumnus.links heading_level=3 %}
-      {% endfor %}
-    </div>
-  </section>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us · {{ site.title | escape }}</title>
+  <link rel="canonical" href="{{ '/about/' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/about/' | relative_url }}">
+  <script>window.location.replace({{ '/about/' | relative_url | jsonify }} + window.location.hash);</script>
+</head>
+<body>
+  <p>This page has moved to <a href="{{ '/about/' | relative_url }}">About Us</a>.</p>
+</body>
+</html>

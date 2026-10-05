@@ -8,6 +8,8 @@
   links:
     - label: LinkedIn
       url: https://www.linkedin.com/in/julian-dai/
+    - label: Ramp
+      url: https://ramp.com/
     - label: ATA
       url: /products/#ata
   sources:
@@ -21,6 +23,8 @@
   links:
     - label: LinkedIn
       url: https://www.linkedin.com/in/adithya-sriram/
+    - label: Studio
+      url: https://studio.com/
     - label: Pagio
       url: /products/#pagio
   sources:
@@ -33,6 +37,8 @@
   links:
     - label: LinkedIn
       url: https://www.linkedin.com/in/ryan-klivansky/
+    - label: DeepFeat
+      url: https://deepfeat.ai/
     - label: ForReelFlies
       url: /products/#forreelflies
   sources:

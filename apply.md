@@ -14,7 +14,7 @@ Brown AI Studio is a **10-week summer fellowship** for Brown University students
 
 A website or app. A game. A creative tool. Something that makes someone’s day a little easier. Your project needs a software component, and AI will help you bring it to life.
 
-See what past fellows have made in [Products]({{ '/products/' | relative_url }}), or [meet the mentors]({{ '/mentors/' | relative_url }}) who can help you along the way.
+See what past fellows have made in [Products]({{ '/products/' | relative_url }}), or [meet the team]({{ '/about/' | relative_url }}) who can help you along the way.
 
 ## A good fit for the studio
 
