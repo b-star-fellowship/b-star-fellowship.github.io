@@ -86,7 +86,7 @@ Existing files using `layout: default` continue to work and can keep their own M
 - The site uses a brown palette. Each product’s panel retains its own brand colors.
 - The application page links to the Google Form supplied for the program. Update `application_url` in `_config.yml` to change all three application calls to action together.
 - The KADI summer interview is in `_posts/2026-09-30-kadi-summer-2026.md`, reconstructed from the June 18, July 16, and July 31 check-ins. Its product details and usage reflect those calls through July 31.
-- Sam Dooman’s headshot comes from the Brown CS profile linked on his leadership profile. The optimized image is stored locally as `assets/img/sam-dooman.jpg`; his bio is based on the existing site and the Brown CS profile.
+- Sam Dooman’s headshot was supplied for his leadership profile and is stored locally as a compressed JPEG at `assets/img/sam-dooman.jpg`.
 - Sam Kortchmar’s bio and photo were supplied for his leadership profile. His photo is stored locally as `assets/img/sam-kortchmar.png`, alongside links to LinkedIn and RateMate.
 - This is a local draft. No domain changes or publishing have been performed.
 
