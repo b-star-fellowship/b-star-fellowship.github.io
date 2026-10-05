@@ -21,8 +21,8 @@ questions:
     answer: Fellows receive $5,000 per person for a 10-week summer fellowship, along with mentorship from Brown alumni. You’ll spend the summer building, testing, iterating, and launching your product.
   - question: Who runs the studio, and who are the mentors?
     answer: We're a group of Brown alumni who work at top AI companies and startups, who want to give back. The program was originally started by Sam Dooman, who studied music and computer science at Brown.
-    link: /mentors/
-    link_label: Meet the mentors
+    link: /about/
+    link_label: Meet the team
   - question: How do I apply?
     answer: Visit the application page to learn what to prepare and submit your application. You can apply solo or with a teammate.
     link: /apply/

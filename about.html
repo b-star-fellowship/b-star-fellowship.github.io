@@ -1,0 +1,31 @@
+---
+layout: base
+title: About Us
+permalink: /about/
+description: Meet the leadership and fellowship alumni helping Brown AI Fellows build and launch their own software.
+---
+<div class="container page-shell about-page">
+  <header class="about-heading">
+    <h1>About Us</h1>
+    <p>We help Brown students build and launch their own software, with guidance from Brown alumni and graduates of the fellowship.</p>
+  </header>
+  <section class="leadership-section" aria-labelledby="leadership-heading">
+    <h2 id="leadership-heading">Leadership</h2>
+    <div class="leadership-list">
+      {% for leader in site.data.leadership %}
+      {% capture education %}{{ leader.degree }} {{ leader.program }}{% if leader.graduation_year %} · {{ leader.graduation_year }}{% endif %}{% endcapture %}
+      {% include person-profile.html person=leader id=leader.id subtitle=education bio=leader.bio links=leader.links heading_level=3 %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="mentors-section" aria-labelledby="mentors-heading">
+    <h2 id="mentors-heading">Mentors</h2>
+    <p class="mentors-intro">Alumni of the fellowship, sharing what they learned building and launching their own products.</p>
+    <div class="mentor-list">
+      {% for alumnus in site.data.alumni %}
+      {% assign person = site.data.fellows[alumnus.fellow] %}
+      {% include person-profile.html person=person id=alumnus.fellow subtitle=alumnus.subtitle bio=alumnus.bio links=alumnus.links heading_level=3 %}
+      {% endfor %}
+    </div>
+  </section>
+</div>
