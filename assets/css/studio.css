@@ -629,17 +629,25 @@ max-width:100%;
   height:auto;
 }
 
-.prose .article-photo {
+.prose .article-photo,
+.prose .article-video {
   margin:36px 0;
 }
 
-.prose .article-photo img {
+.prose .article-photo img,
+.prose .article-video video {
   display:block;
   width:100%;
   border-radius:4px;
 }
 
-.prose .article-photo figcaption {
+.prose .article-video video {
+  height:auto;
+  background:#000;
+}
+
+.prose .article-photo figcaption,
+.prose .article-video figcaption {
   margin-top:10px;
   color:var(--muted);
   font-size:13px;
