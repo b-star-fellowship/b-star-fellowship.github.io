@@ -1,7 +1,6 @@
 ---
 title: "Fountainhead: A summer of building for screenwriters"
 date: 2026-10-10 09:00:00 -0400
-published: false
 category: Fellow interview
 author: Sam Dooman
 description: "Chris and Bryan Zou on building a free screenwriting editor, getting collaboration to work, and reaching 500 accounts during their summer fellowship."

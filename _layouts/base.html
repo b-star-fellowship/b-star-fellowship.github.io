@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#171310">
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  {% if page.unlisted %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">

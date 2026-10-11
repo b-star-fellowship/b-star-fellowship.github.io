@@ -4,6 +4,7 @@ layout: base
 <div class="page-shell container">
   <a class="back-link" href="{{ '/blog/' | relative_url }}">{% include arrow.html direction="back" %} All writing & conversations</a>
   <article class="prose">
+    {% if page.unlisted %}<p class="eyebrow">Draft for review</p>{% endif %}
     <p class="eyebrow">{{ page.category | default: 'Article' }} <span class="meta-divider">/</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time></p>
     <h1>{{ page.title }}</h1>
     {% assign post_author = page.author | default: 'Sam Dooman' %}

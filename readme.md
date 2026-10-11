@@ -33,6 +33,8 @@ Your Markdown goes here.
 
 Posts automatically appear in `/blog/` and the RSS feed. The homepage deliberately has no blog feed. Existing Markdown articles keep their original URLs and are listed in `_data/writing.yml`. Posts with future dates appear once their date arrives. Add `published: false` to keep one unpublished. Put work in progress under `_drafts/` and pass `--drafts` to the preview command to include it.
 
+For a shareable draft, create `_reviews/your-title.md` with the same front matter, omitting `published: false`. Review pages build at `/blog/your-title/` on the live site, display “Draft for review,” and ask search engines not to index them. They are separate from `site.posts`, so they do not appear in the blog list or RSS. Keep their links out of `_data/products.json` and `_data/writing.yml` while under review. Anyone with the URL can view them; they are unlisted, not access-controlled. To publish a review, move it to `_posts/YYYY-MM-DD-your-title.md` with the same title portion of the filename and restore any desired directory links. Its URL stays the same.
+
 ## Add a page
 
 Create `your-page.md`:
@@ -86,12 +88,11 @@ Existing files using `layout: default` continue to work and can keep their own M
 - The site uses a brown palette. Each product’s panel retains its own brand colors.
 - The application page links to the Google Form supplied for the program. Update `application_url` in `_config.yml` to change all three application calls to action together.
 - The KADI summer interview is in `_posts/2026-09-30-kadi-summer-2026.md`, reconstructed from the June 18, July 16, and July 31 check-ins. Its product details and usage reflect those calls through July 31.
-- The Fountainhead summer interview is in `_posts/2026-10-10-fountainhead-summer-2026.md`, reconstructed from the June 18, July 9, and July 29 check-ins. Its figures and development status reflect those calls through July 29, including the desktop app still being in testing. The transcripts share one speaker label for Chris and Bryan; attribution follows the surrounding dialogue.
-- The Fountainhead interview is currently a draft (`published: false`), excluded from normal builds, the blog, and RSS. Its product-card interview link is removed while under review. Preview it with `PORT=4001 ./scripts/serve --unpublished --destination /private/tmp/fountainhead-review-site`, then open `http://127.0.0.1:4001/blog/fountainhead-summer-2026/`. To publish, remove `published: false` and restore Fountainhead's `story_url` to `/blog/fountainhead-summer-2026/` in `_data/products.json`.
+- The Fountainhead summer interview is in `_reviews/fountainhead-summer-2026.md`, reconstructed from the June 18, July 9, and July 29 check-ins. Its figures and development status reflect those calls through July 29, including the desktop app still being in testing. The transcripts share one speaker label for Chris and Bryan; attribution follows the surrounding dialogue.
+- The Fountainhead interview is currently an unlisted review page at `https://brownai.studio/blog/fountainhead-summer-2026/`, included in normal builds but absent from the blog list, RSS, and product-card links. To publish it in the blog, move it to `_posts/2026-10-10-fountainhead-summer-2026.md` and restore Fountainhead's `story_url` to `/blog/fountainhead-summer-2026/` in `_data/products.json`.
 - The Fountainhead post includes three supplied videos in `assets/video/fountainhead-summer-2026/`, with poster frames and an analytics screenshot in `assets/img/posts/fountainhead-summer-2026/`. `Video-81375.mp4` is the opening introduction; `Video-46148.mp4` accompanies Chris's filmmaking section; `IMG_5175.mov` was converted to H.264 MP4 for Bryan's time lapse. The promotional videos retain their original video and audio streams. All players use native controls, poster images, and `preload="none"`. The analytics screenshot is labeled as a later snapshot showing 749 accounts and activity into October, separate from the July interview figures.
 - Sam Dooman’s headshot was supplied for his leadership profile and is stored locally as a compressed JPEG at `assets/img/sam-dooman.jpg`.
 - Sam Kortchmar’s bio and photo were supplied for his leadership profile. His photo is stored locally as `assets/img/sam-kortchmar.png`, alongside links to LinkedIn and RateMate.
-- This is a local draft. No domain changes or publishing have been performed.
 
 ## Build
 
