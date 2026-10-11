@@ -20,6 +20,28 @@
     "domain": "fountainhead.site"
   },
   {
+    "id": "kadi",
+    "name": "KADI",
+    "cohort": 2026,
+    "category": "Sports & coaching",
+    "headline": "Players, parents, and coaches in one place.",
+    "summary": "Find coaches, schedule sessions, and keep everyone up to date in one place.",
+    "website": "https://kadi.coach/",
+    "story_url": "/blog/kadi-summer-2026/",
+    "focus": [
+      "Coach discovery",
+      "Scheduling",
+      "Team communication"
+    ],
+    "fellows": [
+      "madeline-templeton",
+      "kit-jackson"
+    ],
+    "featured": true,
+    "description": "KADI brings players, parents, and coaches together in one place. Users can find experienced coaches, schedule sessions, and share real-time updates to keep training organized and everyone informed.",
+    "domain": "kadi.coach"
+  },
+  {
     "id": "dropcal",
     "name": "Dropcal",
     "cohort": 2026,
@@ -114,28 +136,6 @@
     ],
     "description": "Mona is an AI-powered personal finance app for managing budgets, tracking spending, and understanding transaction patterns. It combines transaction categorization, recurring subscription detection, and trend analysis with financial insights, quiz-based learning, and CSV exports.",
     "featured": false
-  },
-  {
-    "id": "kadi",
-    "name": "KADI",
-    "cohort": 2026,
-    "category": "Sports & coaching",
-    "headline": "Players, parents, and coaches in one place.",
-    "summary": "Find coaches, schedule sessions, and keep everyone up to date in one place.",
-    "website": "https://kadi.coach/",
-    "story_url": "/blog/kadi-summer-2026/",
-    "focus": [
-      "Coach discovery",
-      "Scheduling",
-      "Team communication"
-    ],
-    "fellows": [
-      "madeline-templeton",
-      "kit-jackson"
-    ],
-    "featured": true,
-    "description": "KADI brings players, parents, and coaches together in one place. Users can find experienced coaches, schedule sessions, and share real-time updates to keep training organized and everyone informed.",
-    "domain": "kadi.coach"
   },
   {
     "id": "wordgolf",
