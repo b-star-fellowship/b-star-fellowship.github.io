@@ -56,14 +56,6 @@ Third, **a desktop app with offline writing**. We had a downloadable build to te
 
 **Chris:** Version history had already been useful for me, even just writing my content scripts. And the desktop app came directly from conversations with users. Being able to write offline was the number one feature the people I spoke with wanted.
 
-### Sam: Were there features you had to simplify?
-
-**Bryan:** Version history was a good example. We wanted to show exactly who made each change. We could identify who inserted text, but tracking who deleted it was much harder with the library we were using. We couldn't find an existing solution that did everything we wanted.
-
-We also compared versions line by line. Comparing every character or word could get slow on a long screenplay. Even the demo made it obvious that speed needed attention.
-
-**Chris:** We were okay with showing deletions without identifying the person who made them for now. I didn't think knowing exactly who deleted a particular line was worth holding up the rest of the feature.
-
 ### Sam: How many people were using it by the end of July? Any paying?
 
 **Chris:** We reached 500 accounts a couple of days before the July 29 call. In June, we were at about 415, and growth had slowed after we turned off ads. So getting to 500 felt good.
@@ -101,7 +93,7 @@ It immediately made us wonder how many other filmmaking classes might use it. We
 
 **Chris:** I sent an email to 280 people who hadn't logged in for a while, asking to meet and talk about why they weren't using the app. I set up a scheduling link and made myself available. Nobody booked a call.
 
-Then I separately emailed nine power users, and two booked calls. They were young students looking for a free alternative, and both conversations made the demand for a downloadable app much clearer. They wanted to write offline.
+Then I separately emailed nine power users, and two booked calls. They were young students looking for a free alternative, and both conversations made the demand for a downloadable app much clearer. They wanted to write offline which was a feature I didn’t think was important as a writer. However, I realized that through this feedback that offline access was a feature much more important to our users than I had anticipated.
 
 That was useful because it gave us a concrete reason to build the desktop version. I also heard that some writers preferred the feel of a desktop app over a website, even when the functionality was similar.
 
